@@ -1,0 +1,21 @@
+{
+  "name": "ohmyfood_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lnoel4289/lnoel4289.github.io.git"
+  },
+  "author": "lnoel4289",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lnoel4289/lnoel4289.github.io/issues"
+  },
+  "homepage": "https://github.com/lnoel4289/lnoel4289.github.io#readme",
+  "browserslist": "last 4 versions"
+}
