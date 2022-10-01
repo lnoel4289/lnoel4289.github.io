@@ -1,0 +1,91 @@
+/* utils */
+/**/
+body {
+  font-family: "roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.search {
+  background: #4acbab;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input {
+  background: #4acbab;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+}
+form input::placeholder {
+  color: black;
+}
+form input:focus {
+  outline: none;
+}
+
+.site-description {
+  padding: 50px 5%;
+  background: #99E2D0;
+  text-align: center;
+}
+.site-description__button {
+  background: #9356DC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 50px;
+  border-radius: 25px;
+  color: white;
+  box-shadow: 1px 2px 10px 1px #9d9393;
+}
+.site-description__button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.operation {
+  padding: 50px 5%;
+  background: white;
+}
+
+.restaurants {
+  padding: 50px 5%;
+  background: #99E2D0;
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 25px;
+  box-shadow: 1px 2px 10px 1px #9d9393;
+}
+.card__image {
+  overflow: hidden;
+}
+.card__text {
+  background: white;
+}
+
+footer {
+  padding: 50px 5%;
+  background: #10392f;
+  color: #99E2D0;
+}
+footer h3 {
+  font-family: shrikhand;
+}
+
+/*# sourceMappingURL=style.css.map */

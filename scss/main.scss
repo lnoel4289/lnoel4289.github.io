@@ -1,0 +1,103 @@
+/* utils */
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+
+@mixin standard-padding($color:white) {
+    padding: 50px 5%;
+    background: $color;
+}
+@mixin standard-box-shadow($color: #9d9393) {
+    box-shadow: 1px 2px 10px 1px $color;
+}
+@mixin centered-flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**/
+
+body{
+    font-family: 'roboto', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+.search{
+    background: darken($color-tertiary, 20%);   
+}
+
+form{
+    @include centered-flexbox;
+    & input{
+        background: darken($color: $color-tertiary, $amount: 20%);
+        &::placeholder{color: black};
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: hidden;
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+.site-description{
+    @include standard-padding($color-tertiary);
+    text-align: center;
+    &__button{
+        background: $color-primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: 50px;
+        border-radius: 25px;
+        color:white;
+        @include standard-box-shadow;
+        &-container{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.operation{
+    @include standard-padding;
+}
+
+.restaurants{
+    @include standard-padding($color-tertiary);
+}
+
+.card{
+    overflow: hidden;
+    border-radius: 25px;
+    @include standard-box-shadow;
+    &__image{
+        overflow: hidden;
+    }
+    &__text{
+        background: white;
+    }
+}
+
+footer{
+    @include standard-padding(darken($color-tertiary, 60%));
+    color: $color-tertiary;
+    & h3{
+        font-family: shrikhand;
+    }
+}
+
+
+

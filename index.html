@@ -23,20 +23,20 @@
         </div>
     </header>
     <main>
-        <div>
+        <section class="search">
             <form method="post" action="#">
                 <label for="search"><i class="fa-solid fa-location-dot"></i></label>
                 <input type="search" name="search" id="search" placeholder="Paris, Belleville">
             </form>
-        </div>
-        <div>
+        </section>
+        <section class="site-description">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception sélectionnés par nos soins</p>
-            <div>
-                <a href="#restaurants">Explorez nos restaurants</a>
-            </div>
+            <div class="site-description__button-container">
+                <a class="site-description__button" href="#restaurants">Explorez nos restaurants</a>
+            </section>
         </div>
-        <div>
+        <section class="operation">
             <h1>Fonctionnement</h1>
             <div>
                 <div>
@@ -45,7 +45,6 @@
                         <h2>Choisissez un restaurant</h2>
                         <p>1</p>
                     </a>
-                    
                 </div>
                 <div>
                     <a href="#">
@@ -53,7 +52,6 @@
                         <h2>Composez votre menu</h2>
                         <p>2</p>
                     </a>
-                    
                 </div>
                 <div>
                     <a href="#">
@@ -61,24 +59,23 @@
                         <h2>Dégustez au restaurant</h2>
                         <p>3</p>
                     </a>
-                    
                 </div>
             </div>
-        </div>
-        <article id="restaurants">
+        </section>
+        <article class="restaurants" id="restaurants">
             <div>
                 <h1>Restaurants</h1>
             </div>
             <div>
                 <a href="page1.html">
                     <div class="card">
-                        <div class="image">
+                        <div class="card__image">
                             <img src="images/restaurants/mobile_device/jay-wennington-N_Y88TWmGwA-unspl.jpg" alt="Plats sur une table">
                             <div>
                                 <p>Nouveau</p>
                             </div>
                         </div>
-                        <div>
+                        <div class="card__text">
                             <div>
                                 <h2>La palette du goût</h2>
                                 <p>Ménilmontant</p>
@@ -93,13 +90,13 @@
                 </a>
                 <a href="page2.html">
                     <div class="card">
-                        <div class="image">
+                        <div class="card__image">
                             <img src="images/restaurants/mobile_device/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Plats sur une table">
                             <div>
                                 <p>Nouveau</p>
                             </div>
                         </div>
-                        <div>
+                        <div class="card__text">
                             <div>
                                 <h2>La note enchantée</h2>
                                 <p>Charonne</p>
@@ -114,10 +111,10 @@
                 </a>
                 <a href="page3.html">
                     <div class="card">
-                        <div class="image">
-                            <img src="images/restaurants/mobile_device/louis-hansel-shotsoflouis-qNBGVy.jpg" alt="Plat sur table">
+                        <div class="card__image">
+                            <img src="images/restaurants/mobile_device/louis-hansel-shotsoflouis-qNBGVy.jpg" alt="Plats sur une table">
                         </div>
-                        <div>
+                        <div class="card__text">
                             <div>
                                 <h2>À la française</h2>
                                 <p>Cité rouge</p>
@@ -132,10 +129,10 @@
                 </a>
                 <a href="page4.html">
                     <div class="card">
-                        <div class="image">
-                            <img src="images/restaurants/mobile_device/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Plat sur table">
+                        <div class="card__image">
+                            <img src="images/restaurants/mobile_device/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Plats sur une table">
                         </div>
-                        <div>
+                        <div class="card__text">
                             <div>
                                 <h2>Le délice des sens</h2>
                                 <p>Folie-Méricourt</p>
@@ -153,7 +150,7 @@
     </main>
     <footer>
         <div>
-            <img src="images/logo/ohmyfood.png" alt="logo">
+            <h3>ohmyfood</h3>
         </div>
         <div>
         <a href="">
