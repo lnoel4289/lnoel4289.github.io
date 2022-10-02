@@ -38,7 +38,13 @@ form input:focus {
   background: #99E2D0;
   text-align: center;
 }
-.site-description__button {
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
   background: #9356DC;
   display: flex;
   justify-content: center;
@@ -48,10 +54,6 @@ form input:focus {
   border-radius: 25px;
   color: white;
   box-shadow: 1px 2px 10px 1px #9d9393;
-}
-.site-description__button-container {
-  display: flex;
-  justify-content: center;
 }
 
 .operation {

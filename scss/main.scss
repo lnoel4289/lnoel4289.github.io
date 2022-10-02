@@ -55,22 +55,25 @@ form{
 .site-description{
     @include standard-padding($color-tertiary);
     text-align: center;
-    &__button{
-        background: $color-primary;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60%;
-        height: 50px;
-        border-radius: 25px;
-        color:white;
-        @include standard-box-shadow;
-        &-container{
-            display: flex;
-            justify-content: center;
-        }
-    }
 }
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    background: $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 50px;
+    border-radius: 25px;
+    color:white;
+    @include standard-box-shadow;
+}
+
 
 // SECTION OPERATION
 .operation{
