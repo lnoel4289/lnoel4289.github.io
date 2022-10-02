@@ -13,7 +13,7 @@ $color-tertiary: #99E2D0;
 }
 
 
-// GENERAL
+// BASE
 body{
     font-family: 'roboto', sans-serif;
 }
@@ -27,34 +27,69 @@ a{
     color: unset;
 }
 
-// FOOTER
-
-// MAIN
-// SECTION SEARCH FORM
-.search{
-    background: darken($color-tertiary, 20%);   
+h2{
+    margin: 0;
 }
 
+// HEADER
+header{
+    background: white;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include standard-box-shadow;
+    z-index: 10;
+}
+
+.logo{
+    width: 45%;
+    margin: 20px;
+}
+
+.arrow{
+    position: absolute;
+    font-size: 40px;
+    left: 5%;
+    top: 15px;
+}
+
+// MAIN
+main{
+    padding-top: 68.6px;
+}
+
+// SEARCH FORM
 form{
+    height: 60px;
+    background: darken($color-tertiary, 20%);   
     display: flex;
     justify-content: center;
+    align-items: center;
     & input{
         background: darken($color: $color-tertiary, $amount: 20%);
-        &::placeholder{color: black};
-        border-top-style: hidden;
-        border-right-style: hidden;
-        border-left-style: hidden;
-        border-bottom-style: hidden;
+        &::placeholder{
+            color: black;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        border-style: hidden;
         &:focus{
             outline: none;
         }
     }
+    & label{
+        padding: 0 20px;
+        font-size: 18px;
+    }
 }
 
 // SECTION SITE DESCRIPTION
-.site-description{
+.background-style{
     @include standard-padding($color-tertiary);
-    text-align: center;
+    &__section{
+    text-align: center;}
 }
 
 .button-container{
@@ -63,28 +98,34 @@ form{
 }
 
 .button{
-    background: $color-primary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    height: 50px;
     border-radius: 25px;
-    color:white;
     @include standard-box-shadow;
+    display: flex;
+    align-items: center;
+    border-style: hidden;
+    &__site-description{
+        justify-content: center;
+        width: 60%;
+        height: 50px;
+    }
+    &--color-primary{
+        background: $color-primary;
+        color:white;
+    }
+    &--color-tertiary{
+        background: $color-tertiary;
+    }
 }
 
 
 // SECTION OPERATION
 .operation{
     @include standard-padding;
-    &__button{
+    &__buttons{
+        height: 300px;
         display: flex;
-        align-items: center;
-        &__link{
-            display: flex;
-            align-items: center;
-        }
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
 
@@ -93,15 +134,59 @@ form{
     @include standard-padding($color-tertiary);
 }
 
+.cards-block{
+    height: 1260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .card{
     overflow: hidden;
     border-radius: 25px;
     @include standard-box-shadow;
+    height: 300px;
     &__image{
         overflow: hidden;
+        position: relative;
+        height: 70%;
+        &__img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &__new{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            z-index: 1;
+            top: 20px;
+            right: 20px;
+            background: $color-tertiary;
+            padding: 0 10px;
+            color: darken($color-tertiary, 40%);
+            font-weight: 600;
+            border: solid 1px lighten($color-tertiary, 10%);
+            height: 30px;
+        }
     }
-    &__text{
+    &__textbox{
         background: white;
+        display: flex;
+        justify-content: space-between;
+        height: 30%;
+        padding: 5%;
+        & p{
+            margin: 0;
+        }
+    }
+}
+
+// PAGES RESTAURANT
+.menu-image{
+    & img{
+        width: 100%;
+        object-fit: cover;
     }
 }
 
