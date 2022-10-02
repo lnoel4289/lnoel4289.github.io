@@ -1,4 +1,4 @@
-/* utils */
+// UTILS
 
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
@@ -12,8 +12,8 @@ $color-tertiary: #99E2D0;
     box-shadow: 1px 2px 10px 1px $color;
 }
 
-/**/
 
+// GENERAL
 body{
     font-family: 'roboto', sans-serif;
 }
@@ -27,6 +27,10 @@ a{
     color: unset;
 }
 
+// FOOTER
+
+// MAIN
+// SECTION SEARCH FORM
 .search{
     background: darken($color-tertiary, 20%);   
 }
@@ -47,6 +51,7 @@ form{
     }
 }
 
+// SECTION SITE DESCRIPTION
 .site-description{
     @include standard-padding($color-tertiary);
     text-align: center;
@@ -67,10 +72,20 @@ form{
     }
 }
 
+// SECTION OPERATION
 .operation{
     @include standard-padding;
+    &__button{
+        display: flex;
+        align-items: center;
+        &__link{
+            display: flex;
+            align-items: center;
+        }
+    }
 }
 
+// SECTION RESTAURANTS
 .restaurants{
     @include standard-padding($color-tertiary);
 }
@@ -87,6 +102,7 @@ form{
     }
 }
 
+// FOOTER
 footer{
     @include standard-padding(darken($color-tertiary, 60%));
     color: $color-tertiary;
