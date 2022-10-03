@@ -3,8 +3,9 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$color-white: white;
 
-@mixin standard-padding($color:white) {
+@mixin standard-padding($color:$color-white) {
     padding: 50px 5%;
     background: $color;
 }
@@ -27,13 +28,17 @@ a{
     color: unset;
 }
 
+h1{
+    margin-top: 0;
+}
+
 h2{
     margin: 0;
 }
 
 // HEADER
 header{
-    background: white;
+    background: $color-white;
     position: fixed;
     width: 100%;
     display: flex;
@@ -69,6 +74,7 @@ form{
     align-items: center;
     font-size: 18px;
     & input{
+        width: 175px;
         background: darken($color: $color-tertiary, $amount: 20%);
         font-weight: 700;
         &::placeholder{
@@ -88,29 +94,43 @@ form{
 // SECTION SITE DESCRIPTION
 .background-style{
     @include standard-padding($color-tertiary);
-    &__section{
-    text-align: center;}
 }
 
-.button-container{
-    display: flex;
-    justify-content: center;
-}
-
-.button{
-    border-radius: 25px;
-    @include standard-box-shadow;
-    display: flex;
-    align-items: center;
-    border-style: hidden;
-    &__site-description{
+.site-description{
+    &__button{
         justify-content: center;
         width: 60%;
         height: 50px;
     }
+    &__background{
+        text-align: center;
+    }
+}
+
+.button{
+    border-style: hidden;
+    border-radius: 25px;
+    &-container{
+        display: flex;
+        justify-content: center;
+    }
+    &-number{
+        padding: 6px 10px;
+        border-radius: 25px;
+        position: absolute;
+        left: -15px;
+    }
+    &--large{
+        display: flex;
+        align-items: center;
+        @include standard-box-shadow;
+    }
     &--color-primary{
         background: $color-primary;
-        color:white;
+        color: $color-white;
+    }
+    &--color-secondary{
+        background: $color-secondary;
     }
     &--color-tertiary{
         background: $color-tertiary;
@@ -121,11 +141,21 @@ form{
 // SECTION OPERATION
 .operation{
     @include standard-padding;
-    &__buttons{
-        height: 300px;
+    &__button-container{
+        height: 280px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding-left: 10px;
+        &__button{
+            position: relative;
+            height: 75px;
+            font-size: 13px;
+            & i{
+                padding: 0 30px;
+                font-size: 20px;
+            }
+        }
     }
 }
 
@@ -171,7 +201,7 @@ form{
         }
     }
     &__textbox{
-        background: white;
+        background: $color-white;
         display: flex;
         justify-content: space-between;
         height: 30%;
