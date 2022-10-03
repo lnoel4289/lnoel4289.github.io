@@ -67,21 +67,21 @@ form{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 18px;
     & input{
         background: darken($color: $color-tertiary, $amount: 20%);
+        font-weight: 700;
         &::placeholder{
             color: black;
-            font-size: 18px;
-            font-weight: 700;
         }
         border-style: hidden;
         &:focus{
             outline: none;
+            font-weight: 700;
         }
     }
     & label{
         padding: 0 20px;
-        font-size: 18px;
     }
 }
 
@@ -192,10 +192,28 @@ form{
 
 // FOOTER
 footer{
-    @include standard-padding(darken($color-tertiary, 60%));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 5% 30px;
+    background: darken($color: $color-tertiary, $amount: 60%);
     color: $color-tertiary;
+    font-size: 18px;
     & h3{
         font-family: shrikhand;
+        font-weight: 200;
+    }
+    & ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        line-height: 1.6;
+    }
+    & i{
+        width: 30px;
     }
 }
 

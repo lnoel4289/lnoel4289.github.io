@@ -48,22 +48,22 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 18px;
 }
 form input {
   background: #4acbab;
+  font-weight: 700;
   border-style: hidden;
 }
 form input::placeholder {
   color: black;
-  font-size: 18px;
-  font-weight: 700;
 }
 form input:focus {
   outline: none;
+  font-weight: 700;
 }
 form label {
   padding: 0 20px;
-  font-size: 18px;
 }
 
 .background-style {
@@ -169,12 +169,29 @@ form label {
 }
 
 footer {
-  padding: 50px 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 5% 30px;
   background: #10392f;
   color: #99E2D0;
+  font-size: 18px;
 }
 footer h3 {
   font-family: shrikhand;
+  font-weight: 200;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.6;
+}
+footer i {
+  width: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
