@@ -159,6 +159,8 @@ form{
     }
 }
 
+// ANCHOR RESTAURANTS
+
 // SECTION RESTAURANTS
 .restaurants{
     @include standard-padding($color-tertiary);
@@ -219,6 +221,20 @@ form{
         object-fit: cover;
     }
 }
+
+.pages{
+    &__button-container{
+        align-items: center;
+        border: $color-tertiary;
+    }
+    &__button{
+        justify-content: center;
+        height: 50px;
+        width:45%;
+    }
+}
+
+
 
 // FOOTER
 footer{
