@@ -23,6 +23,7 @@ header {
   background: white;
   position: fixed;
   width: 100%;
+  height: 65px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +32,7 @@ header {
 }
 
 .logo {
-  width: 45%;
+  height: 50%;
   margin: 20px;
 }
 
@@ -43,7 +44,7 @@ header {
 }
 
 main {
-  padding-top: 68.6px;
+  padding-top: 65px;
 }
 
 form {
@@ -92,6 +93,7 @@ form label {
 .button-container {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 .button-number {
   padding: 6px 10px;
@@ -114,6 +116,9 @@ form label {
 .button--color-tertiary {
   background: #99E2D0;
 }
+.button--color-white {
+  background: white;
+}
 
 .operation {
   padding: 50px 5%;
@@ -134,6 +139,13 @@ form label {
 .operation__button-container__button i {
   padding: 0 30px;
   font-size: 20px;
+}
+
+#anchor-restaurants {
+  display: block;
+  height: 115px;
+  margin-top: -115px;
+  visibility: hidden;
 }
 
 .restaurants {
@@ -182,7 +194,6 @@ form label {
   background: white;
   display: flex;
   justify-content: space-between;
-  height: 30%;
   padding: 5%;
 }
 .card__textbox p {
@@ -202,6 +213,23 @@ form label {
   justify-content: center;
   height: 50px;
   width: 45%;
+}
+.pages__button__textbox {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  height: 30%;
+  padding: 5%;
+}
+.pages__button__textbox p {
+  margin: 0;
+}
+.pages__dishes__button-container {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 12.5px;
 }
 
 footer {
