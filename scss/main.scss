@@ -40,6 +40,42 @@ h2{
     margin: 0;
 }
 
+// COMPONENTS
+.button{
+    border-style: hidden;
+    border-radius: 25px;
+    &-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    &-number{
+        padding: 6px 10px;
+        border-radius: 25px;
+        position: absolute;
+        left: -15px;
+    }
+    &--large{
+        display: flex;
+        align-items: center;
+        @include standard-box-shadow;
+    }
+    &--color-primary{
+        background: $color-primary;
+        color: $color-white;
+    }
+    &--color-secondary{
+        background: $color-secondary;
+    }
+    &--color-tertiary{
+        background: $color-tertiary;
+    }
+    &--color-white{
+        background: $color-white;
+    }
+}
+
+// LAYOUT
 // HEADER
 header{
     background: $color-white;
@@ -65,7 +101,7 @@ header{
     top: 15px;
 }
 
-// MAIN
+// INDEX-MAIN
 main{
     padding-top: 65px;
 }
@@ -112,47 +148,6 @@ form{
     }
 }
 
-// COMPONENTS
-.button{
-    border-style: hidden;
-    border-radius: 25px;
-    &-container{
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-    }
-    &-number{
-        padding: 6px 10px;
-        border-radius: 25px;
-        position: absolute;
-        left: -15px;
-    }
-    &--large{
-        display: flex;
-        align-items: center;
-        @include standard-box-shadow;
-        // &-container{
-        //     height: 100px;
-        //     display: flex;
-        //     margin-bottom: 20px;
-        // }
-    }
-    &--color-primary{
-        background: $color-primary;
-        color: $color-white;
-    }
-    &--color-secondary{
-        background: $color-secondary;
-    }
-    &--color-tertiary{
-        background: $color-tertiary;
-    }
-    &--color-white{
-        background: $color-white;
-    }
-}
-
-
 // SECTION OPERATION
 .operation{
     @include standard-padding;
@@ -188,7 +183,6 @@ form{
 }
 
 .cards-block{
-    height: 1260px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -199,6 +193,7 @@ form{
     border-radius: 25px;
     @include standard-box-shadow;
     height: 300px;
+    margin-bottom: 20px;
     &__image{
         overflow: hidden;
         position: relative;
@@ -224,6 +219,7 @@ form{
         }
     }
     &__textbox{
+        height: 30%;
         background: $color-white;
         display: flex;
         justify-content: space-between;
@@ -232,16 +228,13 @@ form{
             margin: 0;
         }
     }
-}
-
-// PAGES RESTAURANT
-.menu-image{
-    & img{
-        width: 100%;
-        object-fit: cover;
+    &__heart{
+        display:flex;
+        align-items:center;
     }
 }
 
+// PAGES RESTAURANT
 .pages{
     &__button-container{
         align-items: center;
@@ -265,11 +258,57 @@ form{
     &__dishes{
         &__button{
             &-container{
-                height: 100px;
+                height: 75px;
                 display: flex;
                 margin-bottom: 20px;
+                justify-content: space-between;
+                overflow: hidden;
             }
         }
+        &__textbox{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding-right: 20px;
+            & p, h3{
+                margin: 0;
+            }
+        }
+    }
+    &__price{
+        display: flex;
+        align-items: flex-end;
+        font-weight: 600;
+    }
+    &__check{
+        height: 100%;
+        border-style: none;
+        &-container{
+            height: 100%;
+        }
+    }
+}
+
+// ARTICLE MENU (form?)
+main{
+    background-color: $color-tertiary;
+}
+.menu{
+    position: relative;
+    top: -50px;
+    padding-bottom: 0;
+    width: 100%;
+    border-radius: 50px 50px 0 0;
+    &__image{
+        & img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__heading{
+        font-family: shrikhand, roboto, sans-serif;
+        display: flex;
+        justify-content: space-between;
     }
 }
 

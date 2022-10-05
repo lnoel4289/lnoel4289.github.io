@@ -19,6 +19,40 @@ h2 {
   margin: 0;
 }
 
+.button {
+  border-style: hidden;
+  border-radius: 25px;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.button-number {
+  padding: 6px 10px;
+  border-radius: 25px;
+  position: absolute;
+  left: -15px;
+}
+.button--large {
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 2px 10px 1px #9d9393;
+}
+.button--color-primary {
+  background: #9356DC;
+  color: white;
+}
+.button--color-secondary {
+  background: #FF79DA;
+}
+.button--color-tertiary {
+  background: #99E2D0;
+}
+.button--color-white {
+  background: white;
+}
+
 header {
   background: white;
   position: fixed;
@@ -86,40 +120,6 @@ form label {
   text-align: center;
 }
 
-.button {
-  border-style: hidden;
-  border-radius: 25px;
-}
-.button-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-.button-number {
-  padding: 6px 10px;
-  border-radius: 25px;
-  position: absolute;
-  left: -15px;
-}
-.button--large {
-  display: flex;
-  align-items: center;
-  box-shadow: 1px 2px 10px 1px #9d9393;
-}
-.button--color-primary {
-  background: #9356DC;
-  color: white;
-}
-.button--color-secondary {
-  background: #FF79DA;
-}
-.button--color-tertiary {
-  background: #99E2D0;
-}
-.button--color-white {
-  background: white;
-}
-
 .operation {
   padding: 50px 5%;
   background: white;
@@ -154,7 +154,6 @@ form label {
 }
 
 .cards-block {
-  height: 1260px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -165,6 +164,7 @@ form label {
   border-radius: 25px;
   box-shadow: 1px 2px 10px 1px #9d9393;
   height: 300px;
+  margin-bottom: 20px;
 }
 .card__image {
   overflow: hidden;
@@ -191,6 +191,7 @@ form label {
   height: 30px;
 }
 .card__textbox {
+  height: 30%;
   background: white;
   display: flex;
   justify-content: space-between;
@@ -199,10 +200,9 @@ form label {
 .card__textbox p {
   margin: 0;
 }
-
-.menu-image img {
-  width: 100%;
-  object-fit: cover;
+.card__heart {
+  display: flex;
+  align-items: center;
 }
 
 .pages__button-container {
@@ -225,11 +225,53 @@ form label {
   margin: 0;
 }
 .pages__dishes__button-container {
-  height: 100px;
+  height: 75px;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.pages__dishes__textbox {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
-  padding: 12.5px;
+  width: 100%;
+  padding-right: 20px;
+}
+.pages__dishes__textbox p, .pages__dishes__textbox h3 {
+  margin: 0;
+}
+.pages__price {
+  display: flex;
+  align-items: flex-end;
+  font-weight: 600;
+}
+.pages__check {
+  height: 100%;
+  border-style: none;
+}
+.pages__check-container {
+  height: 100%;
+}
+
+main {
+  background-color: #99E2D0;
+}
+
+.menu {
+  position: relative;
+  top: -50px;
+  padding-bottom: 0;
+  width: 100%;
+  border-radius: 50px 50px 0 0;
+}
+.menu__image img {
+  width: 100%;
+  object-fit: cover;
+}
+.menu__heading {
+  font-family: shrikhand, roboto, sans-serif;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer {
