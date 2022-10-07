@@ -119,7 +119,7 @@ header {
   background: white;
   display: flex;
   justify-content: space-between;
-  padding: 5%;
+  padding: 15px 20px;
 }
 .card__textbox p {
   margin: 0;
