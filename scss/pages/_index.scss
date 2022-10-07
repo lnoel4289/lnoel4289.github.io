@@ -1,0 +1,79 @@
+main{
+    padding-top: 65px;
+}
+
+// ANCHOR RESTAURANTS
+#anchor-restaurants{
+    display: block;
+    height: 115px;
+    margin-top: -115px;
+    visibility: hidden;
+}
+
+// SEARCH FORM
+.search-form{
+    height: 60px;
+    background: darken($color-tertiary, 20%);   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    & input{
+        width: 175px;
+        background: darken($color: $color-tertiary, $amount: 20%);
+        font-weight: 700;
+        &::placeholder{
+            color: black;
+        }
+        border-style: hidden;
+        &:focus{
+            outline: none;
+            font-weight: 700;
+        }
+    }
+    & label{
+        padding: 0 20px;
+    }
+}
+
+// SECTION SITE DESCRIPTION
+.background-style{
+    @include standard-padding($color-tertiary);
+}
+
+.site-description{
+    &__button{
+        justify-content: center;
+        width: 60%;
+        height: 50px;
+    }
+    &__background{
+        text-align: center;
+    }
+}
+
+// SECTION OPERATION
+.operation{
+    @include standard-padding;
+    &__button-container{
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 10px;
+        &__button{
+            position: relative;
+            height: 75px;
+            font-size: 13px;
+            & i{
+                padding: 0 30px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+// SECTION RESTAURANTS
+.restaurants{
+    @include standard-padding($color-tertiary);
+}

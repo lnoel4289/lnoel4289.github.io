@@ -1,0 +1,33 @@
+.button{
+    border-style: hidden;
+    border-radius: 25px;
+    &-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    &-number{
+        padding: 6px 10px;
+        border-radius: 25px;
+        position: absolute;
+        left: -15px;
+    }
+    &--large{
+        display: flex;
+        align-items: center;
+        @include standard-box-shadow;
+    }
+    &--color-primary{
+        background: $color-primary;
+        color: $color-white;
+    }
+    &--color-secondary{
+        background: $color-secondary;
+    }
+    &--color-tertiary{
+        background: $color-tertiary;
+    }
+    &--color-white{
+        background: $color-white;
+    }
+}

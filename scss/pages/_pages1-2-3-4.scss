@@ -1,0 +1,55 @@
+.pages{
+    &__button-container{
+        align-items: center;
+        // border: $color-tertiary;
+    }
+    &__button{
+        justify-content: center;
+        height: 50px;
+        width:45%;
+        &__textbox{
+            background: $color-white;
+            display: flex;
+            justify-content: space-between;
+            height: 30%;
+            padding: 5%;
+            & p{
+                margin: 0;
+            }
+        }
+    }
+    &__dishes{
+        &__button{
+            &-container{
+                height: 75px;
+                display: flex;
+                margin-bottom: 20px;
+                justify-content: space-between;
+                overflow: hidden;
+                padding: 15px;
+            }
+        }
+        &__textbox{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding-right: 20px;
+            & p, h3{
+                margin: 0;
+            }
+        }
+    }
+    &__price{
+        display: flex;
+        align-items: flex-end;
+        font-weight: 600;
+    }
+    &__check{
+        height: 100%;
+        border-style: none;
+        &-container{
+            height: 100%;
+        }
+    }
+}
+

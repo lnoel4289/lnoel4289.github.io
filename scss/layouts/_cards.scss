@@ -1,0 +1,51 @@
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card{
+    overflow: hidden;
+    border-radius: 25px;
+    @include standard-box-shadow;
+    height: 300px;
+    margin-bottom: 20px;
+    &__image{
+        overflow: hidden;
+        position: relative;
+        height: 70%;
+        &__img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &__new{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            z-index: 1;
+            top: 20px;
+            right: 20px;
+            background: $color-tertiary;
+            padding: 0 10px;
+            color: darken($color-tertiary, 40%);
+            font-weight: 600;
+            border: solid 1px lighten($color-tertiary, 10%);
+            height: 30px;
+        }
+    }
+    &__textbox{
+        height: 30%;
+        background: $color-white;
+        display: flex;
+        justify-content: space-between;
+        padding: 5%;
+        & p{
+            margin: 0;
+        }
+    }
+    &__heart{
+        display:flex;
+        align-items:center;
+    }
+}
