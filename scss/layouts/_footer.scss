@@ -6,9 +6,18 @@ footer{
     background: darken($color: $color-tertiary, $amount: 60%);
     color: $color-tertiary;
     font-size: 18px;
+    @include tablet{
+        font-size: 30px;
+        padding: 10px 5% 50px;
+    }
     & h3{
         font-family: shrikhand;
         font-weight: 200;
+        @include tablet{
+            font-size: 50px;
+        margin: 20px 0 30px;
+    }
+        
     }
     & ul{
         list-style: none;
@@ -18,8 +27,14 @@ footer{
         flex-direction: column;
         justify-content: space-between;
         line-height: 1.6;
+        @include tablet{
+            flex-direction: row;
+        }
     }
     & i{
         width: 30px;
+        @include tablet{
+            width: 50px;
+        }
     }
 }
