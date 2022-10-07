@@ -81,7 +81,7 @@ main {
   padding-top: 65px;
 }
 
-form {
+.search-form {
   height: 60px;
   background: #4acbab;
   display: flex;
@@ -89,20 +89,20 @@ form {
   align-items: center;
   font-size: 18px;
 }
-form input {
+.search-form input {
   width: 175px;
   background: #4acbab;
   font-weight: 700;
   border-style: hidden;
 }
-form input::placeholder {
+.search-form input::placeholder {
   color: black;
 }
-form input:focus {
+.search-form input:focus {
   outline: none;
   font-weight: 700;
 }
-form label {
+.search-form label {
   padding: 0 20px;
 }
 
@@ -207,7 +207,6 @@ form label {
 
 .pages__button-container {
   align-items: center;
-  border: #99E2D0;
 }
 .pages__button {
   justify-content: center;
@@ -230,6 +229,7 @@ form label {
   margin-bottom: 20px;
   justify-content: space-between;
   overflow: hidden;
+  padding: 15px;
 }
 .pages__dishes__textbox {
   display: flex;
@@ -272,6 +272,22 @@ main {
   font-family: shrikhand, roboto, sans-serif;
   display: flex;
   justify-content: space-between;
+}
+
+.menu-form__dish-type {
+  border-style: none;
+  padding: 20px 0;
+  margin: 0;
+}
+.menu-form__dish-type__title {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.menu-form__title-border {
+  height: 5px;
+  width: 60px;
+  margin-top: 5px;
+  background-color: #38c4a1;
 }
 
 footer {
