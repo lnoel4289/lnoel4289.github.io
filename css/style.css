@@ -6,10 +6,6 @@ body {
   box-sizing: border-box;
 }
 
-input[type=checkbox] {
-  visibility: hidden;
-}
-
 a {
   text-decoration: none;
   color: unset;
@@ -294,13 +290,11 @@ main {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-  padding: 15px;
 }
 .pages__dishes__textbox {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding-right: 20px;
 }
 .pages__dishes__textbox p, .pages__dishes__textbox h3 {
   margin: 0;
@@ -315,6 +309,15 @@ main {
   border-style: none;
 }
 .pages__check-container {
+  height: 100%;
+}
+
+.check-anim {
+  background-color: white;
+}
+.check-anim-container {
+  background-color: #99E2D0;
+  width: 20%;
   height: 100%;
 }
 

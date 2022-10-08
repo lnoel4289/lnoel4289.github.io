@@ -26,14 +26,12 @@
                 display: flex;
                 justify-content: space-between;
                 overflow: hidden;
-                padding: 15px;
             }
         }
         &__textbox{
             display: flex;
             justify-content: space-between;
             width: 100%;
-            padding-right: 20px;
             & p, h3{
                 margin: 0;
             }
@@ -50,6 +48,15 @@
         &-container{
             height: 100%;
         }
+    }
+}
+
+.check-anim{
+    background-color: $color-white;
+    &-container{
+    background-color: $color-tertiary;
+    width: 20%;
+    height: 100%;
     }
 }
 
