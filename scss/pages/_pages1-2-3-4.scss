@@ -20,10 +20,10 @@
     }
     &__dishes{
         &__button{
-            &-container{
+            margin-bottom: 20px;
+            &-label{
                 height: 75px;
                 display: flex;
-                margin-bottom: 20px;
                 justify-content: space-between;
                 overflow: hidden;
                 padding: 15px;

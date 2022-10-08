@@ -6,6 +6,10 @@ body {
   box-sizing: border-box;
 }
 
+input[type=checkbox] {
+  visibility: hidden;
+}
+
 a {
   text-decoration: none;
   color: unset;
@@ -282,10 +286,12 @@ main {
 .pages__button__textbox p {
   margin: 0;
 }
-.pages__dishes__button-container {
+.pages__dishes__button {
+  margin-bottom: 20px;
+}
+.pages__dishes__button-label {
   height: 75px;
   display: flex;
-  margin-bottom: 20px;
   justify-content: space-between;
   overflow: hidden;
   padding: 15px;

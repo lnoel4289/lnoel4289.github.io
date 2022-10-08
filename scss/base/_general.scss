@@ -6,6 +6,10 @@ body{
     box-sizing: border-box;
 }
 
+input[type=checkbox] {
+    visibility: hidden;
+  }
+
 a{
     text-decoration: none;
     color: unset;
