@@ -1,0 +1,22 @@
+.favorite{
+    display:flex;
+    align-items:center;
+    font-size: 35px;
+    & label{
+        position: relative;
+    }
+    &__painted{
+        position:absolute;
+        left: 0;
+        color: $color-primary;
+        opacity: 0;
+    }
+    & input:checked{
+        & + label{
+            & > .favorite__painted{
+                opacity: 1;
+                transition: opacity 500ms;
+            }
+        }
+    }
+}

@@ -6,6 +6,10 @@ body {
   box-sizing: border-box;
 }
 
+input[type=checkbox] {
+  visibility: hidden;
+}
+
 a {
   text-decoration: none;
   color: unset;
@@ -51,6 +55,25 @@ h2 {
 }
 .button--color-white {
   background: white;
+}
+
+.favorite {
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+}
+.favorite label {
+  position: relative;
+}
+.favorite__painted {
+  position: absolute;
+  left: 0;
+  color: #9356DC;
+  opacity: 0;
+}
+.favorite input:checked + label > .favorite__painted {
+  opacity: 1;
+  transition: opacity 500ms;
 }
 
 header {
@@ -134,10 +157,6 @@ header {
 }
 .card__textbox p {
   margin: 0;
-}
-.card__heart {
-  display: flex;
-  align-items: center;
 }
 
 footer {
