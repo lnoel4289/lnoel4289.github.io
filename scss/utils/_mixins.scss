@@ -10,12 +10,6 @@
     border-radius: 25px;
 }
 
-$breakpoints: (
-    mobile: 767px,
-    tablet: 768px,
-    desktop: 1024px
-);
-
 @mixin mobile {
     @media screen and (max-width: map-get($breakpoints, mobile)){
         @content;
