@@ -324,8 +324,8 @@ main {
 .dish__label {
   height: 90px;
   display: flex;
-  justify-content: space-between;
   position: relative;
+  width: 100%;
 }
 .dish__textbox {
   font-size: 23px;
@@ -333,6 +333,7 @@ main {
   align-items: center;
   justify-content: space-between;
   padding-right: 20px;
+  width: 80%;
 }
 .dish__textbox p, .dish__textbox h3 {
   margin: 0;
@@ -352,6 +353,7 @@ main {
   width: 20%;
   height: 100%;
   position: absolute;
+  right: 0;
 }
 .check-anim__check {
   background: white;
