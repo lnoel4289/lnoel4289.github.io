@@ -45,23 +45,32 @@ main{
     &__label{
         height: 80px;
         display: flex;
-        justify-content: space-between;
         width: 100%;
         font-size: 23px;
+        position: relative;
         & p, h3{
             margin: 0;
         }
-
-        
+        & input:checked{
+            & ~ .checkbox__container{
+                transform: translateX(-100%);
+                & .checkbox__check{
+                    transform: rotate(675deg);
+                }
+            }
+            & + .dish__textbox > .dish__price{
+                transform: translateX(-100%);
+            }
+        }
     }
-    &__description{
+    &__textbox{
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
         padding: 10px 5px;
+        width: 100%;
         & p, h3{
             margin: 0;
             overflow: hidden;
@@ -69,29 +78,50 @@ main{
             white-space: nowrap;
         }
     }
-    
+    &__description{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+    }
     &__price{
         display: flex;
         align-items: flex-end;
         font-weight: 600;
-        padding: 10px 5px;
+        padding: 0 20px;
         height: 100%;
-    }
-    &__anim{
-        display: flex;
-        align-items: center;
-        height: 100%;
+        // transform: translateX(0);
+        transition: transform 200ms 30ms;
     }
 }
 
-.check-anim{
+.checkbox{
+    position: absolute;
+    left: 33%;
+    top: 33%;
+    background-color: $color-white;
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
     &__container{
-    background-color: $color-tertiary;
-    width: 100px;
-    height: 100%;
-    transform: translateX(100%);
-    // position: absolute;
-    // right: 0;
+        background-color: $color-tertiary;
+        width: $chk-wid;
+        height: 100%;
+        position: absolute;
+        right: -$chk-wid;
+        // transform: translateX(0);
+        transition: transform 300ms;
+    }
+    &__check{
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        width: 50%;
+        height: 30%;
+        border-bottom: $color-tertiary solid 4px;
+        border-left:  $color-tertiary solid 4px;;
+        transform: rotate(-45deg);
+        transition: transform 300ms;
     }
 }
 

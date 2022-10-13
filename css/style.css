@@ -6,6 +6,10 @@ body {
   box-sizing: border-box;
 }
 
+input[type=checkbox] {
+  visibility: hidden;
+}
+
 a {
   text-decoration: none;
   color: unset;
@@ -324,46 +328,79 @@ main {
 .dish__label {
   height: 80px;
   display: flex;
-  justify-content: space-between;
   width: 100%;
   font-size: 23px;
+  position: relative;
 }
 .dish__label p, .dish__label h3 {
   margin: 0;
 }
-.dish__description {
+.dish__label input:checked ~ .checkbox__container {
+  transform: translateX(-100%);
+}
+.dish__label input:checked ~ .checkbox__container .checkbox__check {
+  transform: rotate(675deg);
+}
+.dish__label input:checked + .dish__textbox > .dish__price {
+  transform: translateX(-100%);
+}
+.dish__textbox {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   padding: 10px 5px;
+  width: 100%;
 }
-.dish__description p, .dish__description h3 {
+.dish__textbox p, .dish__textbox h3 {
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.dish__description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
 }
 .dish__price {
   display: flex;
   align-items: flex-end;
   font-weight: 600;
-  padding: 10px 5px;
+  padding: 0 20px;
   height: 100%;
-}
-.dish__anim {
-  display: flex;
-  align-items: center;
-  height: 100%;
+  transition: transform 200ms 30ms;
 }
 
-.check-anim__container {
+.checkbox {
+  position: absolute;
+  left: 33%;
+  top: 33%;
+  background-color: white;
+  width: 35%;
+  height: 35%;
+  border-radius: 50%;
+}
+.checkbox__container {
   background-color: #99E2D0;
-  width: 100px;
+  width: 80px;
   height: 100%;
-  transform: translateX(100%);
+  position: absolute;
+  right: -80px;
+  transition: transform 300ms;
+}
+.checkbox__check {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  width: 50%;
+  height: 30%;
+  border-bottom: #99E2D0 solid 4px;
+  border-left: #99E2D0 solid 4px;
+  transform: rotate(-45deg);
+  transition: transform 300ms;
 }
 
 .submit-button {

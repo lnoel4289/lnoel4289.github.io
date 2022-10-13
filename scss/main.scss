@@ -1,29 +1,14 @@
-// BASE
 @import "base/general";
 
-
-// UTILS
 @import "utils/variables";
 @import "utils/mixins";
 
-
-// COMPONENTS
 @import "components/buttons";
 @import "components/hearts";
 
-
-
-// LAYOUT
-// HEADER
 @import "layouts/header";
-// CARDS
 @import "layouts/cards";
-// FOOTER
 @import "layouts/footer";
 
-
-// PAGES
-// INDEX CSS
 @import "pages/index";
-// PAGES 1 2 3 4
 @import "pages/pages1-2-3-4";

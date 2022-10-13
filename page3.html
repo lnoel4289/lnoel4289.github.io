@@ -33,167 +33,206 @@
         <article class="menu background-style">
             <h1 class="menu__heading">
                 Nom du restaurant
-                <button>
-                    <i class="fa-regular fa-heart"></i>
-                </button>
+                <div class="favorite">
+                    <input type="checkbox" id="heart1"><label for="heart1"><span class="favorite__hollow"><i class="fa-regular fa-heart"></i></span><span class="favorite__painted"><i class="fa-solid fa-heart"></i></span></label>
+                </div>
             </h1>
             <form class="menu-form">
-                <div>
-                    <fieldset class="menu-form__dish-type">
+                <div class="dish__type">
+                    <div class="menu-form__dish-type">
                         <legend class="menu-form__dish-type__title">
-                            Type de plat
+                            Entrées
                             <div class="menu-form__title-border"></div>
                         </legend>
-                        <div>
-                            <div class="button button--large button--color-white pages__dishes__button-container">
-                                <label for="dish1" class="pages__dishes__textbox">
-                                    <div>
+                        <div class="dish button button--large button--color-white ">
+                            <label for="dish1" class="dish__label">
+                                <input type="checkbox" id="dish1" name="dish1">
+                                <div class="dish__textbox">
+                                    <div class="dish__description">
                                         <h3>Plat</h3>
                                         <p>Légende</p>
                                     </div>
-                                    <div class="pages__price">
-                                        <p>prix€</p>
+                                    <div class="dish__price">
+                                        <p>00€</p>
                                     </div>
-                                </label>
-                                <div>
-                                    <input type="checkbox" id="dish1" name="dish1">
                                 </div>
-                            </div>
-                            <div class="button button--large button--color-white pages__dishes__button-container">
-                                <label for="dish2" class="pages__dishes__textbox">
-                                    <div>
-                                        <h3>Plat</h3>
-                                        <p>Légende</p>
+                                <div class="checkbox__container">
+                                    <div class="checkbox">
+                                        <div class="checkbox__check"></div>
                                     </div>
-                                    <div class="pages__price">
-                                        <p>prix€</p>
-                                    </div>
-                                </label>
-                                <div>
-                                    <input type="checkbox" id="dish2" name="dish2">
                                 </div>
-                            </div>
-                            <div class="button button--large button--color-white pages__dishes__button-container">
-                                <label for="dish3" class="pages__dishes__textbox">
-                                    <div>
-                                        <h3>Plat</h3>
-                                        <p>Légende</p>
-                                    </div>
-                                    <div class="pages__price">
-                                        <p>prix€</p>
-                                    </div>
-                                </label>
-                                <div>
-                                    <input type="checkbox" id="dish3" name="dish3">
-                                </div>
-                            </div>
+                            </label>
                         </div>
-                    </fieldset>
-                    <fieldset class="menu-form__dish-type">
+                        <div class="dish button button--large button--color-white ">
+                            <label for="dish2" class="dish__label">
+                                <input type="checkbox" id="dish2" name="dish2">
+                                <div class="dish__textbox">
+                                    <div class="dish__description">
+                                        <h3>Plat</h3>
+                                        <p>Légende</p>
+                                    </div>
+                                    <div class="dish__price">
+                                        <p>00€</p>
+                                    </div>
+                                </div>
+                                <div class="checkbox__container">
+                                    <div class="checkbox">
+                                        <div class="checkbox__check"></div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="dish button button--large button--color-white ">
+                            <label for="dish3" class="dish__label">
+                                <input type="checkbox" id="dish3" name="dish3">
+                                <div class="dish__textbox">
+                                    <div class="dish__description">
+                                        <h3>Plat</h3>
+                                        <p>Légende</p>
+                                    </div>
+                                    <div class="dish__price">
+                                        <p>00€</p>
+                                    </div>
+                                </div>
+                                <div class="checkbox__container">
+                                    <div class="checkbox">
+                                        <div class="checkbox__check"></div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="menu-form__dish-type">
                         <legend class="menu-form__dish-type__title">
-                            Type de plat
+                            Plats
                             <div class="menu-form__title-border"></div>
                         </legend>
-                        <div>
-                            <div class="button button--large button--color-white pages__dishes__button-container">
-                                <label for="dish1" class="pages__dishes__textbox">
-                                    <div>
+                        <div class="dish button button--large button--color-white ">
+                            <label for="dish4" class="dish__label">
+                                <input type="checkbox" id="dish4" name="dish4">
+                                <div class="dish__textbox">
+                                    <div class="dish__description">
                                         <h3>Plat</h3>
                                         <p>Légende</p>
                                     </div>
-                                    <div class="pages__price">
-                                        <p>prix€</p>
+                                    <div class="dish__price">
+                                        <p>00€</p>
                                     </div>
-                                </label>
-                                <div>
-                                    <input type="checkbox" id="dish1" name="dish1">
                                 </div>
-                            </div>
-                            <div class="button button--large button--color-white pages__dishes__button-container">
-                                <label for="dish2" class="pages__dishes__textbox">
-                                    <div>
-                                        <h3>Plat</h3>
-                                        <p>Légende</p>
+                                <div class="checkbox__container">
+                                    <div class="checkbox">
+                                        <div class="checkbox__check"></div>
                                     </div>
-                                    <div class="pages__price">
-                                        <p>prix€</p>
-                                    </div>
-                                </label>
-                                <div>
-                                    <input type="checkbox" id="dish2" name="dish2">
                                 </div>
-                            </div>
-                            <div class="button button--large button--color-white pages__dishes__button-container">
-                                <label for="dish3" class="pages__dishes__textbox">
-                                    <div>
-                                        <h3>Plat</h3>
-                                        <p>Légende</p>
-                                    </div>
-                                    <div class="pages__price">
-                                        <p>prix€</p>
-                                    </div>
-                                </label>
-                                <div>
-                                    <input type="checkbox" id="dish3" name="dish3">
-                                </div>
-                            </div>
+                            </label>
                         </div>
-                    </fieldset>
-                    <fieldset class="menu-form__dish-type">
+                        <div class="dish button button--large button--color-white ">
+                            <label for="dish5" class="dish__label">
+                                <input type="checkbox" id="dish5" name="dish5">
+                                <div class="dish__textbox">
+                                    <div class="dish__description">
+                                        <h3>Plat</h3>
+                                        <p>Légende</p>
+                                    </div>
+                                    <div class="dish__price">
+                                        <p>00€</p>
+                                    </div>
+                                </div>
+                                <div class="checkbox__container">
+                                    <div class="checkbox">
+                                        <div class="checkbox__check"></div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="dish button button--large button--color-white ">
+                            <label for="dish6" class="dish__label">
+                                <input type="checkbox" id="dish6" name="dish6">
+                                <div class="dish__textbox">
+                                    <div class="dish__description">
+                                        <h3>Plat</h3>
+                                        <p>Légende</p>
+                                    </div>
+                                    <div class="dish__price">
+                                        <p>00€</p>
+                                    </div>
+                                </div>
+                                <div class="checkbox__container">
+                                    <div class="checkbox">
+                                        <div class="checkbox__check"></div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="menu-form__dish-type">
                         <legend class="menu-form__dish-type__title">
-                            Type de plat
+                            Desserts
                             <div class="menu-form__title-border"></div>
                         </legend>
-                        <div>
-                            <div class="button button--large button--color-white pages__dishes__button-container">
-                                <label for="dish1" class="pages__dishes__textbox">
-                                    <div>
+                        <div class="dish button button--large button--color-white ">
+                            <label for="dish7" class="dish__label">
+                                <input type="checkbox" id="dish7" name="dish7">
+                                <div class="dish__textbox">
+                                    <div class="dish__description">
                                         <h3>Plat</h3>
                                         <p>Légende</p>
                                     </div>
-                                    <div class="pages__price">
-                                        <p>prix€</p>
+                                    <div class="dish__price">
+                                        <p>00€</p>
                                     </div>
-                                </label>
-                                <div>
-                                    <input type="checkbox" id="dish1" name="dish1">
                                 </div>
-                            </div>
-                            <div class="button button--large button--color-white pages__dishes__button-container">
-                                <label for="dish2" class="pages__dishes__textbox">
-                                    <div>
-                                        <h3>Plat</h3>
-                                        <p>Légende</p>
+                                <div class="checkbox__container">
+                                    <div class="checkbox">
+                                        <div class="checkbox__check"></div>
                                     </div>
-                                    <div class="pages__price">
-                                        <p>prix€</p>
-                                    </div>
-                                </label>
-                                <div>
-                                    <input type="checkbox" id="dish2" name="dish2">
                                 </div>
-                            </div>
-                            <div class="button button--large button--color-white pages__dishes__button-container">
-                                <label for="dish3" class="pages__dishes__textbox">
-                                    <div>
-                                        <h3>Plat</h3>
-                                        <p>Légende</p>
-                                    </div>
-                                    <div class="pages__price">
-                                        <p>prix€</p>
-                                    </div>
-                                </label>
-                                <div>
-                                    <input type="checkbox" id="dish3" name="dish3">
-                                </div>
-                            </div>
+                            </label>
                         </div>
-                    </fieldset>
+                        <div class="dish button button--large button--color-white ">
+                            <label for="dish8" class="dish__label">
+                                <input type="checkbox" id="dish8" name="dish8">
+                                <div class="dish__textbox">
+                                    <div class="dish__description">
+                                        <h3>Plat</h3>
+                                        <p>Légende</p>
+                                    </div>
+                                    <div class="dish__price">
+                                        <p>00€</p>
+                                    </div>
+                                </div>
+                                <div class="checkbox__container">
+                                    <div class="checkbox">
+                                        <div class="checkbox__check"></div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="dish button button--large button--color-white ">
+                            <label for="dish9" class="dish__label">
+                                <input type="checkbox" id="dish9" name="dish9">
+                                <div class="dish__textbox">
+                                    <div class="dish__description">
+                                        <h3>Plat</h3>
+                                        <p>Légende</p>
+                                    </div>
+                                    <div class="dish__price">
+                                        <p>00€</p>
+                                    </div>
+                                </div>
+                                <div class="checkbox__container">
+                                    <div class="checkbox">
+                                        <div class="checkbox__check"></div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- SUBMIT BUTTON 'COMMANDER' -->
                 <div class="button-container pages__button-container">
-                    <button class="button button--large button--color-primary pages__button"  type="submit">
+                    <button class="button button--large button--color-primary submit-button"  type="submit">
                         Commander
                     </button>
                 </div>
