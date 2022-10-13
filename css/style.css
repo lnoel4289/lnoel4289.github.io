@@ -326,6 +326,7 @@ main {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  font-size: 23px;
 }
 .dish__label p, .dish__label h3 {
   margin: 0;
@@ -337,6 +338,7 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  padding: 10px 5px;
 }
 .dish__description p, .dish__description h3 {
   margin: 0;
@@ -348,6 +350,7 @@ main {
   display: flex;
   align-items: flex-end;
   font-weight: 600;
+  padding: 10px 5px;
   height: 100%;
 }
 .dish__anim {
@@ -360,6 +363,7 @@ main {
   background-color: #99E2D0;
   width: 100px;
   height: 100%;
+  transform: translateX(100%);
 }
 
 .submit-button {

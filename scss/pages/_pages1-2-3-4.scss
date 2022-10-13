@@ -47,10 +47,12 @@ main{
         display: flex;
         justify-content: space-between;
         width: 100%;
-        // font-size: 23px;
+        font-size: 23px;
         & p, h3{
             margin: 0;
         }
+
+        
     }
     &__description{
         display: flex;
@@ -59,7 +61,7 @@ main{
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        // padding: 5% 0;
+        padding: 10px 5px;
         & p, h3{
             margin: 0;
             overflow: hidden;
@@ -72,7 +74,7 @@ main{
         display: flex;
         align-items: flex-end;
         font-weight: 600;
-        // padding: 5% 0;
+        padding: 10px 5px;
         height: 100%;
     }
     &__anim{
@@ -87,6 +89,7 @@ main{
     background-color: $color-tertiary;
     width: 100px;
     height: 100%;
+    transform: translateX(100%);
     // position: absolute;
     // right: 0;
     }
