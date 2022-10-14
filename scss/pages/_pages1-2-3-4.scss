@@ -42,6 +42,7 @@ main{
 .dish{
     margin-bottom: 20px;
     overflow: hidden;
+    animation: fade-in 2s backwards;
     &__label{
         height: 80px;
         display: flex;

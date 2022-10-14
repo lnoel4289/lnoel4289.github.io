@@ -76,6 +76,14 @@ h2 {
   transition: opacity 500ms;
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 header {
   background: white;
   position: fixed;
@@ -324,6 +332,7 @@ main {
 .dish {
   margin-bottom: 20px;
   overflow: hidden;
+  animation: fade-in 2s backwards;
 }
 .dish__label {
   height: 80px;
