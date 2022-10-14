@@ -1,16 +1,16 @@
 .button{
     border-style: hidden;
-    border-radius: 25px;
+    border-radius: 2.5rem;
     &-container{
         display: flex;
         justify-content: center;
-        margin-top: 50px;
+        margin-top: 5rem;
     }
     &-number{
-        padding: 6px 10px;
-        border-radius: 25px;
+        padding: .6rem 1rem;
+        border-radius: 2.5rem;
         position: absolute;
-        left: -15px;
+        left: -1.5rem;
     }
     &--large{
         display: flex;

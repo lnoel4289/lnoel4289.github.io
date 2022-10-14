@@ -1,5 +1,10 @@
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: "roboto", sans-serif;
+  font-size: 1.6rem;
 }
 
 * {
@@ -25,23 +30,23 @@ h2 {
 
 .button {
   border-style: hidden;
-  border-radius: 25px;
+  border-radius: 2.5rem;
 }
 .button-container {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 5rem;
 }
 .button-number {
-  padding: 6px 10px;
-  border-radius: 25px;
+  padding: 0.6rem 1rem;
+  border-radius: 2.5rem;
   position: absolute;
-  left: -15px;
+  left: -1.5rem;
 }
 .button--large {
   display: flex;
   align-items: center;
-  box-shadow: 1px 2px 10px 1px #9d9393;
+  box-shadow: 0.1rem 0.2rem 1rem 0.1rem #9d9393;
 }
 .button--color-primary {
   background: #9356DC;
@@ -60,7 +65,7 @@ h2 {
 .favorite {
   display: flex;
   align-items: center;
-  font-size: 35px;
+  font-size: 3.5rem;
 }
 .favorite label {
   position: relative;
@@ -96,24 +101,24 @@ header {
   background: white;
   position: fixed;
   width: 100%;
-  height: 65px;
+  height: 6.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 1px 2px 10px 1px #9d9393;
+  box-shadow: 0.1rem 0.2rem 1rem 0.1rem #9d9393;
   z-index: 100;
 }
 
 .logo {
   height: 50%;
-  margin: 20px;
+  margin: 2rem;
 }
 
 .arrow {
   position: absolute;
-  font-size: 40px;
+  font-size: 4rem;
   left: 5%;
-  top: 15px;
+  top: 1.5rem;
 }
 
 .cards-container {
@@ -129,10 +134,10 @@ header {
 
 .card {
   overflow: hidden;
-  border-radius: 25px;
-  box-shadow: 1px 2px 10px 1px #9d9393;
-  height: 300px;
-  margin-bottom: 20px;
+  border-radius: 2.5rem;
+  box-shadow: 0.1rem 0.2rem 1rem 0.1rem #9d9393;
+  height: 30rem;
+  margin-bottom: 2rem;
 }
 @media screen and (min-width: 768px) {
   .card {
@@ -155,21 +160,21 @@ header {
   align-items: center;
   position: absolute;
   z-index: 1;
-  top: 20px;
-  right: 20px;
+  top: 2rem;
+  right: 2rem;
   background: #99E2D0;
-  padding: 0 10px;
+  padding: 0 1rem;
   color: #278870;
   font-weight: 600;
-  border: solid 1px #c1ede2;
-  height: 30px;
+  border: solid 0.1rem #c1ede2;
+  height: 3rem;
 }
 .card__textbox {
   height: 30%;
   background: white;
   display: flex;
   justify-content: space-between;
-  padding: 15px 20px;
+  padding: 1.5rem 2rem;
 }
 .card__textbox p {
   margin: 0;
@@ -179,10 +184,10 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 5% 30px;
+  padding: 0 5% 3rem;
   background: #10392f;
   color: #99E2D0;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 @media screen and (min-width: 768px) {
   footer {
@@ -196,8 +201,8 @@ footer h3 {
 }
 @media screen and (min-width: 768px) {
   footer h3 {
-    font-size: 50px;
-    margin: 20px 0 30px;
+    font-size: 5rem;
+    margin: 2rem 0 3rem;
   }
 }
 footer ul {
@@ -215,11 +220,11 @@ footer ul {
   }
 }
 footer i {
-  width: 30px;
+  width: 3rem;
 }
 @media screen and (min-width: 768px) {
   footer i {
-    width: 50px;
+    width: 5rem;
   }
 }
 
@@ -232,18 +237,18 @@ main {
 }
 
 .spinner {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background-color: transparent;
-  border: 10px solid #FF79DA;
-  border-top: #9356DC solid 10px;
+  border: 1rem solid #FF79DA;
+  border-top: #9356DC solid 1rem;
   z-index: 100;
   animation: spinner linear 1s infinite;
 }
 .spinner__container {
-  width: 100%;
-  height: 500px;
+  width: 100vh;
+  height: 100vh;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -252,21 +257,21 @@ main {
 
 #anchor-restaurants {
   display: block;
-  height: 90px;
-  margin-top: -90px;
+  height: 9rem;
+  margin-top: -9rem;
   visibility: hidden;
 }
 
 .search-form {
-  height: 60px;
+  height: 6rem;
   background: #4acbab;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 .search-form input {
-  width: 175px;
+  width: 17.5rem;
   background: #4acbab;
   font-weight: 700;
   border-style: hidden;
@@ -279,46 +284,46 @@ main {
   font-weight: 700;
 }
 .search-form label {
-  padding: 0 20px;
+  padding: 0 2rem;
 }
 
 .background-style {
-  padding: 50px 5%;
+  padding: 5rem 5%;
   background: #99E2D0;
 }
 
 .site-description__button {
   justify-content: center;
   width: 60%;
-  height: 50px;
+  height: 5rem;
 }
 .site-description__background {
   text-align: center;
 }
 
 .operation {
-  padding: 50px 5%;
+  padding: 5rem 5%;
   background: white;
 }
 .operation__button-container {
-  height: 280px;
+  height: 28rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 10px;
+  padding-left: 1rem;
 }
 .operation__button-container__button {
   position: relative;
-  height: 75px;
-  font-size: 13px;
+  height: 7.5rem;
+  font-size: 1.3rem;
 }
 .operation__button-container__button i {
-  padding: 0 30px;
-  font-size: 20px;
+  padding: 0 3rem;
+  font-size: 2rem;
 }
 
 .restaurants {
-  padding: 50px 5%;
+  padding: 5rem 5%;
   background: #99E2D0;
 }
 
@@ -328,9 +333,9 @@ main {
 
 .menu {
   position: relative;
-  top: -50px;
+  top: -5rem;
   padding-bottom: 0;
-  border-radius: 50px 50px 0 0;
+  border-radius: 5rem 5rem 0 0;
 }
 .menu__image img {
   width: 100%;
@@ -344,24 +349,24 @@ main {
 
 .menu-form__dish-type {
   border-style: none;
-  padding: 20px 0;
+  padding: 2rem 0;
   margin: 0;
   display: flex;
   flex-direction: column;
 }
 .menu-form__dish-type__title {
-  font-size: 20px;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 .menu-form__title-border {
   height: 5px;
-  width: 60px;
-  margin: 5px 0 20px;
+  width: 6rem;
+  margin: 0.5rem 0 2rem;
   background-color: #38c4a1;
 }
 
 .dish {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   overflow: hidden;
   animation: fade-in 2s backwards;
 }
@@ -375,10 +380,10 @@ main {
   animation-delay: 400ms;
 }
 .dish__label {
-  height: 80px;
+  height: 8rem;
   display: flex;
   width: 100%;
-  font-size: 23px;
+  font-size: 2.3rem;
   position: relative;
 }
 .dish__label p, .dish__label h3 {
@@ -399,7 +404,7 @@ main {
 .dish__textbox {
   display: flex;
   justify-content: space-between;
-  padding: 10px 5px;
+  padding: 1rem 0.5rem;
   width: 100%;
 }
 .dish__textbox p, .dish__textbox h3 {
@@ -421,9 +426,9 @@ main {
   align-items: flex-end;
   font-weight: 600;
   height: 100%;
-  padding-right: 20px;
+  padding-right: 2rem;
   transition: transform 200ms 30ms;
-  width: 80px;
+  width: 8rem;
 }
 
 .checkbox {
@@ -437,10 +442,10 @@ main {
 }
 .checkbox__container {
   background-color: #99E2D0;
-  width: 80px;
+  width: 8rem;
   height: 100%;
   position: absolute;
-  right: -80px;
+  right: -8rem;
   transition: transform 300ms;
 }
 .checkbox__check {
@@ -449,15 +454,15 @@ main {
   left: 25%;
   width: 50%;
   height: 30%;
-  border-bottom: #99E2D0 solid 4px;
-  border-left: #99E2D0 solid 4px;
+  border-bottom: #99E2D0 solid 0.4rem;
+  border-left: #99E2D0 solid 0.4rem;
   transform: rotate(-45deg);
   transition: transform 300ms;
 }
 
 .submit-button {
   justify-content: center;
-  height: 50px;
+  height: 5rem;
   width: 45%;
 }
 

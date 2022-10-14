@@ -8,17 +8,17 @@ main{
 }
 
 .spinner{
-    width: 300px;
-    height:300px;
+    width: 100%;
+    height:100%;
     border-radius: 50%;
     background-color: transparent;
-    border: 10px solid $color-secondary;
-    border-top: $color-primary solid 10px;
+    border: 1rem solid $color-secondary;
+    border-top: $color-primary solid 1rem;
     z-index: 100;
     animation: spinner linear 1s infinite;
     &__container{
-        width: 100%;
-        height: 500px;
+        width: 100vh;
+        height: 100vh;
         position: fixed;
         display: flex;
         justify-content: center;
@@ -29,21 +29,21 @@ main{
 // ANCHOR RESTAURANTS
 #anchor-restaurants{
     display: block;
-    height: 90px;
-    margin-top: -90px;
+    height: 9rem;
+    margin-top: -9rem;
     visibility: hidden;
 }
 
 // SEARCH FORM
 .search-form{
-    height: 60px;
+    height: 6rem;
     background: darken($color-tertiary, 20%);   
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 1.8rem;
     & input{
-        width: 175px;
+        width: 17.5rem;
         background: darken($color: $color-tertiary, $amount: 20%);
         font-weight: 700;
         &::placeholder{
@@ -56,7 +56,7 @@ main{
         }
     }
     & label{
-        padding: 0 20px;
+        padding: 0 2rem;
     }
 }
 
@@ -69,7 +69,7 @@ main{
     &__button{
         justify-content: center;
         width: 60%;
-        height: 50px;
+        height: 5rem;
     }
     &__background{
         text-align: center;
@@ -80,18 +80,18 @@ main{
 .operation{
     @include standard-padding;
     &__button-container{
-        height: 280px;
+        height: 28rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-left: 10px;
+        padding-left: 1rem;
         &__button{
             position: relative;
-            height: 75px;
-            font-size: 13px;
+            height: 7.5rem;
+            font-size: 1.3rem;
             & i{
-                padding: 0 30px;
-                font-size: 20px;
+                padding: 0 3rem;
+                font-size: 2rem;
             }
         }
     }

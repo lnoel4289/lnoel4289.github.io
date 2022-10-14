@@ -3,9 +3,9 @@ main{
 }
 .menu{
     position: relative;
-    top: -50px;
+    top: -5rem;
     padding-bottom: 0;
-    border-radius: 50px 50px 0 0;
+    border-radius: 5rem 5rem 0 0;
     &__image{
         & img{
             width: 100%;
@@ -22,25 +22,25 @@ main{
 .menu-form{
     &__dish-type{
         border-style: none;
-        padding: 20px 0;
+        padding: 2rem 0;
         margin: 0;
         display: flex;
         flex-direction: column;
         &__title{
-            font-size: 20px;
+            font-size: 2rem;
             text-transform: uppercase;
         }
     }
     &__title-border{
         height: 5px;
-        width: 60px;
-        margin: 5px 0 20px;
+        width: 6rem;
+        margin: .5rem 0 2rem;
         background-color: darken($color-tertiary, 25);
     }
 }
 
 .dish{
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     overflow: hidden;
     animation: fade-in 2s backwards;
     @for $i from 2 through 4 {
@@ -49,10 +49,10 @@ main{
         }
     }
     &__label{
-        height: 80px;
+        height: 8rem;
         display: flex;
         width: 100%;
-        font-size: 23px;
+        font-size: 2.3rem;
         position: relative;
         & p, h3{
             margin: 0;
@@ -77,7 +77,7 @@ main{
     &__textbox{
         display: flex;
         justify-content: space-between;
-        padding: 10px 5px;
+        padding: 1rem .5rem;
         width: 100%;
         & p, h3{
             margin: 0;
@@ -99,10 +99,10 @@ main{
         align-items: flex-end;
         font-weight: 600;
         height: 100%;
-        padding-right: 20px;
+        padding-right: 2rem;
         // transform: translateX(0);
         transition: transform 200ms 30ms;
-        width: 80px;
+        width: 8rem;
     }
 }
 
@@ -129,8 +129,8 @@ main{
         left: 25%;
         width: 50%;
         height: 30%;
-        border-bottom: $color-tertiary solid 4px;
-        border-left:  $color-tertiary solid 4px;;
+        border-bottom: $color-tertiary solid .4rem;
+        border-left:  $color-tertiary solid .4rem;;
         transform: rotate(-45deg);
         transition: transform 300ms;
     }
@@ -138,7 +138,6 @@ main{
 
 .submit-button{
     justify-content: center;
-    height: 50px;
+    height: 5rem;
     width:45%;
 }
-

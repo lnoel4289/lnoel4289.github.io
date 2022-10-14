@@ -4,16 +4,15 @@
     flex-direction: column;
     @include tablet{
         flex-flow: row wrap;
-        
     }
 }
 
 .card{
     overflow: hidden;
-    border-radius: 25px;
+    border-radius: 2.5rem;
     @include standard-box-shadow;
-    height: 300px;
-    margin-bottom: 20px;
+    height: 30rem;
+    margin-bottom: 2rem;
     @include tablet{
         width: 47.5%;
         margin-bottom: 4%;
@@ -32,14 +31,14 @@
             align-items: center;
             position: absolute;
             z-index: 1;
-            top: 20px;
-            right: 20px;
+            top: 2rem;
+            right: 2rem;
             background: $color-tertiary;
-            padding: 0 10px;
+            padding: 0 1rem;
             color: darken($color-tertiary, 40%);
             font-weight: 600;
-            border: solid 1px lighten($color-tertiary, 10%);
-            height: 30px;
+            border: solid .1rem lighten($color-tertiary, 10%);
+            height: 3rem;
         }
     }
     &__textbox{
@@ -47,7 +46,7 @@
         background: $color-white;
         display: flex;
         justify-content: space-between;
-        padding: 15px 20px;
+        padding: 1.5rem 2rem;
         & p{
             margin: 0;
         }
