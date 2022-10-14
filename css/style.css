@@ -84,6 +84,7 @@ h2 {
     opacity: 1;
   }
 }
+@keyframes spinner {}
 header {
   background: white;
   position: fixed;
