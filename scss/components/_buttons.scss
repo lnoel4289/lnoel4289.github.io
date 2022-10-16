@@ -21,14 +21,18 @@
         background: $color-primary;
         color: $color-white;
     }
-    &--color-secondary{
-        background: $color-secondary;
-    }
     &--color-tertiary{
-        background: $color-tertiary;
+        background: $color-tertiary-lighter;
         @include desktop-l{
             width: 30%;
         }
+    }
+    &--color-gradient{
+        background:$color-gradient;
+        color: $color-white;
+        border-radius: 50px;
+        width: 23rem;
+        height: 7rem;
     }
     &--color-white{
         background: $color-white;

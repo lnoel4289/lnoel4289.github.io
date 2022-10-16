@@ -61,22 +61,26 @@ h2 {
 .button--large {
   display: flex;
   align-items: center;
-  box-shadow: 0.1rem 0.2rem 1rem 0.1rem #9d9393;
+  box-shadow: 0.1rem 0.2rem 1rem 0.1rem #99E2D0;
 }
 .button--color-primary {
   background: #9356DC;
   color: white;
 }
-.button--color-secondary {
-  background: #FF79DA;
-}
 .button--color-tertiary {
-  background: #99E2D0;
+  background: #e8f9f5;
 }
 @media screen and (min-width: 1680px) {
   .button--color-tertiary {
     width: 30%;
   }
+}
+.button--color-gradient {
+  background: linear-gradient(#ff46cc, #9356DC);
+  color: white;
+  border-radius: 50px;
+  width: 23rem;
+  height: 7rem;
 }
 .button--color-white {
   background: white;
@@ -102,7 +106,7 @@ h2 {
   opacity: 0;
 }
 .favorite input:checked + label > .favorite__painted {
-  opacity: 1;
+  opacity: 0.9;
   transition: opacity 500ms;
 }
 
@@ -130,7 +134,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0.1rem 0.2rem 1rem 0.1rem #9d9393;
+  box-shadow: 0.1rem 0.2rem 1rem 0.1rem #99E2D0;
   z-index: 100;
 }
 
@@ -160,7 +164,7 @@ header {
 .card {
   overflow: hidden;
   border-radius: 2.5rem;
-  box-shadow: 0.1rem 0.2rem 1rem 0.1rem #9d9393;
+  box-shadow: 0.1rem 0.2rem 1rem 0.1rem #99E2D0;
   height: 30rem;
   margin-bottom: 2rem;
 }
@@ -199,11 +203,12 @@ header {
   z-index: 1;
   top: 2rem;
   right: 2rem;
-  background: #99E2D0;
+  background: #e8f9f5;
   padding: 0 1rem;
-  color: #278870;
+  color: #32b091;
   font-weight: 600;
-  border: solid 0.1rem #c1ede2;
+  border: solid 3pxrem #e8f9f5;
+  border-radius: 3px;
   height: 3rem;
 }
 .card__textbox {
@@ -228,8 +233,8 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   padding: 0 5% 3rem;
-  background: #10392f;
-  color: #99E2D0;
+  background: #1b6150;
+  color: #e8f9f5;
 }
 @media screen and (min-width: 768px) {
   footer {
@@ -279,7 +284,7 @@ footer ul {
   }
 }
 footer i {
-  width: 3rem;
+  width: 4rem;
 }
 @media screen and (min-width: 768px) {
   footer i {
@@ -296,7 +301,7 @@ main {
 }
 @media screen and (min-width: 768px) {
   main {
-    padding-top: 97.5px;
+    padding-top: 91px;
   }
 }
 @media screen and (min-width: 1680px) {
@@ -333,7 +338,7 @@ main {
 
 .search-form {
   height: 6rem;
-  background: #4acbab;
+  background: #c1ede2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -341,7 +346,7 @@ main {
 }
 .search-form input {
   width: 17.5rem;
-  background: #4acbab;
+  background: #c1ede2;
   font-weight: 700;
   border-style: hidden;
 }
@@ -358,23 +363,16 @@ main {
 
 .background-style {
   padding: 5rem 5%;
-  background: #99E2D0;
+  background: #e8f9f5;
 }
 
 .site-description__button {
   justify-content: center;
-  width: 23rem;
-  height: 5.5rem;
 }
 @media screen and (min-width: 768px) {
   .site-description__button {
     width: 30rem;
     font-size: 2rem;
-  }
-}
-@media screen and (min-width: 1680px) {
-  .site-description__button {
-    height: 8rem;
   }
 }
 .site-description__background {
@@ -455,12 +453,19 @@ main {
   height: 7.5rem;
   font-size: 1.3rem;
 }
+.operation__button-container__button:last-child {
+  background: #ffdff6;
+}
+.operation__button-container__button:last-child i {
+  color: #9356DC;
+}
 @media screen and (max-width: 320px) {
   .operation__button-container__button {
     font-size: 1.2rem;
   }
 }
 .operation__button-container__button i {
+  color: #1b6150;
   padding: 0 3rem;
   font-size: 2rem;
 }
@@ -495,7 +500,7 @@ main {
 
 .restaurants {
   padding: 5rem 5%;
-  background: #99E2D0;
+  background: #e8f9f5;
 }
 @media screen and (max-width: 320px) {
   .restaurants {
@@ -514,12 +519,12 @@ main {
 }
 
 main {
-  background-color: #99E2D0;
+  background-color: #e8f9f5;
   padding-top: 65px;
 }
 @media screen and (min-width: 768px) {
   main {
-    padding-top: 97.5px;
+    padding-top: 91px;
   }
 }
 @media screen and (min-width: 1680px) {
@@ -597,7 +602,7 @@ main {
   height: 5px;
   width: 6rem;
   margin: 0.5rem 0 2rem;
-  background-color: #38c4a1;
+  background-color: #99E2D0;
 }
 
 .dish {
@@ -698,9 +703,6 @@ main {
 .submit-button {
   font-size: 2.2rem;
   justify-content: center;
-  height: 8rem;
-  width: 25rem;
-  border-radius: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

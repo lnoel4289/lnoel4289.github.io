@@ -37,14 +37,14 @@ main{
 // SEARCH FORM
 .search-form{
     height: 6rem;
-    background: darken($color-tertiary, 20%);   
+    background: $color-tertiary-light;   
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.8rem;
     & input{
         width: 17.5rem;
-        background: darken($color: $color-tertiary, $amount: 20%);
+        background: $color-tertiary-light;
         font-weight: 700;
         &::placeholder{
             color: black;
@@ -62,20 +62,15 @@ main{
 
 // SECTION SITE DESCRIPTION
 .background-style{
-    @include standard-padding($color-tertiary);
+    @include standard-padding($color-tertiary-lighter);
 }
 
 .site-description{
     &__button{
         justify-content: center;
-        width: 23rem;
-        height: 5.5rem;
         @include tablet{
             width: 30rem;
             font-size: 2rem;
-        }
-        @include desktop-l{
-            height: 8rem;
         }
     }
     &__background{
@@ -139,10 +134,17 @@ main{
             position: relative;
             height: 7.5rem;
             font-size: 1.3rem;
+            &:last-child{
+                background: $color-secondary-lighter;
+                & i{
+                    color: $color-primary;
+                }
+            }
             @include mobile-s{
-                font-size: 1.2rem;
+            font-size: 1.2rem;
             }
             & i{
+                color: $color-tertiary-darker;
                 padding: 0 3rem;
                 font-size: 2rem;
                 @include mobile-s{
@@ -170,7 +172,7 @@ main{
 
 // SECTION RESTAURANTS
 .restaurants{
-    @include standard-padding($color-tertiary);
+    @include standard-padding($color-tertiary-lighter);
     @include mobile-s{
         padding-bottom: 2rem;
     }

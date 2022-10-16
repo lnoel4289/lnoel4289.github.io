@@ -8,7 +8,7 @@
     background: $color;
 }
 
-@mixin standard-box-shadow($color: #9d9393) {
+@mixin standard-box-shadow($color: $color-tertiary) {
     box-shadow: .1rem .2rem 1rem .1rem $color;
 }
 
@@ -52,7 +52,7 @@
 @mixin main-top-padding{
     padding-top: 65px;
     @include tablet{
-        padding-top: 97.5px;
+        padding-top: 91px;
     }
     @include desktop-l{
         padding-top: 110.5px;
