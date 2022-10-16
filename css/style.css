@@ -3,7 +3,12 @@ html {
 }
 @media screen and (min-width: 768px) {
   html {
-    font-size: 15px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1680px) {
+  html {
+    font-size: 17px;
   }
 }
 
@@ -31,6 +36,7 @@ a {
 
 h1 {
   margin-top: 0;
+  font-size: 3rem;
 }
 
 h2 {
@@ -66,6 +72,11 @@ h2 {
 }
 .button--color-tertiary {
   background: #99E2D0;
+}
+@media screen and (min-width: 1680px) {
+  .button--color-tertiary {
+    width: 30%;
+  }
 }
 .button--color-white {
   background: white;
@@ -165,6 +176,12 @@ header {
     height: 22rem;
   }
 }
+@media screen and (min-width: 1680px) {
+  .card {
+    height: 20rem;
+    width: 30%;
+  }
+}
 .card__image {
   overflow: hidden;
   position: relative;
@@ -216,8 +233,19 @@ footer {
 }
 @media screen and (min-width: 768px) {
   footer {
-    font-size: 30px;
-    padding: 10px 5% 50px;
+    font-size: 2.2rem;
+    padding: 1rem 5% 5rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  footer {
+    padding: 1.8rem 10% 8rem;
+  }
+}
+@media screen and (min-width: 1680px) {
+  footer {
+    padding: 0 28% 5rem;
+    font-size: 2rem;
   }
 }
 footer h3 {
@@ -228,6 +256,12 @@ footer h3 {
   footer h3 {
     font-size: 5rem;
     margin: 2rem 0 3rem;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1680px) {
+  footer h3 {
+    text-align: center;
+    font-size: 62px;
   }
 }
 footer ul {
@@ -263,6 +297,11 @@ main {
 @media screen and (min-width: 768px) {
   main {
     padding-top: 97.5px;
+  }
+}
+@media screen and (min-width: 1680px) {
+  main {
+    padding-top: 110.5px;
   }
 }
 
@@ -333,6 +372,11 @@ main {
     font-size: 2rem;
   }
 }
+@media screen and (min-width: 1680px) {
+  .site-description__button {
+    height: 8rem;
+  }
+}
 .site-description__background {
   text-align: center;
   display: flex;
@@ -363,6 +407,11 @@ main {
     align-items: center;
   }
 }
+@media screen and (min-width: 1680px) {
+  .operation {
+    align-items: unset;
+  }
+}
 @media screen and (min-width: 768px) {
   .operation__container {
     width: 691px;
@@ -370,13 +419,17 @@ main {
 }
 @media screen and (min-width: 768px) {
   .operation__container h1 {
-    font-size: 3rem;
     margin-bottom: 2rem;
   }
 }
 @media screen and (min-width: 426px) and (max-width: 767px) {
   .operation__container {
     width: 372.5px;
+  }
+}
+@media screen and (min-width: 1680px) {
+  .operation__container {
+    width: unset;
   }
 }
 .operation__button-container {
@@ -389,6 +442,12 @@ main {
 @media screen and (max-width: 767px) {
   .operation__button-container {
     max-width: 372.5px;
+  }
+}
+@media screen and (min-width: 1680px) {
+  .operation__button-container {
+    flex-direction: row;
+    height: unset;
   }
 }
 .operation__button-container__button {
@@ -410,6 +469,29 @@ main {
     padding: 0 2rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .operation__button-container__button i {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1680px) {
+  .operation__button-container__button i {
+    font-size: 1.5rem;
+  }
+}
+.operation__button-container__button h2 {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .operation__button-container__button h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1680px) {
+  .operation__button-container__button h2 {
+    font-size: 1.5rem;
+  }
+}
 
 .restaurants {
   padding: 5rem 5%;
@@ -420,9 +502,30 @@ main {
     padding-bottom: 2rem;
   }
 }
+@media screen and (min-width: 1400px) {
+  .restaurants {
+    padding: 5rem 10%;
+  }
+}
+@media screen and (min-width: 1680px) {
+  .restaurants {
+    padding: 5rem 5%;
+  }
+}
 
 main {
   background-color: #99E2D0;
+  padding-top: 65px;
+}
+@media screen and (min-width: 768px) {
+  main {
+    padding-top: 97.5px;
+  }
+}
+@media screen and (min-width: 1680px) {
+  main {
+    padding-top: 110.5px;
+  }
 }
 
 .menu {
@@ -431,14 +534,52 @@ main {
   padding-bottom: 0;
   border-radius: 5rem 5rem 0 0;
 }
+@media screen and (min-width: 768px) {
+  .menu {
+    top: -4rem;
+  }
+}
 .menu__image img {
   width: 100%;
+  object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .menu__image img {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+  }
+}
+.menu__image--smaller {
+  width: 0px;
+  height: 0px;
+  visibility: hidden;
+}
+@media screen and (min-width: 768px) {
+  .menu__image--smaller {
+    visibility: visible;
+    width: 100%;
+    height: unset;
+    border-radius: 50px;
+    overflow: hidden;
+    border: white solid 5px;
+    text-align: center;
+  }
+}
+.menu__image--smaller img {
+  width: 100%;
+  height: 300px;
   object-fit: cover;
 }
 .menu__heading {
   font-family: shrikhand, roboto, sans-serif;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: center;
 }
 
 .menu-form__dish-type {
@@ -555,9 +696,11 @@ main {
 }
 
 .submit-button {
+  font-size: 2.2rem;
   justify-content: center;
-  height: 5rem;
-  width: 45%;
+  height: 8rem;
+  width: 25rem;
+  border-radius: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,13 @@
+// main TOP PADDING
+@mixin main-top-padding{
+
+}
+
 @mixin standard-padding($color: $color-white) {
     padding: 5rem 5%;
     background: $color;
 }
+
 @mixin standard-box-shadow($color: #9d9393) {
     box-shadow: .1rem .2rem 1rem .1rem $color;
 }
@@ -10,32 +16,45 @@
     border-radius: 2.5rem;
 }
 
+// BREAKPOINTS
 @mixin mobile-s{
     @media screen and (max-width: map-get($breakpoints, mobile-s)){
         @content;
     }
 }
-
 @mixin mobile {
     @media screen and (max-width: map-get($breakpoints, mobile)){
         @content;
     }
 }
-
 @mixin tablet-s{
     @media screen and (min-width: map-get($breakpoints, tablet-s)) and (max-width: map-get($breakpoints, mobile)) {
         @content;
     }
 }
-
 @mixin tablet {
     @media screen and (min-width: map-get($breakpoints, tablet)){
         @content;
     }
 }
-
 @mixin desktop {
     @media screen and (min-width: map-get($breakpoints, desktop)) {
         @content;
+    }
+}
+@mixin desktop-l {
+    @media screen and (min-width: map-get($breakpoints, desktop-l)) {
+        @content;
+    }
+}
+
+// main TOP PADDING
+@mixin main-top-padding{
+    padding-top: 65px;
+    @include tablet{
+        padding-top: 97.5px;
+    }
+    @include desktop-l{
+        padding-top: 110.5px;
     }
 }

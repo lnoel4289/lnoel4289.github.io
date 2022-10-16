@@ -7,8 +7,15 @@ footer{
     background: darken($color: $color-tertiary, $amount: 60%);
     color: $color-tertiary;
     @include tablet{
-        font-size: 30px;
-        padding: 10px 5% 50px;
+        font-size: 2.2rem;
+        padding: 1rem 5% 5rem;
+    }
+    @include desktop{
+        padding: 1.8rem 10% 8rem;
+    }
+    @include desktop-l{
+        padding: 0 28% 5rem;
+        font-size: 2rem;
     }
     & h3{
         font-family: shrikhand;
@@ -16,7 +23,11 @@ footer{
         @include tablet{
             font-size: 5rem;
         margin: 2rem 0 3rem;
-    }
+        @include desktop-l{
+            text-align: center;
+            font-size: 62px;
+        }
+        }
         
     }
     & ul{

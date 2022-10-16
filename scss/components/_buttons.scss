@@ -26,6 +26,9 @@
     }
     &--color-tertiary{
         background: $color-tertiary;
+        @include desktop-l{
+            width: 30%;
+        }
     }
     &--color-white{
         background: $color-white;

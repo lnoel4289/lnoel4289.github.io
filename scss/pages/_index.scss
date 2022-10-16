@@ -3,10 +3,7 @@ body{
 }
 
 main{
-    padding-top: 65px;
-    @include tablet{
-        padding-top: 97.5px;
-    }
+    @include main-top-padding
     // animation: fade-in 0ms 1000ms backwards;
 }
 
@@ -77,6 +74,9 @@ main{
             width: 30rem;
             font-size: 2rem;
         }
+        @include desktop-l{
+            height: 8rem;
+        }
     }
     &__background{
         text-align: center;
@@ -102,6 +102,9 @@ main{
     @include tablet-s{
     align-items: center;
     }
+    @include desktop-l{
+        align-items: unset;
+    }
     
     &__container{
         @include tablet{
@@ -109,12 +112,14 @@ main{
         }
         & h1{
             @include tablet{
-                font-size: 3rem;
                 margin-bottom: 2rem;
             }
         }
         @include tablet-s{
             width: 372.5px;
+        }
+        @include desktop-l{
+            width: unset;
         }
     }
     &__button-container{
@@ -125,6 +130,10 @@ main{
         padding-left: 1rem;
         @include mobile{
             max-width: 372.5px;
+        }
+        @include desktop-l{
+            flex-direction: row;
+            height: unset;
         }
         &__button{
             position: relative;
@@ -139,6 +148,21 @@ main{
                 @include mobile-s{
                     padding: 0 2rem
                 }
+                @include tablet{
+                    font-size: 3rem;
+                }
+                @include desktop-l{
+                    font-size: 1.5rem;
+                }
+            }
+            & h2{
+                font-size: 1.5rem;
+                @include tablet{
+                    font-size: 3rem;
+                }
+                @include desktop-l{
+                    font-size: 1.5rem
+                }
             }
         }
     }
@@ -149,5 +173,11 @@ main{
     @include standard-padding($color-tertiary);
     @include mobile-s{
         padding-bottom: 2rem;
+    }
+    @include desktop{
+        padding: 5rem 10%;
+    }
+    @include desktop-l{
+        padding: 5rem 5%;
     }
 }
