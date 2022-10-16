@@ -13,9 +13,13 @@
     @include standard-box-shadow;
     height: 30rem;
     margin-bottom: 2rem;
+    @include mobile-s{
+        height: 25rem;
+    }
     @include tablet{
         width: 47.5%;
         margin-bottom: 4%;
+        height: 22rem;
     }
     &__image{
         overflow: hidden;
@@ -47,8 +51,11 @@
         display: flex;
         justify-content: space-between;
         padding: 1.5rem 2rem;
-        & p{
+        & h2, p{
             margin: 0;
+            @include tablet{
+                font-size: 1.6rem;
+            }
         }
     }
 }

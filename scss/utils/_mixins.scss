@@ -10,8 +10,20 @@
     border-radius: 2.5rem;
 }
 
+@mixin mobile-s{
+    @media screen and (max-width: map-get($breakpoints, mobile-s)){
+        @content;
+    }
+}
+
 @mixin mobile {
     @media screen and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+}
+
+@mixin tablet-s{
+    @media screen and (min-width: map-get($breakpoints, tablet-s)) and (max-width: map-get($breakpoints, mobile)) {
         @content;
     }
 }

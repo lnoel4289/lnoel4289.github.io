@@ -1,10 +1,19 @@
 html {
   font-size: 10px;
 }
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
 
 body {
   font-family: "roboto", sans-serif;
-  font-size: 1.6rem;
+}
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 1.6rem;
+  }
 }
 
 * {
@@ -35,7 +44,7 @@ h2 {
 .button-container {
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 2.5rem;
 }
 .button-number {
   padding: 0.6rem 1rem;
@@ -66,6 +75,11 @@ h2 {
   display: flex;
   align-items: center;
   font-size: 3.5rem;
+}
+@media screen and (min-width: 768px) {
+  .favorite {
+    font-size: 3rem;
+  }
 }
 .favorite label {
   position: relative;
@@ -139,10 +153,16 @@ header {
   height: 30rem;
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 320px) {
+  .card {
+    height: 25rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .card {
     width: 47.5%;
     margin-bottom: 4%;
+    height: 22rem;
   }
 }
 .card__image {
@@ -176,18 +196,23 @@ header {
   justify-content: space-between;
   padding: 1.5rem 2rem;
 }
-.card__textbox p {
+.card__textbox h2, .card__textbox p {
   margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .card__textbox h2, .card__textbox p {
+    font-size: 1.6rem;
+  }
 }
 
 footer {
+  font-size: 2.4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 0 5% 3rem;
   background: #10392f;
   color: #99E2D0;
-  font-size: 1.8rem;
 }
 @media screen and (min-width: 768px) {
   footer {
@@ -235,6 +260,11 @@ body {
 main {
   padding-top: 65px;
 }
+@media screen and (min-width: 768px) {
+  main {
+    padding-top: 97.5px;
+  }
+}
 
 .spinner {
   width: 100%;
@@ -257,8 +287,8 @@ main {
 
 #anchor-restaurants {
   display: block;
-  height: 9rem;
-  margin-top: -9rem;
+  height: 8.5rem;
+  margin-top: -8.5rem;
   visibility: hidden;
 }
 
@@ -294,16 +324,60 @@ main {
 
 .site-description__button {
   justify-content: center;
-  width: 60%;
-  height: 5rem;
+  width: 23rem;
+  height: 5.5rem;
+}
+@media screen and (min-width: 768px) {
+  .site-description__button {
+    width: 30rem;
+    font-size: 2rem;
+  }
 }
 .site-description__background {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.site-description__background h1 + p {
+  font-size: 1.9rem;
+}
+@media screen and (max-width: 320px) {
+  .site-description__background h1 + p {
+    font-size: 1.6rem;
+  }
 }
 
 .operation {
   padding: 5rem 5%;
   background: white;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .operation {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 767px) {
+  .operation {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .operation__container {
+    width: 691px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .operation__container h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 767px) {
+  .operation__container {
+    width: 372.5px;
+  }
 }
 .operation__button-container {
   height: 28rem;
@@ -312,19 +386,39 @@ main {
   justify-content: space-between;
   padding-left: 1rem;
 }
+@media screen and (max-width: 767px) {
+  .operation__button-container {
+    max-width: 372.5px;
+  }
+}
 .operation__button-container__button {
   position: relative;
   height: 7.5rem;
   font-size: 1.3rem;
 }
+@media screen and (max-width: 320px) {
+  .operation__button-container__button {
+    font-size: 1.2rem;
+  }
+}
 .operation__button-container__button i {
   padding: 0 3rem;
   font-size: 2rem;
+}
+@media screen and (max-width: 320px) {
+  .operation__button-container__button i {
+    padding: 0 2rem;
+  }
 }
 
 .restaurants {
   padding: 5rem 5%;
   background: #99E2D0;
+}
+@media screen and (max-width: 320px) {
+  .restaurants {
+    padding-bottom: 2rem;
+  }
 }
 
 main {

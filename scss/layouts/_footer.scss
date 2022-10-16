@@ -1,11 +1,11 @@
 footer{
+    font-size: 2.4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 0 5% 3rem;
     background: darken($color: $color-tertiary, $amount: 60%);
     color: $color-tertiary;
-    font-size: 1.8rem;
     @include tablet{
         font-size: 30px;
         padding: 10px 5% 50px;
