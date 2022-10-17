@@ -1,55 +1,75 @@
 main{
     background-color: $color-tertiary-lighter;
-    @include main-top-padding
 }
 .menu{
     position: relative;
     top: -5rem;
     @include tablet{
-        top: -4rem;
+        top: unset;
+        border-radius: unset;
+        padding: 2.5rem 5% 5rem;
+    }
+    @include desktop-s{
+        padding: 2.5rem 10% 5rem;
+    }
+    @include desktop-l{
+        padding: 2.5rem 5% 5rem;
     }
     padding-bottom: 0;
     border-radius: 5rem 5rem 0 0;
+    &__heading{
+        display: flex;
+        justify-content: center;
+        & > div{
+            width: 100%;
+            @include desktop-s{
+                width: 80%;
+            }
+        }
+    }
     &__image{
+        @include tablet{
+            width: 0;
+            height: 0;
+            visibility: hidden;
+        }
         & img{
             width: 100%;
             object-fit: cover;
-            @include tablet{
-                width: 0px;
-                height: 0px;
-                visibility: hidden;
-            }
         }
         &--smaller{
-            width: 0px;
-            height: 0px;
+            width: 0;
+            height: 0;
             visibility: hidden;
             @include tablet{
                 visibility: visible;
                 width: 100%;
-                height: unset;
+                height: 20rem;
                 border-radius: 50px;
                 overflow: hidden;
                 border: $color-white solid 5px;
-                text-align: center;
+            }
+            @include desktop-s{
+                height: 30rem;
             }
             & img{
                 width: 100%;
-                height: 300px;
+                height: 20rem;
                 object-fit: cover;
+                @include desktop-s{
+                    height: 30rem;
+                }
             }
         }
     }
-    &__heading{
+    &__title{
         font-family: shrikhand, roboto, sans-serif;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        @include tablet{
+            justify-content: unset;
+        }
     }
-}
-
-.photo-container{
-    display: flex;
-    justify-content: center;
 }
 
 .menu-form{
@@ -59,9 +79,28 @@ main{
         margin: 0;
         display: flex;
         flex-direction: column;
+        @include desktop-s{
+            width: 47.5%;
+        }
+        @include desktop-l{
+            width: 30%;
+        }
+        &:last-child{
+            @include desktop-s{
+                padding-top: 0;
+            }
+            @include desktop-l{
+                padding-top: 2rem;
+            }
+        }
         &__title{
             font-size: 2rem;
             text-transform: uppercase;
+            @include desktop-l{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
     }
     &__title-border{
@@ -79,6 +118,13 @@ main{
     @for $i from 2 through 4 {
         &--#{$i}{
             animation-delay: $anim-delay * $i;
+        }
+    }
+    &__type{
+        @include desktop-s{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
     }
     &__label{
