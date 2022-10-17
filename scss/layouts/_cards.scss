@@ -22,8 +22,13 @@
         height: 22rem;
     }
     @include desktop-l{
-        height: 20rem;
-        width: 30%;
+        height: 25rem;
+        width: 47%;
+    }
+    @include desktop-hd{
+        width: 23%;
+        height: 22rem;
+        margin-bottom: 0;
     }
     &__image{
         overflow: hidden;
@@ -45,8 +50,8 @@
             padding: 0 1rem;
             color: $color-tertiary-dark;
             font-weight: 600;
-            border: solid 3pxrem $color-tertiary-lighter;
-            border-radius: 3px;
+            border: solid .3rem $color-tertiary-lighter;
+            border-radius: .3rem;
             height: 3rem;
         }
     }

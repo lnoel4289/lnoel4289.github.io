@@ -47,6 +47,21 @@
         @content;
     }
 }
+@mixin desktop-hd {
+    @media screen and (min-width: map-get($breakpoints, desktop-hd)) {
+        @content;
+    }
+}
+@mixin desktop-xl {
+    @media screen and (min-width: map-get($breakpoints, desktop-xl)) {
+        @content;
+    }
+}
+@mixin desktop-uhd {
+    @media screen and (min-width: map-get($breakpoints, desktop-uhd)) {
+        @content;
+    }
+}
 
 // main TOP PADDING
 @mixin main-top-padding{
@@ -55,6 +70,12 @@
         padding-top: 91px;
     }
     @include desktop-l{
-        padding-top: 110.5px;
+        padding-top: 97.5px;
+    }
+    @include desktop-xl{
+        padding-top: 143px;
+    }
+    @include desktop-uhd{
+        padding-top: 195px;
     }
 }

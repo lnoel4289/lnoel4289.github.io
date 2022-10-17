@@ -14,7 +14,11 @@ footer{
         padding: 1.8rem 10% 8rem;
     }
     @include desktop-l{
-        padding: 0 28% 5rem;
+        padding: 0 5% 5rem;
+        font-size: 2rem;
+    }
+    @include desktop-hd{
+        padding: 0 5% 5rem;
         font-size: 2rem;
     }
     & h3{
@@ -22,14 +26,12 @@ footer{
         font-weight: 200;
         @include tablet{
             font-size: 5rem;
-        margin: 2rem 0 3rem;
+        margin: 2rem 0 3rem;}
         @include desktop-l{
-            text-align: center;
-            font-size: 62px;
+            font-size: 4rem;
+            border-bottom: $color-tertiary-lighter solid;
+            height: 6rem;}
         }
-        }
-        
-    }
     & ul{
         list-style: none;
         padding: 0;
@@ -39,13 +41,11 @@ footer{
         justify-content: space-between;
         line-height: 1.6;
         @include tablet{
-            flex-direction: row;
-        }
+            flex-direction: row;}
     }
     & i{
         width: 4rem;
         @include tablet{
-            width: 5rem;
-        }
+            width: 5rem;}
     }
 }

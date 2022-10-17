@@ -3,7 +3,7 @@ body{
 }
 
 main{
-    @include main-top-padding
+    @include main-top-padding;
     // animation: fade-in 0ms 1000ms backwards;
 }
 
@@ -97,10 +97,13 @@ main{
     @include tablet-s{
     align-items: center;
     }
+    @include desktop{
+        padding: 5rem 10%;
+    }
     @include desktop-l{
         align-items: unset;
-    }
-    
+        padding: 5rem 5%;
+    }   
     &__container{
         @include tablet{
             width: 691px;
@@ -165,6 +168,9 @@ main{
                 @include desktop-l{
                     font-size: 1.5rem
                 }
+                @include desktop-hd{
+                    font-size: 1.7rem;
+                }
             }
         }
     }
@@ -180,6 +186,9 @@ main{
         padding: 5rem 10%;
     }
     @include desktop-l{
+        padding: 5rem 5%;
+    }
+    @include desktop-hd{
         padding: 5rem 5%;
     }
 }

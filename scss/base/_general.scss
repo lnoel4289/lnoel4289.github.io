@@ -4,7 +4,16 @@ html{
         font-size: 14px;
     }
     @include desktop-l{
-        font-size: 17px;
+        font-size: 15px;
+    }
+    @include desktop-hd{
+        font-size: 16px;
+    }
+    @include desktop-xl{
+        font-size: 22px;
+    }
+    @include desktop-uhd{
+        font-size: 30px;
     }
 }
 
