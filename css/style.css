@@ -91,7 +91,7 @@ h2 {
   }
 }
 .button--color-gradient {
-  background: linear-gradient(#FF79DA, #a16be0);
+  background: linear-gradient(#ff60d3, #9356DC);
   color: white;
   border-radius: 5rem;
   width: 23rem;
