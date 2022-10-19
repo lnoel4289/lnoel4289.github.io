@@ -1,21 +1,3 @@
-// main TOP PADDING
-@mixin main-top-padding{
-
-}
-
-@mixin standard-padding($color: $color-white) {
-    padding: 5rem 5%;
-    background: $color;
-}
-
-@mixin standard-box-shadow($color: $color-tertiary) {
-    box-shadow: .1rem .2rem 1rem .1rem $color;
-}
-
-@mixin standard-border {
-    border-radius: 2.5rem;
-}
-
 // BREAKPOINTS
 @mixin mobile-s{
     @media screen and (max-width: map-get($breakpoints, mobile-s)){
@@ -84,3 +66,21 @@
         padding-top: 195px;
     }
 }
+
+@mixin standard-padding($color: $color-white) {
+    padding: 5rem 5%;
+    background: $color;
+}
+
+@mixin standard-box-shadow {
+    box-shadow: .1rem .1rem 1rem .2rem $color-tertiary;
+}
+
+@mixin enhanced-box-shadow{
+    box-shadow: 0 .5rem .9rem .1rem darken($color-tertiary, 5);
+}
+
+@mixin standard-border {
+    border-radius: 2.5rem;
+}
+

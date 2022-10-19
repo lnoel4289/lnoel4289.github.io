@@ -28,11 +28,33 @@
         }
     }
     &--color-gradient{
+        position: relative;
         background:$color-gradient;
         color: $color-white;
         border-radius: 5rem;
         width: 23rem;
         height: 7rem;
+        z-index: 1;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: $color-gradient-light;
+            @include enhanced-box-shadow;
+            color: $color-white;
+            border-radius: 5rem;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 250ms ease-out;
+        }
+        &:hover{
+            &::after{
+                opacity: 1;
+            }
+        }
     }
     &--color-white{
         background: $color-white;
