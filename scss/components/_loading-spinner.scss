@@ -3,22 +3,30 @@
     height: 95vw;
     border-radius: 50%;
     background-color: transparent;
-    border: 2rem solid $color-primary-lighter;
-    border-top: $color-tertiary-dark solid 2rem;
-    border-bottom: $color-tertiary-light solid 2rem;
-    border-right: $color-tertiary solid 2rem;
-    border-left: $color-tertiary-darker solid 2rem;
-    animation: spinner linear 3s infinite;
+    border: 4rem solid $color-primary-lighter;
+    border-top: $color-primary solid 4rem;
+    // border-bottom: $color-tertiary-light solid 3rem;
+    // border-right: $color-tertiary solid 3rem;
+    // border-left: $color-primary-light solid 3rem;
+    animation: spinner linear 1.5s infinite;
     @include desktop-s{
         width: 95vh;
         height: 95vh;
     }
     &__container{
+        z-index: 100;
+        overflow: hidden;
         position: absolute;
         width: 100vw;
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        animation: in-out 0s 3s both;
+    }
+    &__legend{
+        position: absolute;
+        top: 50%;
+        left: 50%;
     }
 }

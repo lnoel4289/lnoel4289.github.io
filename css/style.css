@@ -14,6 +14,14 @@
     rotate: 360deg;
   }
 }
+@keyframes in-out {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 html {
   font-size: 10px;
 }
@@ -166,12 +174,9 @@ h2 {
   height: 95vw;
   border-radius: 50%;
   background-color: transparent;
-  border: 2rem solid #c9abee;
-  border-top: #32b091 solid 2rem;
-  border-bottom: #c1ede2 solid 2rem;
-  border-right: #99E2D0 solid 2rem;
-  border-left: #1b6150 solid 2rem;
-  animation: spinner linear 3s infinite;
+  border: 4rem solid #c9abee;
+  border-top: #9356DC solid 4rem;
+  animation: spinner linear 1.5s infinite;
 }
 @media screen and (min-width: 1024px) {
   .spinner {
@@ -180,12 +185,20 @@ h2 {
   }
 }
 .spinner__container {
+  z-index: 100;
+  overflow: hidden;
   position: absolute;
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: in-out 0s 3s both;
+}
+.spinner__legend {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 header {
@@ -397,7 +410,7 @@ main {
 }
 
 .index-fade-in {
-  animation: fade-in 2000ms 2000ms cubic-bezier(1, 0, 0.9, 0.3) backwards;
+  animation: fade-in 250ms 2750ms cubic-bezier(1, 0, 0.9, 0.3) backwards;
 }
 
 #anchor-restaurants {
