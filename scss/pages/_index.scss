@@ -4,26 +4,11 @@ body{
 
 main{
     @include main-top-padding;
-    // animation: fade-in 0ms 1000ms backwards;
+    
 }
 
-.spinner{
-    width: 100%;
-    height:100%;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 1rem solid $color-secondary;
-    border-top: $color-primary solid 1rem;
-    z-index: 100;
-    animation: spinner linear 1s infinite;
-    &__container{
-        width: 100vh;
-        height: 100vh;
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.index-fade-in{
+    animation: fade-in 2000ms 2000ms cubic-bezier(1,0,.9,.3) backwards;
 }
 
 // ANCHOR RESTAURANTS

@@ -1,11 +1,12 @@
 @import "utils/variables";
 @import "utils/mixins";
+@import "utils/keyframes";
 
 @import "base/general";
 
 @import "components/buttons";
 @import "components/hearts";
-@import "components/keyframes";
+@import "components/loading-spinner";
 
 @import "layouts/header";
 @import "layouts/cards";

@@ -73,7 +73,7 @@
 }
 
 @mixin standard-box-shadow {
-    box-shadow: .1rem .1rem 1rem .2rem $color-tertiary;
+    box-shadow: .1rem .1rem .9rem .1rem $color-tertiary;
 }
 
 @mixin enhanced-box-shadow{

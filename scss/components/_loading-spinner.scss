@@ -1,0 +1,24 @@
+.spinner{
+    width: 95vw;
+    height: 95vw;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2rem solid $color-primary-lighter;
+    border-top: $color-tertiary-dark solid 2rem;
+    border-bottom: $color-tertiary-light solid 2rem;
+    border-right: $color-tertiary solid 2rem;
+    border-left: $color-tertiary-darker solid 2rem;
+    animation: spinner linear 3s infinite;
+    @include desktop-s{
+        width: 95vh;
+        height: 95vh;
+    }
+    &__container{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
