@@ -161,12 +161,18 @@ h2 {
 .favorite__painted {
   position: absolute;
   left: 0;
-  color: #9356DC;
+  background: linear-gradient(to top, rgba(255, 121, 218, 0.7), rgb(147, 86, 220));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   opacity: 0;
 }
+.favorite input:checked + label > .favorite__hollow {
+  opacity: 0;
+  transition: opacity 250ms 50ms;
+}
 .favorite input:checked + label > .favorite__painted {
-  opacity: 0.9;
-  transition: opacity 500ms;
+  opacity: 1;
+  transition: opacity 300ms;
 }
 
 .spinner {

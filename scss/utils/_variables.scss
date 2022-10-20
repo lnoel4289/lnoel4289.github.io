@@ -17,6 +17,8 @@ $color-tertiary-lighter: lighten($color-tertiary, 20);
 
 $color-gradient: linear-gradient($color-secondary-dark, $color-primary);
 $color-gradient-light: linear-gradient(lighten($color-secondary-dark, 10), lighten($color-primary, 10));
+$color-gradient-heart: linear-gradient(to top,rgba(255, 121, 218, .7),rgba(147, 86, 220, 1)
+);
 
 // BOX-SHADOWS
 $box-shadow: (

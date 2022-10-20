@@ -11,14 +11,20 @@
     &__painted{
         position:absolute;
         left: 0;
-        color: $color-primary;
+        background: $color-gradient-heart;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
         opacity: 0;
     }
     & input:checked{
         & + label{
-            & > .favorite__painted{
-                opacity: 0.9;
-                transition: opacity 500ms;
+          & > .favorite__hollow{
+            opacity: 0;
+            transition: opacity 250ms 50ms;
+          }
+          & > .favorite__painted{
+              opacity: 1;
+              transition: opacity 300ms;
             }
         }
     }
