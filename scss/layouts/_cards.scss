@@ -13,6 +13,7 @@
     @include standard-box-shadow;
     height: 30rem;
     margin-bottom: 2rem;
+    position: relative;
     @include mobile-s{
         height: 25rem;
     }
