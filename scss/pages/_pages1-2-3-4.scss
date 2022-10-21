@@ -140,7 +140,7 @@ main{
             & ~ .checkbox__container{
                 transform: translateX(-100%);
                 & .checkbox__check{
-                    transform: rotate(675deg);
+                animation: rotate-check 200ms 120ms both;
                 }
             }
             & + .dish__textbox{
@@ -214,7 +214,6 @@ main{
         border-bottom: $color-tertiary solid .4rem;
         border-left:  $color-tertiary solid .4rem;;
         transform: rotate(-45deg);
-        transition: transform 300ms;
     }
 }
 

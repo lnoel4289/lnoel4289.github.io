@@ -9,18 +9,27 @@
 
 @keyframes spinner{
     0%{
-        rotate: 0deg;
+        transform: rotate(0deg);
     }
     100%{
-        rotate: 360deg;
+        transform: rotate(360deg);
     }
 }
 
 @keyframes in-out{
     0%{
-        transform:translateX(0);
+        transform: translateX(0);
     }
     100%{
-        transform:translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes rotate-check{
+    0%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(315deg);
     }
 }
