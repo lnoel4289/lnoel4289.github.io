@@ -66,6 +66,8 @@ body {
 
 input[type=checkbox] {
   visibility: hidden;
+  width: 0;
+  height: 0;
 }
 
 a {
@@ -782,7 +784,7 @@ main {
   }
 }
 .dish__label {
-  height: 8rem;
+  height: 9rem;
   display: flex;
   width: 100%;
   font-size: 2.3rem;
@@ -798,7 +800,7 @@ main {
   transform: rotate(675deg);
 }
 .dish__label input:checked + .dish__textbox > .dish__description {
-  width: 50%;
+  width: calc(100% - 16rem);
 }
 .dish__label input:checked + .dish__textbox > .dish__price {
   transform: translateX(-100%);
@@ -806,8 +808,9 @@ main {
 .dish__textbox {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0.5rem;
+  padding: 1.5rem 0 1.5rem 1.5rem;
   width: 100%;
+  height: 100%;
 }
 .dish__textbox p, .dish__textbox h3 {
   margin: 0;
@@ -816,30 +819,34 @@ main {
   white-space: nowrap;
 }
 .dish__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 100%;
+  width: calc(100% - 8rem);
   transition: width 200ms 20ms;
+  height: 100%;
 }
 .dish__price {
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
   font-weight: 600;
   height: 100%;
-  padding-right: 2rem;
   transition: transform 200ms 30ms;
   width: 8rem;
 }
 
 .checkbox {
   position: absolute;
-  left: 33%;
-  top: 33%;
+  left: 33.3%;
+  top: 33.3%;
   background-color: white;
-  width: 35%;
-  height: 35%;
+  width: 2.64rem;
+  height: 2.64rem;
   border-radius: 50%;
 }
 .checkbox__container {
@@ -852,7 +859,7 @@ main {
 }
 .checkbox__check {
   position: absolute;
-  top: 30%;
+  top: 33%;
   left: 25%;
   width: 50%;
   height: 30%;
