@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
@@ -32,17 +32,16 @@
         </div>
         <article class="menu background-style">
             <div class="menu__heading">
+                <div class="menu__title-container">
+                    <h1 class="menu__title">Nom du restaurant</h1>
+                    <div class="favorite favorite--menu-heading">
+                        <input type="checkbox" id="heart1"><label for="heart1"><span class="favorite__hollow"><i class="fa-regular fa-heart"></i></span><span class="favorite__painted"><i class="fa-solid fa-heart"></i>
+                        </span></label>
+                </div>
+                </div>
                 <div>
-                    <h1 class="menu__title">
-                        Nom du restaurant
-                        <div class="favorite">
-                            <input type="checkbox" id="heart1"><label for="heart1"><span class="favorite__hollow"><i class="fa-regular fa-heart"></i></span><span class="favorite__painted"><i class="fa-solid fa-heart"></i></span></label>
-                        </div>
-                    </h1>
-                    <div>
-                        <div class="menu__image--smaller">
-                            <img src="images/restaurants/mobile_device/jay-wennington-N_Y88TWmGwA-unspl.jpg" alt="Plats sur une table">
-                        </div>
+                    <div class="menu__image--smaller">
+                        <img src="images/restaurants/mobile_device/jay-wennington-N_Y88TWmGwA-unspl.jpg" alt="Plats sur une table">
                     </div>
                 </div>
             </div>
@@ -51,17 +50,17 @@
                     
                     <!-- STARTERS -->
                     <div class="menu-form__dish-type">
-                        <legend class="menu-form__dish-type__title">
+                        <div class="menu-form__dish-type__title">
                             Entrées
                             <div class="menu-form__title-border"></div>
-                        </legend>
+                        </div>
                         <div class="dish dish--1 button button--large button--color-white ">
-                            <label for="dish1" class="dish__label">
+                            <div class="dish__label">
                                 <input type="checkbox" id="dish1" name="dish1">
                                 <div class="dish__textbox">
                                     <div class="dish__description">
-                                        <h3>Platttttttttttttttttttttttttttttt</h3>
-                                        <p>Légendeeeeeeeeeeeeeeeeeeeeeeeeeeee</p>
+                                        <h3>Plaaaaaaaaaaaaaaaaaaaaaaaaaaaat</h3>
+                                        <p>Légendeeeeeeeeeeeeeeeeeeeeeeeeee</p>
                                     </div>
                                     <div class="dish__price">
                                         <p>00€</p>
@@ -72,15 +71,15 @@
                                         <div class="checkbox__check"></div>
                                     </div>
                                 </div>
-                            </label>
+                            </div>
                         </div>
                         <div class="dish dish--2 button button--large button--color-white ">
-                            <label for="dish2" class="dish__label">
+                            <div class="dish__label">
                                 <input type="checkbox" id="dish2" name="dish2">
                                 <div class="dish__textbox">
                                     <div class="dish__description">
                                         <h3>Plaaaaaaaaaaaaaaaaaaaaaaaaaaaat</h3>
-                                        <p>Légende</p>
+                                        <p>Légendeeeeeeeeeeeeeeeeeeeeeeeeee</p>
                                     </div>
                                     <div class="dish__price">
                                         <p>00€</p>
@@ -91,15 +90,15 @@
                                         <div class="checkbox__check"></div>
                                     </div>
                                 </div>
-                            </label>
+                            </div>
                         </div>
                         <div class="dish dish--3 button button--large button--color-white ">
-                            <label for="dish3" class="dish__label">
+                            <div class="dish__label">
                                 <input type="checkbox" id="dish3" name="dish3">
                                 <div class="dish__textbox">
                                     <div class="dish__description">
-                                        <h3>Plat</h3>
-                                        <p>Légende</p>
+                                        <h3>Plaaaaaaaaaaaaaaaaaaaaaaaaaaaat</h3>
+                                        <p>Légendeeeeeeeeeeeeeeeeeeeeeeeeee</p>
                                     </div>
                                     <div class="dish__price">
                                         <p>00€</p>
@@ -110,23 +109,23 @@
                                         <div class="checkbox__check"></div>
                                     </div>
                                 </div>
-                            </label>
+                            </div>
                         </div>
                     </div>
 
                     <!-- MAIN DISHES -->
                     <div class="menu-form__dish-type">
-                        <legend class="menu-form__dish-type__title">
+                        <div class="menu-form__dish-type__title">
                             Plats
                             <div class="menu-form__title-border"></div>
-                        </legend>
+                        </div>
                         <div class="dish dish--1 button button--large button--color-white ">
-                            <label for="dish4" class="dish__label">
+                            <div class="dish__label">
                                 <input type="checkbox" id="dish4" name="dish4">
                                 <div class="dish__textbox">
                                     <div class="dish__description">
-                                        <h3>Plat</h3>
-                                        <p>Légende</p>
+                                        <h3>Plaaaaaaaaaaaaaaaaaaaaaaaaaaaat</h3>
+                                        <p>Légendeeeeeeeeeeeeeeeeeeeeeeeeee</p>
                                     </div>
                                     <div class="dish__price">
                                         <p>00€</p>
@@ -137,15 +136,15 @@
                                         <div class="checkbox__check"></div>
                                     </div>
                                 </div>
-                            </label>
+                            </div>
                         </div>
                         <div class="dish dish--2 button button--large button--color-white ">
-                            <label for="dish5" class="dish__label">
+                            <div class="dish__label">
                                 <input type="checkbox" id="dish5" name="dish5">
                                 <div class="dish__textbox">
                                     <div class="dish__description">
-                                        <h3>Plat</h3>
-                                        <p>Légende</p>
+                                        <h3>Plaaaaaaaaaaaaaaaaaaaaaaaaaaaat</h3>
+                                        <p>Légendeeeeeeeeeeeeeeeeeeeeeeeeee</p>
                                     </div>
                                     <div class="dish__price">
                                         <p>00€</p>
@@ -156,15 +155,15 @@
                                         <div class="checkbox__check"></div>
                                     </div>
                                 </div>
-                            </label>
+                            </div>
                         </div>
                         <div class="dish dish--3 button button--large button--color-white ">
-                            <label for="dish6" class="dish__label">
+                            <div class="dish__label">
                                 <input type="checkbox" id="dish6" name="dish6">
                                 <div class="dish__textbox">
                                     <div class="dish__description">
-                                        <h3>Plat</h3>
-                                        <p>Légende</p>
+                                        <h3>Plaaaaaaaaaaaaaaaaaaaaaaaaaaaat</h3>
+                                        <p>Légendeeeeeeeeeeeeeeeeeeeeeeeeee</p>
                                     </div>
                                     <div class="dish__price">
                                         <p>00€</p>
@@ -175,23 +174,23 @@
                                         <div class="checkbox__check"></div>
                                     </div>
                                 </div>
-                            </label>
+                            </div>
                         </div>
                     </div>
 
                     <!-- DESSERTS -->
                     <div class="menu-form__dish-type">
-                        <legend class="menu-form__dish-type__title">
+                        <div class="menu-form__dish-type__title">
                             Desserts
                             <div class="menu-form__title-border"></div>
-                        </legend>
+                        </div>
                         <div class="dish dish--1 button button--large button--color-white ">
-                            <label for="dish7" class="dish__label">
+                            <div class="dish__label">
                                 <input type="checkbox" id="dish7" name="dish7">
                                 <div class="dish__textbox">
                                     <div class="dish__description">
-                                        <h3>Plat</h3>
-                                        <p>Légende</p>
+                                        <h3>Plaaaaaaaaaaaaaaaaaaaaaaaaaaaat</h3>
+                                        <p>Légendeeeeeeeeeeeeeeeeeeeeeeeeee</p>
                                     </div>
                                     <div class="dish__price">
                                         <p>00€</p>
@@ -202,15 +201,15 @@
                                         <div class="checkbox__check"></div>
                                     </div>
                                 </div>
-                            </label>
+                            </div>
                         </div>
                         <div class="dish dish--2 button button--large button--color-white ">
-                            <label for="dish8" class="dish__label">
+                            <div class="dish__label">
                                 <input type="checkbox" id="dish8" name="dish8">
                                 <div class="dish__textbox">
                                     <div class="dish__description">
-                                        <h3>Plat</h3>
-                                        <p>Légende</p>
+                                        <h3>Plaaaaaaaaaaaaaaaaaaaaaaaaaaaat</h3>
+                                        <p>Légendeeeeeeeeeeeeeeeeeeeeeeeeee</p>
                                     </div>
                                     <div class="dish__price">
                                         <p>00€</p>
@@ -221,15 +220,15 @@
                                         <div class="checkbox__check"></div>
                                     </div>
                                 </div>
-                            </label>
+                            </div>
                         </div>
                         <div class="dish dish--3 button button--large button--color-white ">
-                            <label for="dish9" class="dish__label">
+                            <div class="dish__label">
                                 <input type="checkbox" id="dish9" name="dish9">
                                 <div class="dish__textbox">
                                     <div class="dish__description">
-                                        <h3>Plat</h3>
-                                        <p>Légende</p>
+                                        <h3>Plaaaaaaaaaaaaaaaaaaaaaaaaaaaat</h3>
+                                        <p>Légendeeeeeeeeeeeeeeeeeeeeeeeeee</p>
                                     </div>
                                     <div class="dish__price">
                                         <p>00€</p>
@@ -240,7 +239,7 @@
                                         <div class="checkbox__check"></div>
                                     </div>
                                 </div>
-                            </label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -248,7 +247,7 @@
                 <!-- SUBMIT BUTTON 'COMMANDER' -->
                 <div class="button-container pages__button-container">
                     <button class="button button--large button--color-gradient submit-button"  type="submit">
-                        Commander
+                        <span>Commander</span> 
                     </button>
                 </div>
             </form>
@@ -264,26 +263,23 @@
 
         <!-- FOOTER LINKS LIST -->
         <ul>
-            <div>
-                <li>    
-                    <a href="">
-                    <i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
-                </li> 
-                <li>
-                    <a href="">
-                    <i class="fa-solid fa-handshake-angle"></i>Devenir partenaire
-                    </a>
-                </li>
-            </div>
-            <div>
-                <li>
-                    <a href="">Mentions légales</a>
-                </li>
-                <li>
-                    <a href="mailto:lnoel4289@gmail.com">Contact</a>
-                </li>
-            </div>
-            </ul>
+            <li>    
+                <a href="">
+                <i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+            </li> 
+            <li>
+                <a href="">
+                <i class="fa-solid fa-handshake-angle"></i>Devenir partenaire
+                </a>
+            </li>
+        
+            <li>
+                <a href="">Mentions légales</a>
+            </li>
+            <li>
+                <a href="mailto:lnoel4289@gmail.com">Contact</a>
+            </li>
+        </ul>
     </footer>
 </body>
 </html>

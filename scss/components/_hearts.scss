@@ -1,7 +1,7 @@
 .favorite{
     display:flex;
     align-items:center;
-    font-size: 3.5rem;
+    font-size: 2em;
     @include tablet{
         font-size: 3rem;
     }
@@ -13,6 +13,7 @@
         left: 0;
         background: $color-gradient-heart;
         -webkit-text-fill-color: transparent;
+        background-clip: text;
         -webkit-background-clip: text;
         opacity: 0;
     }
@@ -31,8 +32,10 @@
     // CONTEXT
     &--card{
         position: absolute;
-        bottom: 3.2rem;
-        right: 3rem;
+        bottom: 0;
+        right: 0;
+        height: 31.5%;
+        padding-right: 2rem;
     }
     &--menu-heading{
         @include desktop-s{

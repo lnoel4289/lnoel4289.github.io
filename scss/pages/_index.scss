@@ -110,6 +110,7 @@ main{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-top: 3rem;
         padding-left: 1rem;
         @include mobile{
             max-width: 372.5px;

@@ -141,14 +141,14 @@ main{
         & p, h3{
             margin: 0;
         }
-        & input:checked{
-            & ~ .checkbox__container{
+        &:hover{
+            & .checkbox__container{
                 transform: translateX(-100%);
                 & .checkbox__check{
                 animation: rotate-check 200ms 120ms both;
                 }
             }
-            & + .dish__textbox{
+            & .dish__textbox{
                 & > .dish__description{
                 width: calc(100% - $chk-wid*2);
                 }

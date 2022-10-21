@@ -29,7 +29,6 @@ footer{
         margin: 2rem 0 3rem;}
         @include desktop-l{
             font-size: 4rem;
-            border-bottom: $color-tertiary-lighter solid;
             height: 6rem;}
         }
     & ul{
