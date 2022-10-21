@@ -19,12 +19,9 @@ main{
     border-radius: 5rem 5rem 0 0;
     &__heading{
         display: flex;
-        justify-content: center;
-        & > div{
+        flex-direction: column;
+        & > .menu__title-container{
             width: 100%;
-            @include desktop-s{
-                width: 79%;
-            }
         }
     }
     &__image{
@@ -68,6 +65,14 @@ main{
         justify-content: space-between;
         @include tablet{
             justify-content: unset;
+        }
+        &-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include desktop-s{
+                justify-content: normal;
+            }
         }
     }
 }

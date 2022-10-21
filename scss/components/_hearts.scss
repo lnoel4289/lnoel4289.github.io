@@ -2,9 +2,6 @@
     display:flex;
     align-items:center;
     font-size: 3.5rem;
-    position: absolute;
-    bottom: 3.2rem;
-    right: 3rem;
     @include tablet{
         font-size: 3rem;
     }
@@ -29,6 +26,18 @@
               opacity: 1;
               transition: opacity 300ms;
             }
+        }
+    }
+    // CONTEXT
+    &--card{
+        position: absolute;
+        bottom: 3.2rem;
+        right: 3rem;
+    }
+    &--menu-heading{
+        @include desktop-s{
+            position: relative;
+            left: 2rem;
         }
     }
 }
