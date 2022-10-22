@@ -16,8 +16,18 @@ header{
 }
 
 .arrow{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2.5rem;
+    height: 100%;
+    width: 5rem;
     position: absolute;
-    font-size: 4rem;
     left: 5%;
-    top: 1.5rem;
+    @include desktop-s{
+        left: 10%;
+    }
+    @include desktop-l{
+        left: 5%;
+    }
 }
