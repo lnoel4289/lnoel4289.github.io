@@ -38,7 +38,7 @@
         padding-right: 2rem;
     }
     &--menu-heading{
-        @include desktop-s{
+        @include tablet{
             position: relative;
             left: 2rem;
         }

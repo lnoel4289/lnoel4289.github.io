@@ -4,6 +4,9 @@ main{
 .menu{
     position: relative;
     top: -5rem;
+    padding-bottom: 0;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
     @include tablet{
         top: unset;
         border-radius: unset;
@@ -15,13 +18,23 @@ main{
     @include desktop-l{
         padding: 2.5rem 5% 5rem;
     }
-    padding-bottom: 0;
-    border-radius: 5rem 5rem 0 0;
+    
+    
     &__heading{
         display: flex;
         flex-direction: column;
+        @include tablet{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        @include desktop-l{
+            align-items: center;
+        }
         & > .menu__title-container{
             width: 100%;
+            @include desktop-l{
+                width: unset;
+            }
         }
     }
     &__image{
@@ -45,17 +58,15 @@ main{
                 border-radius: 50px;
                 overflow: hidden;
                 border: $color-white solid 5px;
+                margin-bottom: 1.5rem;
             }
-            @include desktop-s{
-                height: 30rem;
+            @include desktop-l{
+                width: 60%;
             }
             & img{
                 width: 100%;
-                height: 20rem;
+                height: 100%;
                 object-fit: cover;
-                @include desktop-s{
-                    height: 30rem;
-                }
             }
         }
     }
@@ -70,7 +81,7 @@ main{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            @include desktop-s{
+            @include tablet{
                 justify-content: normal;
             }
         }
