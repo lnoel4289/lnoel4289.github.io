@@ -1,0 +1,24 @@
+.search-bar{
+    height: 6rem;
+    background: $color-tertiary-light;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    & input{
+        width: 17.5rem;
+        background: $color-tertiary-light;
+        font-weight: 700;
+        &::placeholder{
+            color: black;
+        }
+        border-style: hidden;
+        &:focus{
+            outline: none;
+            font-weight: 700;
+        }
+    }
+    & label{
+        padding: 0 2rem;
+    }
+}

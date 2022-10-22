@@ -1,13 +1,3 @@
-.cards-container{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    margin-top: 3rem;
-    @include tablet{
-        flex-flow: row wrap;
-    }
-}
-
 .card{
     overflow: hidden;
     border-radius: 2.5rem;

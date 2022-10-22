@@ -1,6 +1,8 @@
 .button{
-    border-style: hidden;
-    border-radius: 2.5rem;
+    @include standard-border;
+    display: flex;
+    align-items: center;
+    @include standard-box-shadow;
     &-container{
         display: flex;
         justify-content: center;
@@ -11,13 +13,6 @@
         border-radius: 2.5rem;
         position: absolute;
         left: -1.5rem;
-    }
-    &--large{
-        display: flex;
-        align-items: center;
-        @include standard-box-shadow;
-    }
-    &--color-primary{
         background: $color-primary;
         color: $color-white;
     }
@@ -25,35 +20,6 @@
         background: $color-tertiary-lighter;
         @include desktop-l{
             width: 30%;
-        }
-    }
-    &--color-gradient{
-        position: relative;
-        background:$color-gradient;
-        color: $color-white;
-        border-radius: 5rem;
-        width: 21rem;
-        height: 5.5rem;
-        z-index: 1;
-        &::after{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: $color-gradient-light;
-            @include enhanced-box-shadow;
-            color: $color-white;
-            border-radius: 5rem;
-            opacity: 0;
-            z-index: -1;
-            transition: opacity 250ms ease-out;
-        }
-        &:hover{
-            &::after{
-                opacity: 1;
-            }
         }
     }
     &--color-white{

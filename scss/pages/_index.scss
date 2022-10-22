@@ -3,13 +3,12 @@ body{
 }
 
 main{
-    @include main-top-padding;
-    
+    @include main-top-padding;   
 }
 
-.index-fade-in{
-    animation: fade-in 250ms 2750ms cubic-bezier(1,0,.9,.3) backwards;
-}
+// .index-fade-in{
+//     animation: fade-in 250ms 2750ms cubic-bezier(1,0,.9,.3) backwards;
+// }
 
 // ANCHOR RESTAURANTS
 #anchor-restaurants{
@@ -19,49 +18,16 @@ main{
     visibility: hidden;
 }
 
-// SEARCH FORM
-.search-form{
-    height: 6rem;
-    background: $color-tertiary-light;   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.8rem;
-    & input{
-        width: 17.5rem;
-        background: $color-tertiary-light;
-        font-weight: 700;
-        &::placeholder{
-            color: black;
-        }
-        border-style: hidden;
-        &:focus{
-            outline: none;
-            font-weight: 700;
-        }
-    }
-    & label{
-        padding: 0 2rem;
-    }
-}
-
 // SECTION SITE DESCRIPTION
 .background-style{
-    @include standard-padding($color-tertiary-lighter);
+    @include background($color-tertiary-lighter);
 }
 
 .site-description{
-    &__button{
-        justify-content: center;
-        @include tablet{
-            width: 30rem;
-            font-size: 2rem;
-        }
-    }
     &__background{
         text-align: center;
-        display: flex;
-        flex-direction: column;
+        @include background($color-tertiary-lighter);
+        @include standard-flexbox(column);
         & h1 + p{
             font-size: 1.9rem;
             @include mobile-s{
@@ -73,14 +39,11 @@ main{
 
 // SECTION OPERATION
 .operation{
-    @include standard-padding;
+    @include background;
     display: flex;
     flex-direction: column;
-    @include tablet{
-        align-items: center;
-    }
     @include tablet-s{
-    align-items: center;
+        align-items: center;
     }
     @include desktop{
         padding: 5rem 10%;
@@ -164,7 +127,7 @@ main{
 
 // SECTION RESTAURANTS
 .restaurants{
-    @include standard-padding($color-tertiary-lighter);
+    @include background($color-tertiary-lighter);
     @include mobile-s{
         padding-bottom: 2rem;
     }
@@ -176,5 +139,15 @@ main{
     }
     @include desktop-hd{
         padding: 5rem 5%;
+    }
+}
+
+.cards-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 3rem;
+    @include tablet{
+        flex-flow: row wrap;
     }
 }
