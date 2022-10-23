@@ -6,6 +6,7 @@ main{
     @include main-top-padding;   
 }
 
+// FADE-IN INDEX
 // .index-fade-in{
 //     animation: fade-in 250ms 2750ms cubic-bezier(1,0,.9,.3) backwards;
 // }
@@ -19,19 +20,15 @@ main{
 }
 
 // SECTION SITE DESCRIPTION
-.background-style{
-    @include background($color-tertiary-lighter);
-}
-
 .site-description{
     &__background{
         text-align: center;
         @include background($color-tertiary-lighter);
         @include standard-flexbox(column);
         & h1 + p{
-            font-size: 1.9rem;
+            font-size: 1.5rem;
             @include mobile-s{
-                font-size: 1.6rem
+                font-size: 1.4rem
             }
         }
     }
@@ -42,9 +39,7 @@ main{
     @include background;
     display: flex;
     flex-direction: column;
-    @include tablet-s{
-        align-items: center;
-    }
+    align-items: center;
     @include desktop{
         padding: 5rem 10%;
     }
@@ -53,6 +48,7 @@ main{
         padding: 5rem 5%;
     }   
     &__container{
+        width: 100%;
         @include tablet{
             width: 691px;
         }
@@ -68,59 +64,86 @@ main{
             width: unset;
         }
     }
-    &__button-container{
-        height: 28rem;
+}
+
+// OPERATION BUTTONS
+.button-container{
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-left: 1rem;
+    @include mobile{
+        max-width: 372.5px;
+    }
+    @include desktop-l{
+        flex-direction: row;
+        height: unset;
+    }
+    &__button{
+        @include standard-border;
+        @include standard-box-shadow;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top: 3rem;
-        padding-left: 1rem;
-        @include mobile{
-            max-width: 372.5px;
+        align-items: center;
+        background: $color-tertiary-lighter;
+        position: relative;
+        height: 7.5rem;
+        font-size: 1.3rem;
+        @include mobile-s{
+            height: 7rem;
         }
         @include desktop-l{
-            flex-direction: row;
-            height: unset;
-        }
-        &__button{
-            position: relative;
-            height: 7.5rem;
-            font-size: 1.3rem;
-            &:last-child{
-                background: $color-secondary-lighter;
-                & i{
-                    color: $color-primary;
-                }
+            width: 30%;
             }
-            @include mobile-s{
-            font-size: 1.2rem;
-            }
+        &:last-child{
+            background: $color-secondary-lighter;
             & i{
-                color: $color-tertiary-darker;
-                padding: 0 3rem;
-                font-size: 2rem;
-                @include mobile-s{
-                    padding: 0 2rem
-                }
-                @include tablet{
-                    font-size: 3rem;
-                }
-                @include desktop-l{
-                    font-size: 1.5rem;
-                }
+                color: $color-primary;
             }
-            & h2{
+        }
+        @include mobile-s{
+        font-size: 1.2rem;
+        }
+        & i{
+            color: $color-tertiary-darker;
+            padding: 0 2.5rem;
+            font-size: 2rem;
+            @include mobile-s{
+                padding: 0 2rem;
+            }
+            @include mobile{
+                font-size: 3rem;
+            }
+            @include tablet{
+                font-size: 3rem;
+            }
+            @include desktop-l{
                 font-size: 1.5rem;
-                @include tablet{
-                    font-size: 3rem;
-                }
-                @include desktop-l{
-                    font-size: 1.5rem
-                }
-                @include desktop-hd{
-                    font-size: 1.7rem;
-                }
             }
+        }
+        & h2{
+            font-size: 1.6rem;
+            @include mobile-s{
+                font-size: 1.5rem;
+            }
+            @include tablet{
+                font-size: 3rem;
+            }
+            @include desktop-l{
+                font-size: 1.5rem
+            }
+            @include desktop-hd{
+                font-size: 1.7rem;
+            }
+        }
+        &__number{
+            padding: .6rem 1rem;
+            border-radius: 2.5rem;
+            position: absolute;
+            left: -1.5rem;
+            background: $color-primary;
+            color: $color-white;
         }
     }
 }
@@ -142,6 +165,7 @@ main{
     }
 }
 
+// CARDS CONTAINER
 .cards-container{
     display: flex;
     justify-content: space-between;

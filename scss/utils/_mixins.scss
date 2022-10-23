@@ -5,7 +5,7 @@
     }
 }
 @mixin mobile {
-    @media screen and (max-width: map-get($breakpoints, mobile)){
+    @media screen and (max-width: map-get($breakpoints, mobile-l)){
         @content;
     }
 }

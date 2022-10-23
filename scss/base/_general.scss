@@ -1,5 +1,8 @@
 html{
-    font-size: 10px;
+    font-size: 12px;
+    @include mobile-s{
+        font-size: 11px;
+    }
     @include tablet{
         font-size: 14px;
     }
@@ -41,7 +44,10 @@ a{
 
 h1{
     margin: 0;
-    font-size: 3rem;
+    font-size: 2.8rem;
+    @include mobile-s{
+        font-size: 2.6rem;
+    }
 }
 
 h2{

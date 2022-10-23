@@ -29,7 +29,6 @@ $box-shadow: (
 // BREAKPOINTS
 $breakpoints: (
     mobile-s: 320px,
-    tablet-s: 426px,
     mobile: 767px,
     tablet: 768px,
     desktop-s: 1024px,
@@ -42,6 +41,7 @@ $breakpoints: (
 
 // CHECKBOX-ANIM WIDTH
 $chk-wid: 8rem;
+$chk-wid-mob-s: 5rem;
 
 // ANIMATION
 $anim-dur: 10ms;

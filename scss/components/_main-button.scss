@@ -6,11 +6,15 @@
     color: $color-white;
     border-radius: 5rem;
     border-style: none;
-    font-size: 2rem;
+    font-size: 1.6rem;
     white-space: nowrap;
     box-sizing: content-box;
-    padding: 2rem 3rem;
+    padding: 1.6rem 2.5rem;
     min-width: 20%;
+    z-index: 1;
+    @include mobile-s{
+        font-size: 1.5rem;
+    }
     &::after{
         content: "";
         position: absolute;
@@ -30,8 +34,13 @@
         &::after{
             opacity: 1;
         }
+        }
+    &:active{
+        &::after{
+            opacity: 1;
+        }    
     }
-    &-container{
+    &__container{
         display: flex;
         justify-content: center;
         margin-top: 2.5rem;

@@ -3,6 +3,7 @@ main{
 }
 
 .menu{
+    @include background($color-tertiary-lighter);
     position: relative;
     top: -5rem;
     padding-bottom: 0;
@@ -68,6 +69,7 @@ main{
     }
     &__title{
         font-family: shrikhand, roboto, sans-serif;
+        font-size: 2.4rem;
         display: flex;
         justify-content: space-between;
         @include tablet{
@@ -82,65 +84,76 @@ main{
             }
         }
     }
-}
-
-.menu-form{
-    &__dish-type{
-        border-style: none;
-        padding: 2rem 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        @include desktop-s{
-            width: 47.5%;
-        }
-        @include desktop-l{
-            width: 30%;
-        }
-        &:last-child{
-            @include desktop-s{
-                padding-top: 0;
-            }
-            @include desktop-l{
-                padding-top: 2rem;
-            }
-        }
-        &__title{
-            font-size: 2rem;
-            text-transform: uppercase;
-            @include desktop-l{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    }
-    &__title-border{
-        height: 5px;
-        width: 6rem;
-        margin: .5rem 0 2rem;
-        background-color: $color-tertiary;
-    }
-}
-
-.dish{
-    margin-bottom: 2rem;
-    overflow: hidden;
-    animation: fade-in 2s backwards;
-    @for $i from 2 through 4 {
-        &--#{$i}{
-            animation-delay: $anim-delay * $i;
-        }
-    }
-    &__type{
+    &__body{
         @include desktop-s{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
     }
+}
+
+.dish-type{
+    border-style: none;
+    padding: 2rem 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    @include desktop-s{
+        width: 47.5%;
+    }
+    @include desktop-l{
+        width: 30%;
+    }
+    &:last-child{
+        @include desktop-s{
+            padding-top: 0;
+        }
+        @include desktop-l{
+            padding-top: 2rem;
+        }
+    }
+    &__title{
+        font-size: 2rem;
+        text-transform: uppercase;
+        @include mobile-s{
+            font-size: 1.5rem;
+        }
+        @include desktop-l{
+            display: flex;
+            flex-direction: column;
+            align-items: center;                         
+        }
+        &__border{
+            height: 5px;
+            width: 6rem;
+            margin: .5rem 0 2rem;
+            background-color: $color-tertiary;
+            @include mobile-s{
+                width: 4.8rem
+            }
+        }
+    }       
+}
+
+.dish{
+    @include standard-border;
+    @include standard-box-shadow;
+    display: flex;
+    align-items: center;
+    background: $color-white;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    animation: fade-in 2s backwards;
+    @include mobile-s{
+        border-radius: 1.5rem;
+    }
+    @for $i from 2 through 4 {
+        &--#{$i}{
+            animation-delay: $anim-delay * $i;
+        }
+    }
     &__label{
-        height: 9rem;
         display: flex;
         width: 100%;
         font-size: 2.3rem;
@@ -149,18 +162,21 @@ main{
             margin: 0;
         }
         &:hover{
-            & .checkbox__container{
+            & .dish__checkbox-container{
                 transform: translateX(-100%);
-                & .checkbox__check{
+                & .dish__check{
                 animation: rotate-check 200ms 120ms both;
                 }
             }
             & .dish__textbox{
                 & > .dish__description{
-                width: calc(100% - $chk-wid*2);
+                    width: calc(100% - $chk-wid*2);
+                    @include mobile-s{
+                        width: calc(100% - $chk-wid-mob-s*2);
+                    }
                 }
                 & > .dish__price{
-                transform: translateX(-100%);
+                    transform: translateX(-100%);
                 }
             }
         }
@@ -168,9 +184,13 @@ main{
     &__textbox{
         display: flex;
         justify-content: space-between;
+        align-items: flex-end;
         padding: 1.5rem 0 1.5rem 1.5rem;
         width: 100%;
         height: 100%;
+        @include mobile-s{
+            font-size: 1rem;
+        }
         & p, h3{
             margin: 0;
             overflow: hidden;
@@ -188,34 +208,47 @@ main{
         width: calc(100% - $chk-wid);
         transition: width 200ms 20ms;
         height: 100%;
+        @include mobile-s{
+            width: calc(100% - $chk-wid-mob-s);
+        }
     }
     &__price{
+        font-size: 1.4em;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
         font-weight: 600;
-        height: 100%;
         transition: transform 200ms 30ms;
-        width: 8rem;
-    }
-}
-
-.checkbox{
-    position: absolute;
-    left: 33.3%;
-    top: 33.3%;
-    background-color: $color-white;
-    width: calc($chk-wid*0.33);
-    height: calc($chk-wid*0.33);
-    border-radius: 50%;
-    &__container{
-        background-color: $color-tertiary;
         width: $chk-wid;
-        height: 100%;
+        @include mobile-s{  
+            width:$chk-wid-mob-s
+        }
+    }
+    &__checkbox{
         position: absolute;
-        right: -$chk-wid;
-        transition: transform 300ms;
+        left: 33.3%;
+        top: 33.3%;
+        background-color: $color-white;
+        width: calc($chk-wid*0.33);
+        height: calc($chk-wid*0.33);
+        border-radius: 50%;
+        @include mobile-s{
+            width: calc($chk-wid-mob-s*0.33);
+            height: calc($chk-wid-mob-s*0.33);
+        }
+        &-container{
+            background-color: $color-tertiary;
+            width: $chk-wid;
+            height: 100%;
+            position: absolute;
+            right: -$chk-wid;
+            transition: transform 300ms;
+            @include mobile-s{
+                right: -$chk-wid-mob-s;
+                width: $chk-wid-mob-s;
+            }
+        }
     }
     &__check{
         position: absolute;
@@ -224,7 +257,11 @@ main{
         width: 50%;
         height: 30%;
         border-bottom: $color-tertiary solid .4rem;
-        border-left:  $color-tertiary solid .4rem;;
+        border-left:  $color-tertiary solid .4rem;
         transform: rotate(-45deg);
+        @include mobile-s{
+            border-bottom: $color-tertiary solid .3rem;
+            border-left:  $color-tertiary solid .3rem;
+        }
     }
 }

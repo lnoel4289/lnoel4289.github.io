@@ -1,7 +1,7 @@
 .favorite{
     display:flex;
     align-items:center;
-    font-size: 2em;
+    font-size: 3rem;
     @include tablet{
         font-size: 3rem;
     }
