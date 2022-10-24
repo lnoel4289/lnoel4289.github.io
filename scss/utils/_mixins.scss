@@ -52,18 +52,27 @@
 
 // main TOP PADDING
 @mixin main-top-padding{
-    padding-top: 65px;
+    padding-top: 60px;
+    @include mobile-s{
+        padding-top: 55px;
+    }
     @include tablet{
-        padding-top: 91px;
+        padding-top: 70px;
+    }
+    @include desktop{
+        padding-top: 95px;
     }
     @include desktop-l{
-        padding-top: 97.5px;
+        padding-top: 75px;
+    }
+    @include desktop-hd{
+        padding-top: 80px;
     }
     @include desktop-xl{
-        padding-top: 143px;
+        padding-top: 110px;
     }
     @include desktop-uhd{
-        padding-top: 195px;
+        padding-top: 150px;
     }
 }
 

@@ -40,8 +40,12 @@ $breakpoints: (
 );
 
 // CHECKBOX-ANIM WIDTH
-$chk-wid: 5rem;
+$chk-wid: 5.5rem;
 $chk-wid-mob-s: 5rem;
+$map: (
+    mobile-s: 5rem,
+    mobile: 5.5rem
+);
 
 // ANIMATION
 $anim-dur: 10ms;

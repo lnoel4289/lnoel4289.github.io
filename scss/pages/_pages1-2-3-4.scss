@@ -1,7 +1,3 @@
-main{
-    background-color: $color-tertiary-lighter;
-}
-
 .menu{
     @include background($color-tertiary-lighter);
     position: relative;
@@ -13,9 +9,6 @@ main{
         top: unset;
         border-radius: unset;
         padding: 2.5rem 5% 5rem;
-    }
-    @include desktop-s{
-        padding: 2.5rem 10% 5rem;
     }
     @include desktop-l{
         padding: 2.5rem 5% 5rem;
@@ -77,6 +70,9 @@ main{
         }
         @include tablet{
             justify-content: unset;
+        }
+        @include desktop-hd{
+            font-size: 3rem;
         }
         &-container{
             display: flex;
@@ -180,7 +176,7 @@ main{
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        padding: 1rem 0 1rem 1.5rem;
+        padding: 1rem 0 1rem 1rem;
         width: 100%;
         height: 100%;
         @include mobile-s{
@@ -188,6 +184,21 @@ main{
         }
         @include mobile-l{
             font-size: 1.3rem;
+        }
+        @include tablet{
+            font-size: 1.5rem;
+        }
+        @include desktop-s{
+            font-size: 1.3rem;
+        }
+        @include desktop-l{
+            font-size: 1.1rem;
+        }
+        @include desktop-hd{
+            font-size: 1.3rem;
+        }
+        @include desktop-uhd{
+            font-size: 1.4rem;
         }
         & h3,p{
             margin: .3rem;
@@ -215,7 +226,7 @@ main{
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        align-items: center;
+        align-items: flex-start;
         font-weight: 600;
         transition: transform 200ms 30ms;
         width: $chk-wid;
