@@ -67,7 +67,7 @@ html {
 body {
   font-family: "roboto", sans-serif;
 }
-@media screen and (max-width: ) {
+@media screen and (min-width: 425px) {
   body {
     font-size: 1.6rem;
   }
@@ -97,6 +97,11 @@ h1 {
     font-size: 2.6rem;
   }
 }
+@media screen and (min-width: 425px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
 
 h2 {
   margin: 0;
@@ -105,7 +110,7 @@ h2 {
 .favorite {
   display: flex;
   align-items: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 @media screen and (min-width: 768px) {
   .favorite {
@@ -257,28 +262,36 @@ header {
   background: white;
   position: fixed;
   width: 100%;
-  height: 6.5rem;
+  height: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   box-shadow: 0.1rem 0.1rem 0.9rem 0.1rem #99E2D0;
   z-index: 99;
 }
 
 .logo {
-  width: 18rem;
+  width: 13rem;
   margin: 2rem;
 }
 
 .arrow {
+  font-size: 1.7rem;
+  top: 0.4rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-size: 2.5rem;
   height: 100%;
   width: 5rem;
   position: absolute;
   left: 5%;
+}
+@media screen and (max-width: 320px) {
+  .arrow {
+    font-size: 1.5rem;
+    top: 0.4rem;
+  }
 }
 @media screen and (min-width: 1024px) {
   .arrow {
@@ -339,15 +352,15 @@ header {
   align-items: center;
   position: absolute;
   z-index: 1;
-  top: 2rem;
-  right: 2rem;
-  background: #e8f9f5;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: #c1ede2;
   padding: 0 1rem;
   color: #32b091;
   font-weight: 600;
-  border: solid 0.3rem #e8f9f5;
+  border: solid 0.1rem #e8f9f5;
   border-radius: 0.3rem;
-  height: 3rem;
+  height: 2.5rem;
 }
 .card__textbox {
   font-size: 1.4rem;
@@ -378,7 +391,7 @@ header {
 }
 
 footer {
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -539,7 +552,7 @@ main {
     margin-bottom: 2rem;
   }
 }
-@media screen and (min-width: ) and (max-width: 767px) {
+@media screen and (min-width: ) and (max-width: ) {
   .operation__container {
     width: 372.5px;
   }
@@ -558,7 +571,7 @@ main {
   margin-top: 3rem;
   padding-left: 1rem;
 }
-@media screen and (max-width: ) {
+@media screen and (min-width: 425px) {
   .button-container {
     max-width: 372.5px;
   }
@@ -610,9 +623,9 @@ main {
     padding: 0 2rem;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (min-width: 425px) {
   .button-container__button i {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -785,6 +798,11 @@ main {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 320px) {
+  .menu__title {
+    font-size: 2.2rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .menu__title {
     justify-content: unset;
@@ -836,13 +854,8 @@ main {
   }
 }
 .dish-type__title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
-}
-@media screen and (max-width: 320px) {
-  .dish-type__title {
-    font-size: 1.5rem;
-  }
 }
 @media screen and (min-width: 1600px) {
   .dish-type__title {
@@ -853,18 +866,13 @@ main {
 }
 .dish-type__title__border {
   height: 5px;
-  width: 6rem;
+  width: 4.8rem;
   margin: 0.5rem 0 2rem;
   background-color: #99E2D0;
 }
-@media screen and (max-width: 320px) {
-  .dish-type__title__border {
-    width: 4.8rem;
-  }
-}
 
 .dish {
-  border-radius: 2.5rem;
+  border-radius: 1.5rem;
   box-shadow: 0.1rem 0.1rem 0.9rem 0.1rem #99E2D0;
   display: flex;
   align-items: center;
@@ -872,11 +880,6 @@ main {
   margin-bottom: 2rem;
   overflow: hidden;
   animation: fade-in 2s backwards;
-}
-@media screen and (max-width: 320px) {
-  .dish {
-    border-radius: 1.5rem;
-  }
 }
 .dish--2 {
   animation-delay: 200ms;
@@ -903,7 +906,7 @@ main {
   animation: rotate-check 200ms 120ms both;
 }
 .dish__label:hover .dish__textbox > .dish__description {
-  width: calc(100% - 16rem);
+  width: calc(100% - 10rem);
 }
 @media screen and (max-width: 320px) {
   .dish__label:hover .dish__textbox > .dish__description {
@@ -914,10 +917,11 @@ main {
   transform: translateX(-100%);
 }
 .dish__textbox {
+  font-size: 1.1rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 1.5rem 0 1.5rem 1.5rem;
+  padding: 1rem 0 1rem 1.5rem;
   width: 100%;
   height: 100%;
 }
@@ -926,8 +930,13 @@ main {
     font-size: 1rem;
   }
 }
-.dish__textbox p, .dish__textbox h3 {
-  margin: 0;
+@media screen and (min-width: 425px) {
+  .dish__textbox {
+    font-size: 1.3rem;
+  }
+}
+.dish__textbox h3, .dish__textbox p {
+  margin: 0.3rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -939,7 +948,7 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: calc(100% - 8rem);
+  width: calc(100% - 5rem);
   transition: width 200ms 20ms;
   height: 100%;
 }
@@ -949,14 +958,14 @@ main {
   }
 }
 .dish__price {
-  font-size: 1.4em;
+  font-size: 1.2em;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   font-weight: 600;
   transition: transform 200ms 30ms;
-  width: 8rem;
+  width: 5rem;
 }
 @media screen and (max-width: 320px) {
   .dish__price {
@@ -968,8 +977,8 @@ main {
   left: 33.3%;
   top: 33.3%;
   background-color: white;
-  width: 2.64rem;
-  height: 2.64rem;
+  width: 1.65rem;
+  height: 1.65rem;
   border-radius: 50%;
 }
 @media screen and (max-width: 320px) {
@@ -980,10 +989,10 @@ main {
 }
 .dish__checkbox-container {
   background-color: #99E2D0;
-  width: 8rem;
+  width: 5rem;
   height: 100%;
   position: absolute;
-  right: -8rem;
+  right: -5rem;
   transition: transform 300ms;
 }
 @media screen and (max-width: 320px) {
@@ -998,15 +1007,9 @@ main {
   left: 25%;
   width: 50%;
   height: 30%;
-  border-bottom: #99E2D0 solid 0.4rem;
-  border-left: #99E2D0 solid 0.4rem;
+  border-bottom: #99E2D0 solid 0.3rem;
+  border-left: #99E2D0 solid 0.3rem;
   transform: rotate(-45deg);
-}
-@media screen and (max-width: 320px) {
-  .dish__check {
-    border-bottom: #99E2D0 solid 0.3rem;
-    border-left: #99E2D0 solid 0.3rem;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

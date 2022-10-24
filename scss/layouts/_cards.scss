@@ -36,15 +36,15 @@
             align-items: center;
             position: absolute;
             z-index: 1;
-            top: 2rem;
-            right: 2rem;
-            background: $color-tertiary_lighter;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: $color-tertiary_light;
             padding: 0 1rem;
             color: $color-tertiary-dark;
             font-weight: 600;
-            border: solid .3rem $color-tertiary-lighter;
+            border: solid .1rem $color-tertiary-lighter;
             border-radius: .3rem;
-            height: 3rem;
+            height: 2.5rem;
         }
     }
     &__textbox{

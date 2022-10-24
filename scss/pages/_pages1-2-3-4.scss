@@ -72,6 +72,9 @@ main{
         font-size: 2.4rem;
         display: flex;
         justify-content: space-between;
+        @include mobile-s{
+            font-size: 2.2rem;
+        }
         @include tablet{
             justify-content: unset;
         }
@@ -114,11 +117,8 @@ main{
         }
     }
     &__title{
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-transform: uppercase;
-        @include mobile-s{
-            font-size: 1.5rem;
-        }
         @include desktop-l{
             display: flex;
             flex-direction: column;
@@ -126,18 +126,15 @@ main{
         }
         &__border{
             height: 5px;
-            width: 6rem;
+            width: 4.8rem;
             margin: .5rem 0 2rem;
             background-color: $color-tertiary;
-            @include mobile-s{
-                width: 4.8rem
-            }
         }
     }       
 }
 
 .dish{
-    @include standard-border;
+    border-radius: 1.5rem;
     @include standard-box-shadow;
     display: flex;
     align-items: center;
@@ -145,9 +142,6 @@ main{
     margin-bottom: 2rem;
     overflow: hidden;
     animation: fade-in 2s backwards;
-    @include mobile-s{
-        border-radius: 1.5rem;
-    }
     @for $i from 2 through 4 {
         &--#{$i}{
             animation-delay: $anim-delay * $i;
@@ -182,17 +176,21 @@ main{
         }
     }
     &__textbox{
+        font-size: 1.1rem;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        padding: 1.5rem 0 1.5rem 1.5rem;
+        padding: 1rem 0 1rem 1.5rem;
         width: 100%;
         height: 100%;
         @include mobile-s{
             font-size: 1rem;
         }
-        & p, h3{
-            margin: 0;
+        @include mobile-l{
+            font-size: 1.3rem;
+        }
+        & h3,p{
+            margin: .3rem;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -213,7 +211,7 @@ main{
         }
     }
     &__price{
-        font-size: 1.4em;
+        font-size: 1.2em;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -256,12 +254,8 @@ main{
         left: 25%;
         width: 50%;
         height: 30%;
-        border-bottom: $color-tertiary solid .4rem;
-        border-left:  $color-tertiary solid .4rem;
+        border-bottom: $color-tertiary solid .3rem;
+        border-left:  $color-tertiary solid .3rem;
         transform: rotate(-45deg);
-        @include mobile-s{
-            border-bottom: $color-tertiary solid .3rem;
-            border-left:  $color-tertiary solid .3rem;
-        }
     }
 }

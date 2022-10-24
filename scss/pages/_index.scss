@@ -74,7 +74,7 @@ main{
     justify-content: space-between;
     margin-top: 3rem;
     padding-left: 1rem;
-    @include mobile{
+    @include mobile-l{
         max-width: 372.5px;
     }
     @include desktop-l{
@@ -112,8 +112,8 @@ main{
             @include mobile-s{
                 padding: 0 2rem;
             }
-            @include mobile{
-                font-size: 3rem;
+            @include mobile-l{
+                font-size: 2rem;
             }
             @include tablet{
                 font-size: 3rem;
