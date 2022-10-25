@@ -28,6 +28,9 @@ footer{
         @include tablet{
             font-size: 3rem;
         margin: 2rem 0 3rem;}
+        @include desktop-s{
+            margin-bottom: 1.5rem;
+        }
         @include desktop-l{
             height: 6rem;
         }

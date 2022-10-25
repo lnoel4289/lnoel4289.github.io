@@ -484,6 +484,11 @@ footer h3 {
     margin: 2rem 0 3rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  footer h3 {
+    margin-bottom: 1.5rem;
+  }
+}
 @media screen and (min-width: 1600px) {
   footer h3 {
     height: 6rem;
