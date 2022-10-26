@@ -19,8 +19,7 @@
 <body>
     <!-- HEADER -->
     <header>
-        <img class="logo" src="images/logo/ohmyfood.png" alt="logo" 
-        srcset="images/logo/ohmyfood.png 380w">
+        <img class="logo" src="images/logo/ohmyfood.svg" alt="logo">
         <a class="arrow" href="index.html">
             <i class="fa-solid fa-arrow-left"></i>
         </a>
@@ -31,7 +30,8 @@
         <div class="menu__image">
             <img src="images/restaurants/500px/stil-u2Lp8tXIcjw-unsplash-500px.jpg" 
             alt="Plats sur une table"
-            srcset="images/restaurants/1200px/stil-u2Lp8tXIcjw-unsplash-1200px.jpg 1200w">
+            srcset="images/restaurants/1200px/stil-u2Lp8tXIcjw-unsplash-1200px.jpg 1200w" 
+            sizes="(max-width: 767px) 100vw">
         </div>
         <article class="menu">
             <div class="menu__heading">
@@ -48,7 +48,13 @@
                     srcset="
                     images/restaurants/1200px/stil-u2Lp8tXIcjw-unsplash-1200px.jpg 1200w,
                     images/restaurants/2100px/stil-u2Lp8tXIcjw-unsplash-2100px.jpg 2100w,
-                    images/restaurants/uhd/stil-u2Lp8tXIcjw-unsplash-3024px.jpg 3024w">
+                    images/restaurants/uhd/stil-u2Lp8tXIcjw-unsplash-3024px.jpg 3024w" 
+                    sizes="
+                    ((min-width: 768px) and (max-width: 1599px)) 90vw,
+                    ((min-width:1600px) and (max-width: 1599px)) 38vw,
+                    ((min-width:1600px) and (max-width: 1919px)) 42vw,
+                    (min-width:1920px) 53vw
+                    ">
                 </div>
             </div>
             <div class="menu__body">
