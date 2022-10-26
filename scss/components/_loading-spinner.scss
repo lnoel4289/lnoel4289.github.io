@@ -1,17 +1,16 @@
 .spinner{
-    width: 95vw;
-    height: 95vw;
+    width: 90vw;
+    height: 90vw;
     border-radius: 50%;
     background-color: transparent;
-    border: 3rem solid $color-primary-lighter;
-    border-top: $color-primary solid 3rem;
-    // border-bottom: $color-tertiary-light solid 3rem;
-    // border-right: $color-tertiary solid 3rem;
-    // border-left: $color-primary-light solid 3rem;
+    border: 6vw solid $color-tertiary-lighter;
+    border-left: $color-primary-lighter solid 6vw;
     animation: spinner linear 1s infinite;
     @include desktop-s{
-        width: 95vh;
-        height: 95vh;
+        width: 90vh;
+        height: 90vh;
+        border: 6vh solid $color-tertiary-lighter;
+        border-left: $color-primary-lighter solid 6vh;
     }
     &__container{
         z-index: 100;
@@ -23,10 +22,23 @@
         justify-content: center;
         align-items: center;
         animation: in-out 0s 2500ms both;
-    }
-    &__legend{
-        position: absolute;
-        top: 50%;
-        left: 50%;
+        &__legend{
+            text-align: center;
+            position: absolute;
+            &--shrikhand{
+                font-family: shrikhand, roboto, sans-serif;
+                font-size: 11vw;
+                @include desktop-s{
+                    font-size: 11vh;
+                }
+            }
+            &--roboto{
+                font-family: roboto, sans-serif;
+                font-size: 7vw;
+                @include desktop-s{
+                    font-size: 7vh;
+                }
+            }
+        }
     }
 }
