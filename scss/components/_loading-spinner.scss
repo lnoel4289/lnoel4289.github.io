@@ -8,7 +8,7 @@
     // border-bottom: $color-tertiary-light solid 3rem;
     // border-right: $color-tertiary solid 3rem;
     // border-left: $color-primary-light solid 3rem;
-    animation: spinner linear 1.5s infinite;
+    animation: spinner linear 1s infinite;
     @include desktop-s{
         width: 95vh;
         height: 95vh;
@@ -22,7 +22,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: in-out 0s 2s both;
+        animation: in-out 0s 2500ms both;
     }
     &__legend{
         position: absolute;
