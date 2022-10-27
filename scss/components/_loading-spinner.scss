@@ -3,14 +3,14 @@
     height: 90vw;
     border-radius: 50%;
     background-color: transparent;
-    border: 6vw solid $color-tertiary-light;
+    border: 6vw solid $color-primary-light;
     border-left: transparent solid 6vw;
     animation: spinner linear 1s infinite;
-    filter: blur(3px);
+    filter: blur(2px);
     @include desktop-s{
         width: 90vh;
         height: 90vh;
-        border: 6vh solid $color-tertiary-light;
+        border: 6vh solid $color-primary-light;
         border-left: transparent solid 6vh;
     }
     &__container{
@@ -36,6 +36,7 @@
             &--roboto{
                 font-family: roboto, sans-serif;
                 font-size: 7vw;
+                color: $color-tertiary-darker;
                 @include desktop-s{
                     font-size: 7vh;
                 }
