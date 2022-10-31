@@ -10,7 +10,7 @@ $color-primary-lighter: lighten($color-primary, 20);
 $color-secondary-lighter: lighten($color-secondary, 20);
 $color-secondary-dark: darken($color-secondary,15);
 
-$color-tertiary-dark: lighten($color-tertiary, 35);
+$color-tertiary-dark: lighten($color-tertiary, 40);
 $color-tertiary-darker: darken($color-tertiary, 20);
 $color-tertiary-light: lighten($color-tertiary, 35);
 $color-tertiary-lighter: lighten($color-tertiary, 45);
@@ -22,8 +22,8 @@ $color-gradient-heart: linear-gradient(to top,rgba(255, 121, 218, .7),rgba(147, 
 
 // BOX-SHADOWS
 $box-shadow: (
-    standard: .1rem .2rem .1rem .1rem $color-tertiary-light,
-    enhanced: .1rem .2rem .1rem .1rem $color-tertiary-light
+    standard: .1rem .2rem .1rem .1rem $color-tertiary-dark,
+    enhanced: .1rem .2rem .1rem .1rem $color-tertiary-dark
 );
 
 // BREAKPOINTS
