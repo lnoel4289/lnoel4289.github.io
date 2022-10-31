@@ -91,7 +91,7 @@
 }
 
 @mixin enhanced-box-shadow{
-    box-shadow: 0 .5rem .9rem .1rem darken($color-tertiary, 5);
+    box-shadow: 0 .5rem .9rem .1rem $color-tertiary-light;
 }
 
 @mixin standard-border {
