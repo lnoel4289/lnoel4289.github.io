@@ -6,7 +6,6 @@
     border: 6vw solid $color-tertiary-light;
     border-left: $color-primary-light solid 6vw;
     animation: spinner linear 1s infinite;
-    filter: blur(2px);
     @include desktop-s{
         width: 90vh;
         height: 90vh;
