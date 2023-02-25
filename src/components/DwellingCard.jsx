@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Dwelling = () => {
+const Dwelling = (props) => {
     return (
         <div>
             Dwelling
