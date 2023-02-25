@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
-const Dwelling = (props) => {
-    return (
-        <div>
-            Dwelling
-        </div>
-    );
+const DwellingCard = ({ dwelling }) => {
+  return <div>{dwelling.title}</div>;
 };
 
-export default Dwelling;
+export default DwellingCard;
