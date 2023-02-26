@@ -1,11 +1,19 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+import Error from "./Error";
 
-const Dwelling = () => {
-  return (
-    <div>
-      <h1>Fiche logement</h1>
-    </div>
-  );
+const Dwelling = ({ data }) => {
+  const { id } = useParams();
+  const dwelling = data.find((dat) => dat.id === id);
+  if (!dwelling) {
+    return (
+      <div>
+        <Error />
+      </div>
+    );
+  }
+
+  return <div>{dwelling.description}</div>;
 };
 
 export default Dwelling;

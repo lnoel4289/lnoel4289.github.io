@@ -1,11 +1,10 @@
-import dwellings from "../data/dwellings";
 import DwellingCard from "./DwellingCard";
 
-const Gallery = () => {
+const Gallery = ({ data }) => {
   return (
     <div>
       <h2>Gallery</h2>
-      {dwellings.map((dwelling) => (
+      {data.map((dwelling) => (
         <DwellingCard key={dwelling.id} dwelling={dwelling} />
       ))}
     </div>
