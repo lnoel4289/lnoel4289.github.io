@@ -13,7 +13,7 @@ const Dwelling = ({ data }) => {
     );
   }
 
-  return <div>{dwelling.description}</div>;
+  return <div>{dwelling.title}</div>;
 };
 
 export default Dwelling;
