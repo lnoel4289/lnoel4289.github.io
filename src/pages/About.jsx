@@ -1,11 +1,13 @@
 import React from "react";
 import Banner from "../components/Banner";
+import Dropdown from "../components/Dropdown";
 
 const About = () => {
   return (
     <div>
-      <h1>À propos</h1>
+      <h1>/About/</h1>
       <Banner />
+      <Dropdown />
     </div>
   );
 };

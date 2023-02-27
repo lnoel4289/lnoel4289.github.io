@@ -1,0 +1,23 @@
+.dwellingCard {
+  position: relative;
+  display: flex;
+  height: 34rem;
+  width: 34rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  margin-bottom: 5rem;
+
+  img {
+    height: 34rem;
+    width: 34rem;
+    object-fit: cover;
+  }
+
+  h2 {
+    position: absolute;
+    top: 26.8rem;
+    left: 2rem;
+    font-size: 1.8rem;
+    color: white;
+  }
+}

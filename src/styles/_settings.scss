@@ -1,0 +1,22 @@
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  margin: 4rem 10rem;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin mobile {
+  @media screen and (max-width: 767.9px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) and (max-width: 1023.9px) {
+    @content;
+  }
+}
