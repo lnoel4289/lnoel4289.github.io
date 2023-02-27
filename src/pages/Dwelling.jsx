@@ -7,9 +7,7 @@ const Dwelling = ({ data }) => {
   const dwelling = data.find((dat) => dat.id === id);
   if (!dwelling) {
     return (
-      <div>
-        <Error />
-      </div>
+      <Error />
     );
   }
 
