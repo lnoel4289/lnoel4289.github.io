@@ -1,10 +1,15 @@
 import React from "react";
 
-const Carousel = () => {
+const Carousel = ({ pictures, title }) => {
   return (
-    <div>
-      <h2>Carousel</h2>
-      photo photo...
+    <div className="carousel">
+      {pictures.map((picture, index) => (
+        <img
+          key={`${index}${picture}`}
+          src={`${picture}`}
+          alt={`${title} ${index + 1}`}
+        />
+      ))}
     </div>
   );
 };

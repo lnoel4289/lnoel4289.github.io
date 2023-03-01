@@ -15,10 +15,9 @@ const Dwelling = () => {
 
   return (
     <div>
-      <h1>{dwelling.title}</h1>
-      <Carousel />
-      <Dropdown />
+      <Carousel pictures={dwelling.pictures} title={dwelling.title} />
       <Rating rating={dwelling.rating} />
+      <Dropdown data={dwelling} />
     </div>
   );
 };

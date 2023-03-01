@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Dropdown = () => {
+const Dropdown = ({ data }) => {
     return (
         <div>
-            <h2>Dropdown</h2>
+            
         </div>
     );
 };
