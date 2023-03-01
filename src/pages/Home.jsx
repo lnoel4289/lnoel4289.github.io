@@ -1,11 +1,12 @@
 import Banner from "../components/Banner";
 import Gallery from "../components/Gallery";
+import dwellings from "../data/dwellings";
 
-const Home = ({ data }) => {
+const Home = () => {
   return (
     <div>
       <Banner />
-      <Gallery data={data} />
+      <Gallery dwellings={dwellings} />
     </div>
   );
 };

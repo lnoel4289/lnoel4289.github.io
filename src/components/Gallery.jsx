@@ -1,9 +1,9 @@
 import DwellingCard from "./DwellingCard";
 
-const Gallery = ({ data }) => {
+const Gallery = ({ dwellings }) => {
   return (
     <div className="gallery">
-      {data.map((dwelling) => (
+      {dwellings.map((dwelling) => (
         <DwellingCard key={dwelling.id} dwelling={dwelling} />
       ))}
     </div>

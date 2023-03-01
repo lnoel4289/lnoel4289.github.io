@@ -4,10 +4,11 @@ import Carousel from "../components/Carousel";
 import Dropdown from "../components/Dropdown";
 import Rating from "../components/Rating";
 import Error from "./Error";
+import dwellings from "../data/dwellings";
 
-const Dwelling = ({ data }) => {
+const Dwelling = () => {
   const { id } = useParams();
-  const dwelling = data.find((dat) => dat.id === id);
+  const dwelling = dwellings.find((elem) => elem.id === id);
   if (!dwelling) {
     return <Error />;
   }
