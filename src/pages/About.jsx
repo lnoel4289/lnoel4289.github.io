@@ -1,13 +1,21 @@
 import React from "react";
 import Banner from "../components/Banner";
 import Dropdown from "../components/Dropdown";
+import ethics from "../data/ethics.json";
 
 const About = () => {
   return (
     <div>
-      <h1>/About/</h1>
       <Banner />
-      <Dropdown />
+      {ethics.map((eth, index) => {
+        return (
+          <Dropdown
+            key={`${index}${Object.values(eth).slice(0, 15)}`}
+            title={Object.keys(eth)}
+            content={Object.values(eth)}
+          />
+        );
+      })}
     </div>
   );
 };
