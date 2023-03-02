@@ -10,7 +10,7 @@ const About = () => {
       {ethics.map((eth, index) => {
         return (
           <Dropdown
-            key={`${index}${Object.values(eth).slice(0, 15)}`}
+            key={`${index}`+`${Object.values(eth)}`.split(" ").join("").slice(7, 22)}
             title={Object.keys(eth)}
             content={Object.values(eth)}
           />
