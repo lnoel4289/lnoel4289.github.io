@@ -22,8 +22,8 @@ const Dwelling = () => {
         title="Équipements"
         content={
           <ul>
-            {dwelling.equipments.map((eq) => {
-              return <li>{eq}</li>;
+            {dwelling.equipments.map((eq, index) => {
+              return <li key={`${index}${eq}`}>{eq}</li>;
             })}
           </ul>
         }
