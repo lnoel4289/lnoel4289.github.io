@@ -6,7 +6,7 @@ import ethics from "../data/ethics.json";
 const About = () => {
   return (
     <div>
-      <Banner />
+      <Banner imageURL="./kalen-emsley-Bkci_8qcdvQ-unsplash 2.jpg" altTxt="Un paysage alpin" />
       {ethics.map((eth, index) => {
         return (
           <Dropdown

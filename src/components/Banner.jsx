@@ -1,9 +1,14 @@
 import React from "react";
 
-const Banner = () => {
+const Banner = ({ heading, imageURL, altTxt }) => {
   return (
-    <div>
-      <h1>BANNER</h1>
+    <div className="banner">
+      <div className="imgContainer">
+        <img src={imageURL} alt={altTxt} />
+      </div>
+      <div className="headingContainer">
+        <h1>{heading}</h1>
+      </div>
     </div>
   );
 };

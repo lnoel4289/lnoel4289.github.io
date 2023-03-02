@@ -5,7 +5,7 @@ import dwellings from "../data/dwellings";
 const Home = () => {
   return (
     <div>
-      <Banner />
+      <Banner heading="Chez vous, partout et ailleurs" imageURL="./IMG.jpg" altTxt="Une calanque" />
       <Gallery dwellings={dwellings} />
     </div>
   );
