@@ -17,7 +17,17 @@ const Dwelling = () => {
     <div>
       <Carousel pictures={dwelling.pictures} title={dwelling.title} />
       <Rating rating={dwelling.rating} />
-      <Dropdown data={dwelling} />
+      <Dropdown title="Description" content={<p>{dwelling.description}</p>} />
+      <Dropdown
+        title="Équipements"
+        content={
+          <ul>
+            {dwelling.equipments.map((eq) => {
+              return <li>{eq}</li>;
+            })}
+          </ul>
+        }
+      />
     </div>
   );
 };

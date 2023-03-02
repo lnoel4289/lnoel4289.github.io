@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
 
-const Dropdown = ({ data }) => {
-    return (
-        <div>
-            
-        </div>
-    );
+const Dropdown = ({ title, content }) => {
+  return (
+    <div>
+      <h2>{title}</h2>
+      {content}
+    </div>
+  );
 };
 
 export default Dropdown;
