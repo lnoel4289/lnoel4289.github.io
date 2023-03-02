@@ -2,7 +2,6 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import Carousel from "../components/Carousel";
 import Dropdown from "../components/Dropdown";
-import Rating from "../components/Rating";
 import Error from "./Error";
 import dwellings from "../data/dwellings";
 
@@ -16,7 +15,6 @@ const Dwelling = () => {
   return (
     <div>
       <Carousel pictures={dwelling.pictures} title={dwelling.title} />
-      <Rating rating={dwelling.rating} />
       <Dropdown title="Description" content={<p>{dwelling.description}</p>} />
       <Dropdown
         title="Équipements"
