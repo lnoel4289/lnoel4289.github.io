@@ -4,6 +4,7 @@ import Carousel from "../components/Carousel";
 import Dropdown from "../components/Dropdown";
 import Error from "./Error";
 import dwellings from "../data/dwellings";
+import Presentation from "../layouts/Presentation";
 
 const Dwelling = () => {
   const { id } = useParams();
@@ -15,6 +16,7 @@ const Dwelling = () => {
   return (
     <div>
       <Carousel pictures={dwelling.pictures} title={dwelling.title} />
+      <Presentation title={dwelling.title} location={dwelling.location} />
       <Dropdown title="Description" content={<p>{dwelling.description}</p>} />
       <Dropdown
         title="Équipements"
