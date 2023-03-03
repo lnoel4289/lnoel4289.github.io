@@ -1,21 +1,14 @@
 import React from "react";
 import Banner from "../components/Banner";
-import Dropdown from "../components/Dropdown";
+
 import ethics from "../data/ethics.json";
+import Dropdowns from "../layouts/Dropdowns";
 
 const About = () => {
   return (
     <div>
       <Banner imageURL="./kalen-emsley-Bkci_8qcdvQ-unsplash 2.jpg" altTxt="Un paysage alpin" />
-      {ethics.map((eth, index) => {
-        return (
-          <Dropdown
-            key={`${index}`+`${Object.values(eth)}`.split(" ").join("").slice(7, 22)}
-            title={Object.keys(eth)}
-            content={Object.values(eth)}
-          />
-        );
-      })}
+      <Dropdowns data={ethics} />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
+import Dropdown from "../components/Dropdown";
 
-const Dropdowns = (data) => {
+const Dropdowns = ({ data }) => {
   return (
     <div>
       {data.map((dat, index) => {
