@@ -1,19 +1,11 @@
 import React, { useState } from "react";
 
 const Carousel = ({ pictures, title }) => {
-
-
-  const [state, setState] = useState();
+  const [state, setState] = useState(0);
 
   return (
     <div className="carousel">
-      {pictures.map((picture, index) => (
-        <img
-          key={`${index}${picture}`}
-          src={`${picture}`}
-          alt={`${title} ${index + 1}`}
-        />
-      ))}
+      {<img src={`${pictures[state]}`} alt={`${title} ${state + 1}`} />}
     </div>
   );
 };
