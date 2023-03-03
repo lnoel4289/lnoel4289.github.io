@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Carousel = ({ pictures, title }) => {
+
+
+  const [state, setState] = useState();
+
   return (
     <div className="carousel">
       {pictures.map((picture, index) => (
