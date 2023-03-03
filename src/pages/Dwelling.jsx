@@ -16,7 +16,7 @@ const Dwelling = () => {
   return (
     <div>
       <Carousel pictures={dwelling.pictures} title={dwelling.title} />
-      <Presentation title={dwelling.title} location={dwelling.location} />
+      <Presentation title={dwelling.title} location={dwelling.location} tags={dwelling.tags} rating={dwelling.rating} host={dwelling.host} />
       <Dropdown title="Description" content={<p>{dwelling.description}</p>} />
       <Dropdown
         title="Équipements"

@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const Rating = ({ rating }) => {
-    return (
-        <div>
-            {rating}
-        </div>
-    );
+  return <div>{rating}</div>;
 };
 
 export default Rating;
