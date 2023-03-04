@@ -5,14 +5,14 @@ import { ReactComponent as Logo } from "../assets/images/logo.svg";
 const Header = () => {
   return (
     <header>
-      <Logo alt="Logo Kaza" />
+      <Logo className="logo" alt="Logo Kaza" />
       <nav>
         <ul>
           <li>
             <NavLink to="/">Accueil</NavLink>
           </li>
           <li>
-            <NavLink to="/about">À propos</NavLink>
+            <NavLink to="/about">A propos</NavLink>
           </li>
         </ul>
       </nav>

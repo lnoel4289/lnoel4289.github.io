@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Error from "./pages/Error";
 import Home from "./pages/Home";
 import Dwelling from "./pages/Dwelling";
+import "./styles/normalize.css";
 import "./styles/index.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
