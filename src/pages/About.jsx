@@ -6,7 +6,7 @@ import Dropdowns from "../layouts/Dropdowns";
 
 const About = () => {
   return (
-    <div>
+    <div className="about">
       <Banner imageURL="./kalen-emsley-Bkci_8qcdvQ-unsplash 2.jpg" altTxt="Un paysage alpin" />
       <Dropdowns data={ethics} />
     </div>
