@@ -1,21 +1,18 @@
 .dwellingCard {
   position: relative;
-  display: flex;
-  height: 34rem;
-  width: 34rem;
+  height: 25.5rem;
   overflow: hidden;
   border-radius: 1rem;
   margin-bottom: 2rem;
 
   img {
-    height: 34rem;
-    width: 34rem;
+    height: 25.5rem;
     object-fit: cover;
   }
 
   h2 {
     position: absolute;
-    top: 26.8rem;
+    top: 18.8rem;
     left: 2rem;
     font-size: 1.8rem;
     color: $color-secondary;
