@@ -2,6 +2,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2rem;
 
   .logo {
     width: 14.5rem;
@@ -11,12 +12,12 @@ header {
     width: 14rem;
     height: 1.7rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
   ul {
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
   a {
     font-size: 1.2rem;
