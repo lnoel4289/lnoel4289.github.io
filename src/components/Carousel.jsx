@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
 const Carousel = ({ pictures, title }) => {
-  const [state, setState] = useState(0);
+  const [picture, setPicture] = useState(0);
 
   return (
     <div className="carousel">
-      {<img src={`${pictures[state]}`} alt={`${title} ${state + 1}`} />}
+      {<img src={`${pictures[picture]}`} alt={`${title} ${picture + 1}`} />}
     </div>
   );
 };

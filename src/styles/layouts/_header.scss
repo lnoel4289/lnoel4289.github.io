@@ -1,11 +1,6 @@
 header {
   display: flex;
   justify-content: space-between;
-  .logo {
-    @include mobile {
-      
-    }
-  }
   nav {
     width: 30.9rem;
     align-self: center;
