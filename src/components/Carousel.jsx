@@ -3,7 +3,6 @@ import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 
 const Carousel = ({ pictures, title }) => {
   const [picture, setPicture] = useState(0);
-  const styleArrows = { width: "100%", height: "100%", fill: "white" };
 
   return (
     <div className="carousel">
@@ -19,7 +18,7 @@ const Carousel = ({ pictures, title }) => {
                 : setPicture(picture - 1);
             }}
           >
-            <MdArrowBackIos style={styleArrows} />
+            <MdArrowBackIos className="arrow" />
           </span>
           <span
             className="forwardArrow"
@@ -29,7 +28,7 @@ const Carousel = ({ pictures, title }) => {
                 : setPicture(picture + 1)
             }
           >
-            <MdArrowForwardIos style={styleArrows} />
+            <MdArrowForwardIos className="arrow" />
           </span>
         </div>
       )}
