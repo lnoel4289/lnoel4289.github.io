@@ -1,6 +1,5 @@
 import React from "react";
 import Banner from "../components/Banner";
-
 import ethics from "../data/ethics.json";
 import Dropdowns from "../layouts/Dropdowns";
 
