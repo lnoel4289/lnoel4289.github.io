@@ -5,7 +5,7 @@ const Dropdown = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
+    <div className="dropdown">
       <div className="dropButton"
         onClick={() => {
           isOpen === true ? setIsOpen(false) : setIsOpen(true);
@@ -16,7 +16,7 @@ const Dropdown = ({ title, content }) => {
           <MdArrowBackIos className="arrow" />
         </div>
       </div>
-      {isOpen === true && <div>{content}</div>}
+      {isOpen === true && <div className="content">{content}</div>}
     </div>
   );
 };

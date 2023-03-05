@@ -1,6 +1,7 @@
 $color-primary: #ff6060;
 $color-secondary: white;
 $color-tertiary: black;
+$color-quaternary: #F7F7F7;
 
 @mixin desktop {
   @media screen and (min-width: 1024px) {
