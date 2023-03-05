@@ -5,6 +5,10 @@ header {
   align-items: center;
   margin-bottom: 2rem;
 
+  .nav-active {
+    text-decoration: underline;
+  }
+
   .logo {
     width: 14.5rem;
     height: 4.7rem;
