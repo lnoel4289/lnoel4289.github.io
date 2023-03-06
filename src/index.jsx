@@ -21,6 +21,7 @@ root.render(
         <Route path="/about" element={<About />}></Route>
         <Route path="/error" element={<Error />}></Route>
         <Route path="*" element={<Error />}></Route>
+        <Route path="/redirect"  ></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
