@@ -1,10 +1,14 @@
 .presentation {
+  display: flex;
+  flex-direction: column;
+  .host-rating-cont {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 1.6rem;
-    .host-rating-cont {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

@@ -9,7 +9,7 @@ const Presentation = ({ title, location, tags, rating, host }) => {
       <div>
         <h1>{title}</h1>
         <h2>{location}</h2>
-        <div>
+        <div className="tags">
           {tags.map((tag, index) => {
             return <Tag key={index} tag={tag} />;
           })}

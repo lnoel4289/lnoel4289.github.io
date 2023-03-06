@@ -2,7 +2,7 @@ import React from "react";
 
 const Tag = ({ tag }) => {
   return (
-    <div>
+    <div className="tag">
       <h3>{tag}</h3>
     </div>
   );
