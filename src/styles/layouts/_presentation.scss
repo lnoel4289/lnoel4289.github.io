@@ -1,6 +1,18 @@
 .presentation {
   display: flex;
   flex-direction: column;
+  h1 {
+    color: $color-primary;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.56rem;
+  }
+  h2 {
+    color: $color-primary;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2rem;
+  }
   .host-rating-cont {
     display: flex;
     justify-content: space-between;
