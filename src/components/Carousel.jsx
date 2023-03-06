@@ -10,8 +10,8 @@ const Carousel = ({ pictures, title }) => {
 
       {pictures.length > 1 && (
         <div>
-          <span
-            className="backArrowContainer"
+          <div
+            className="arrow-container"
             onClick={() => {
               picture === 0
                 ? setPicture(pictures.length - 1)
@@ -19,9 +19,9 @@ const Carousel = ({ pictures, title }) => {
             }}
           >
             <MdArrowBackIos className="arrow" />
-          </span>
-          <span
-            className="forwardArrowContainer"
+          </div>
+          <div
+            className="arrow-container arrow-container-right"
             onClick={() =>
               picture === pictures.length - 1
                 ? setPicture(0)
@@ -29,7 +29,7 @@ const Carousel = ({ pictures, title }) => {
             }
           >
             <MdArrowForwardIos className="arrow" />
-          </span>
+          </div>
         </div>
       )}
     </div>
