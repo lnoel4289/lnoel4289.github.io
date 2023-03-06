@@ -1,0 +1,10 @@
+.presentation {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.6rem;
+    .host-rating-cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

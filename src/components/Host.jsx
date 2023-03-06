@@ -1,12 +1,14 @@
-import React from 'react';
+import React from "react";
 
 const Host = ({ name, imgUrl }) => {
-    return (
-        <div>
-            <h3>{name}</h3>
-            <img src={imgUrl} alt={name} />
-        </div>
-    );
+  return (
+    <div className="host">
+      <h3>{name}</h3>
+      <div className="host-img-container">
+        <img src={imgUrl} alt={name} />
+      </div>
+    </div>
+  );
 };
 
 export default Host;

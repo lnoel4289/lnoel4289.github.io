@@ -10,12 +10,12 @@ const Rating = ({ rating }) => {
   }
 
   return (
-    <div>
+    <div className="rating">
       {array.map((num, index) => (
         <MdStarRate
           key={index}
           className={
-            num <= rating ? "color-primary-star" : "color-quinary-star"
+            num <= rating ? "star star-color-primary" : "star star-color-quinary"
           }
         />
       ))}
