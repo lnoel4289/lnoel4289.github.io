@@ -14,6 +14,17 @@
       font-size: 1.3rem;
       font-weight: 500;
     }
+    .arrow-container {
+      height: 100%;
+      &-up {
+        transform: rotate(180deg);
+      }
+      .arrow {
+        transform: rotate(-90deg);
+        height: 1.9rem;
+        width: 1.9rem;
+      }
+    }
   }
   .content {
     position: relative;
@@ -28,14 +39,8 @@
   }
 }
 
-.arrowContainer {
-  width: .9rem;
-  height: 1.5rem;
-  transform: rotate(-90deg);
-}
-
 .arrow {
-  width: .9rem;
+  width: 0.9rem;
   height: 1.5rem;
   fill: white;
 }

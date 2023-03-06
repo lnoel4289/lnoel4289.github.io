@@ -8,15 +8,15 @@ const Dropdown = ({ title, content }) => {
     <div className="dropdown">
       <div className="dropButton"
         onClick={() => {
-          isOpen === true ? setIsOpen(false) : setIsOpen(true);
+          isOpen ? setIsOpen(false) : setIsOpen(true);
         }}
       >
         {title}
-        <div className="arrowContainer">
+        <div className={isOpen ? " arrow-container arrow-container-up" : "arrow-container"}>
           <MdArrowBackIos className="arrow" />
         </div>
       </div>
-      {isOpen === true && <div className="content">{content}</div>}
+      {isOpen && <div className="content">{content}</div>}
     </div>
   );
 };
