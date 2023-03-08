@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Dwelling from "./pages/Dwelling";
 import "./styles/normalize.css";
 import "./styles/index.scss";
+import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -26,3 +27,5 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
+
+reportWebVitals(console.log);

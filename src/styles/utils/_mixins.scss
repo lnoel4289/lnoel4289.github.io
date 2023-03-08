@@ -1,3 +1,5 @@
+// MIXINS FOR RESPONSIVE
+
 @mixin desktop {
   @media screen and (min-width: 1024px) {
     @content;
@@ -5,7 +7,7 @@
 }
 
 @mixin tablet {
-  @media screen and (min-width: 768px) and (max-width: 1023.9px) {
+  @media screen and (min-width: 768px) {
     @content;
   }
 }
@@ -26,10 +28,13 @@
   }
 }
 
-@mixin flexbox-center($justify: center) {
+
+// OTHER MIXINS
+
+@mixin flexbox-center($justify: center, $align: center) {
   display: flex;
   justify-content: $justify;
-  align-items: center;
+  align-items: $align;
 }
 
 @mixin margin-page($up: 2rem, $down: 0) {

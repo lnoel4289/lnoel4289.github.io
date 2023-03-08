@@ -17,12 +17,12 @@
     border-radius: 50%;
     @include mobile {
       &:active {
-        background-color: $color-quinary;
+        background-color: $color-tertiary;
       }
     }
     @include desktop {
       &:hover {
-        background-color: $color-quinary;
+        background-color: $color-tertiary;
       }
     }
     &-right {
