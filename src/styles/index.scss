@@ -1,7 +1,7 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 
-@import "./settings";
+@import "./base/settings";
 
 @import "./pages/home";
 @import "./pages/error";
@@ -19,4 +19,4 @@
 @import "./components/dropdown";
 @import "./components/rating";
 @import "./components/host";
-@import "./components/tag"
+@import "./components/tag";
