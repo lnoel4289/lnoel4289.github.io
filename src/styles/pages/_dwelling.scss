@@ -1,5 +1,5 @@
 .dwelling {
-  margin: 2rem 2rem 0;
+  @include margin-page;
 }
 
 .arrow {

@@ -1,5 +1,5 @@
 .error {
-  margin: 20rem 2rem;
+  @include margin-page(20rem, 20rem);
   text-align: center;
   color: $color-primary;
   h1 {
