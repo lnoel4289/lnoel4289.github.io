@@ -18,9 +18,20 @@ header {
     align-items: center;
   }
   ul {
+    @include flexbox-center(space-between);
+    margin: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    height: 4.7rem;
+    @include mobile-s {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+    li {
+      @include mobile-s {
+        @include flexbox-center(flex-end);
+      }
+    }
   }
   a {
     font-size: 1.2rem;
