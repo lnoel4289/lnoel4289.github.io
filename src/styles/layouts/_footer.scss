@@ -4,6 +4,9 @@ footer {
   padding: 6.2rem 0;
   background-color: $color-tertiary;
   color: $color-secondary;
+  position: absolute;
+  
+  width: 100%;
   svg path {
     fill: white;
   }
