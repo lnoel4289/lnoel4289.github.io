@@ -1,42 +1,10 @@
-$color-primary: #ff6060;
-$color-secondary: white;
-$color-tertiary: black;
-$color-quaternary: #F7F7F7;
-$color-quinary: #E3E3E3;
-
-@mixin desktop {
-  @media screen and (min-width: 1024px) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media screen and (min-width: 768px) and (max-width: 1023.9px) {
-    @content;
-  }
-}
-
-@mixin mobile {
-  @media screen and (max-width: 767.9px) {
-    @content;
-  }
-}
-
-@mixin flexbox-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin center-items {
-  display: flex;
-  align-items: center;
-}
-
 :root {
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
   font-weight: 400;
+  @include tablet {
+    font-size: 20px;
+  }
 }
 
 body {

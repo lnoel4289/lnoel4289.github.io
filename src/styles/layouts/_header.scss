@@ -31,5 +31,8 @@ header {
     @include mobile {
       text-transform: uppercase;
     }
+    @include tablet {
+      text-transform: uppercase;
+    }
   }
 }
