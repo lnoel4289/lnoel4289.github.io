@@ -22,13 +22,8 @@
   }
 }
 
-@mixin flexbox-center {
+@mixin flexbox-center($justify:center) {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin center-items {
-  display: flex;
+  justify-content: $justify;
   align-items: center;
 }

@@ -1,9 +1,7 @@
 .dropdown {
   margin-bottom: 2rem;
   .dropButton {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flexbox-center(space-between);
     height: 3rem;
     border-radius: 0.5rem;
     background-color: $color-primary;

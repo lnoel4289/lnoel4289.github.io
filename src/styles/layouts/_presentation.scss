@@ -14,9 +14,7 @@
     line-height: 2rem;
   }
   .host-rating-cont {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexbox-center(space-between);
     margin-bottom: 1.6rem;
   }
   .tags {

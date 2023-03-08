@@ -1,8 +1,6 @@
 header {
+  @include flexbox-center(space-between);
   margin: 2rem 2rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 2rem;
 
   .nav-active {
