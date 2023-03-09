@@ -1,8 +1,11 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  @include tablet {
-    
+  justify-content: space-between;
+  @include desktop-s {
+    padding: $mrgn-dsktp-s $mrgn-dsktp-s 0;
+    border-radius: 1rem;
+    background-color: $color-secondary;
+    margin-bottom: $mrgn-dsktp-s;
   }
 }

@@ -5,7 +5,9 @@
   border-radius: 1rem;
   margin-bottom: 2rem;
   width: 100%;
-  @include tablet {
+  @include desktop-s {
+    width: calc(50% - $mrgn-dsktp-s/2);
+    margin-bottom: $mrgn-dsktp-s;
   }
   img {
     width: 100%;
