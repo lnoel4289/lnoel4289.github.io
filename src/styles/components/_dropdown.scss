@@ -1,8 +1,5 @@
 .dropdown {
   margin-bottom: $mrgn-mbl;
-  @include desktop-s {
-    margin-bottom: $mrgn-dsktp-s;
-  }
   .dropButton {
     @include flexbox-center(space-between);
     height: 3rem;

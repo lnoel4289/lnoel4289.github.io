@@ -16,18 +16,26 @@ const Dwelling = () => {
   return (
     <div className="dwelling">
       <Carousel pictures={dwelling.pictures} title={dwelling.title} />
-      <Presentation title={dwelling.title} location={dwelling.location} tags={dwelling.tags} rating={dwelling.rating} host={dwelling.host} />
-      <Dropdown title="Description" content={<p>{dwelling.description}</p>} />
-      <Dropdown
-        title="Équipements"
-        content={
-          <ul>
-            {dwelling.equipments.map((eq, index) => {
-              return <li key={`${index}${eq}`}>{eq}</li>;
-            })}
-          </ul>
-        }
+      <Presentation
+        title={dwelling.title}
+        location={dwelling.location}
+        tags={dwelling.tags}
+        rating={dwelling.rating}
+        host={dwelling.host}
       />
+      <div className="dwelling__dropdowns" >
+        <Dropdown title="Description" content={<p>{dwelling.description}</p>} />
+        <Dropdown
+          title="Équipements"
+          content={
+            <ul>
+              {dwelling.equipments.map((eq, index) => {
+                return <li key={`${index}${eq}`}>{eq}</li>;
+              })}
+            </ul>
+          }
+        />
+      </div>
     </div>
   );
 };

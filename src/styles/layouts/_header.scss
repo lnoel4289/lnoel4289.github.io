@@ -1,12 +1,12 @@
 header {
   @include flexbox-center(space-between);
-  margin: 2rem 2rem 0;
-  margin-bottom: 2rem;
-
+  @include margin-page($mrgn-mbl, $mrgn-mbl, $mrgn-mbl);
+  @include desktop-s {
+    @include margin-page($mrgn-dsktp-s, $mrgn-dsktp-s, $mrgn-dsktp-s);
+  }
   .nav-active {
     text-decoration: underline;
   }
-
   .logo {
     width: 14.5rem;
     height: 4.7rem;

@@ -3,6 +3,18 @@
   @include desktop-s {
     @include margin-page($mrgn-dsktp-s, $mrgn-dsktp-s);
   }
+  &__dropdowns {
+    @include desktop-s {
+      display: flex;
+      justify-content: space-between;
+    }
+    .dropdown {
+      @include desktop-s {
+        margin-bottom: $mrgn-dsktp-s;
+        width: calc(50% - $mrgn-dsktp-s/2);
+      }
+    }
+  }
 }
 
 .arrow {

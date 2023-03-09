@@ -3,7 +3,7 @@ import Dropdown from "../components/Dropdown";
 
 const Dropdowns = ({ data }) => {
   return (
-    <article>
+    <article className="dropdowns" >
       {data.map((dat, index) => {
         return (
           <Dropdown

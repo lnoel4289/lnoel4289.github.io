@@ -1,6 +1,10 @@
 .presentation {
   display: flex;
   flex-direction: column;
+  @include desktop-s {
+    flex-direction: row;
+    justify-content: space-between;
+  }
   h1 {
     color: $color-primary;
     font-size: 1.8rem;
@@ -16,6 +20,11 @@
   .host-rating-cont {
     @include flexbox-center(space-between);
     margin-bottom: 1.6rem;
+    @include desktop-s {
+      flex-direction: column-reverse;
+      align-items: flex-end;
+      justify-content: space-around;
+    }
   }
   .tags {
     display: flex;

@@ -24,6 +24,9 @@
 
 body {
   font-size: 1.2rem;
+  @include desktop-s {
+    font-size: 1.5rem;
+  }
 }
 
 * {
