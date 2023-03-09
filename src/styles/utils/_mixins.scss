@@ -43,6 +43,6 @@
   align-items: $align;
 }
 
-@mixin margin-page($up: 2rem, $down: 0) {
-  margin: $up 2rem $down;
+@mixin margin-page($up: $mrgn-mbl, $sides:$mrgn-mbl, $down: 0) {
+  margin: $up $sides $down;
 }

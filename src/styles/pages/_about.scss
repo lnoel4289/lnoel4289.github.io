@@ -1,5 +1,8 @@
 .about {
   @include margin-page;
+  @include desktop-s {
+    @include margin-page($mrgn-dsktp-s, $mrgn-dsktp-s);
+  }
   .content {
     min-height: 14.3rem;
   }

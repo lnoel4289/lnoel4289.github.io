@@ -4,12 +4,7 @@ $color-secondary: #f7f7f7;
 $color-tertiary: #e3e3e3;
 $color-white: white;
 $color-black: black;
-//
 
 // LAYOUT
-$margins: (
-  desktop-s: 3rem,
-);
-
-$mrgn-dsktp-s: map-get($margins, "desktop-s");
-//
+$mrgn-mbl: 2rem;
+$mrgn-dsktp-s: 3rem;

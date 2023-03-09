@@ -1,5 +1,8 @@
 .dwelling {
   @include margin-page;
+  @include desktop-s {
+    @include margin-page($mrgn-dsktp-s, $mrgn-dsktp-s);
+  }
 }
 
 .arrow {
