@@ -9,9 +9,6 @@
   @include desktop {
     height: 21rem;
   }
-  @include desktop-l {
-    height: 29rem;
-  }
   img {
     width: 100%;
     height: 100%;
@@ -38,6 +35,11 @@
         background-color: $color-tertiary;
         opacity: 0.5;
       }
+      @include desktop-l {
+        height: 100px;
+        width: 100px;
+        top: 42%;
+      }
     }
     &__right {
       right: 0;
@@ -53,6 +55,10 @@
     @include desktop-s {
       height: 80px;
       width: 80px;
+    }
+    @include desktop-l {
+      height: 100px;
+      width: 100px;
     }
   }
 }

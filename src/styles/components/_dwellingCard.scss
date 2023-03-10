@@ -26,16 +26,18 @@
   }
   h2 {
     position: absolute;
-    bottom: 2rem;
-    left: 2rem;
+    bottom: 0;
+    left: 0;
     margin: 0;
+    padding: 2rem;
     font-size: 1.8rem;
     color: $color-white;
     @include desktop {
       font-size: .9rem;
       font-weight: 500;
-      bottom: 1rem;
-      left: 1rem;
+    }
+    @include desktop-l {
+      font-size: 1.2rem;
     }
   }
 }
