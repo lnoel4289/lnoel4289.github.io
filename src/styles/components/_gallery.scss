@@ -8,4 +8,8 @@
     background-color: $color-secondary;
     margin-bottom: $mrgn-dsktp-s;
   }
+  @include desktop {
+    justify-content: unset;
+    padding: $mrgn-pdng $mrgn-pdng 0;
+  }
 }

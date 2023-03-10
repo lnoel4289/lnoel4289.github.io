@@ -18,7 +18,10 @@
     font-size: 20px;
   }
   @include desktop-s {
-    font-size: 14px;
+    font-size: 10px;
+  }
+  @include desktop {
+    font-size: 20px;
   }
 }
 
@@ -26,6 +29,9 @@ body {
   font-size: 1.2rem;
   @include desktop-s {
     font-size: 1.5rem;
+  }
+  @include desktop {
+    font-size: 1.2rem;
   }
 }
 

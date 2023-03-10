@@ -9,6 +9,16 @@
     width: calc(50% - $mrgn-dsktp-s/2);
     margin-bottom: $mrgn-dsktp-s;
   }
+  @include desktop {
+    width: 31%;
+    height: 17rem;
+    border-radius: .5rem;
+    margin-right: $mrgn-card;
+    margin-bottom: $mrgn-card;
+    &:nth-child(3n) {
+      margin-right: unset;
+    }
+  }
   img {
     width: 100%;
     height: 100%;
@@ -21,5 +31,11 @@
     margin: 0;
     font-size: 1.8rem;
     color: $color-white;
+    @include desktop {
+      font-size: .9rem;
+      font-weight: 500;
+      bottom: 1rem;
+      left: 1rem;
+    }
   }
 }

@@ -1,10 +1,13 @@
 footer {
   @include flexbox-center;
   flex-direction: column;
-  padding: 6.2rem 0;
+  padding: 62px 0;
   background-color: $color-black;
   color: $color-white;
-  position: absolute;
+  height: 209px;
+  @include desktop {
+    padding-bottom: 20px;
+  }
 
   width: 100%;
   svg path {
@@ -15,6 +18,11 @@ footer {
     height: 4rem;
   }
   p {
-    margin-top: 3.4rem;
+    @include tablet {
+      font-size: .7rem;
+    }
+    @include desktop-s {
+      font-size: 1.2rem;
+    }
   }
 }

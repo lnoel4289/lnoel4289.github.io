@@ -8,5 +8,9 @@ $color-black: black;
 // LAYOUT
 $mrgn-mbl: 2rem;
 $mrgn-dsktp-s: 3rem;
-$mrgn-dsktp: 20rem;
-$banner-hght: 11.1rem
+$mrgn-dsktp: 5rem;
+$mrgn-pdng: 2.5rem;
+$banner-hght: 11.1rem;
+
+// CALC
+$mrgn-card: calc(10%/3);

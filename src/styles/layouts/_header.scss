@@ -4,6 +4,9 @@ header {
   @include desktop-s {
     @include margin-page($mrgn-dsktp-s, $mrgn-dsktp-s, $mrgn-dsktp-s);
   }
+  @include desktop {
+    @include margin-page($mrgn-mbl, $mrgn-dsktp, $mrgn-dsktp-s);
+  }
   .nav-active {
     text-decoration: underline;
   }
@@ -42,6 +45,9 @@ header {
     text-transform: uppercase;
     @include desktop-s {
       text-transform: unset;
+    }
+    @include desktop {
+      font-size: 1.2rem;
     }
   }
 }
