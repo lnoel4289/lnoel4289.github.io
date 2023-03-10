@@ -19,10 +19,13 @@ footer {
   }
   p {
     @include tablet {
-      font-size: .7rem;
+      font-size: 0.7rem;
     }
     @include desktop-s {
       font-size: 1.2rem;
     }
+  }
+  @include desktop-xl {
+    height: 300px;
   }
 }

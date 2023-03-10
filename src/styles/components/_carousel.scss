@@ -3,8 +3,14 @@
   height: 25.5rem;
   border-radius: 1rem;
   position: relative;
+  @include desktop-s {
+    height: 40rem;
+  }
   @include desktop {
-    height: 20rem;
+    height: 21rem;
+  }
+  @include desktop-l {
+    height: 29rem;
   }
   img {
     width: 100%;
@@ -21,20 +27,32 @@
     @include mobile {
       &:active {
         background-color: $color-tertiary;
+        opacity: 0.5;
       }
     }
-    @include desktop {
+    @include desktop-s {
+      height: 80px;
+      width: 80px;
+      top: 40%;
       &:hover {
         background-color: $color-tertiary;
+        opacity: 0.5;
       }
     }
-    &-right {
+    &__right {
       right: 0;
+    }
+    &__left {
+      transform: rotate(180deg);
     }
   }
   .arrow {
     height: 2.4rem;
     width: 2.4rem;
     fill: white;
+    @include desktop-s {
+      height: 80px;
+      width: 80px;
+    }
   }
 }

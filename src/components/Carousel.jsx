@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
+import { MdArrowForwardIos } from "react-icons/md";
 
 const Carousel = ({ pictures, title }) => {
   const [picture, setPicture] = useState(0);
@@ -11,17 +11,17 @@ const Carousel = ({ pictures, title }) => {
       {pictures.length > 1 && (
         <div>
           <div
-            className="arrow-container"
+            className="arrow-container arrow-container__left"
             onClick={() => {
               picture === 0
                 ? setPicture(pictures.length - 1)
                 : setPicture(picture - 1);
             }}
           >
-            <MdArrowBackIos className="arrow" />
+            <MdArrowForwardIos className="arrow" />
           </div>
           <div
-            className="arrow-container arrow-container-right"
+            className="arrow-container arrow-container__right"
             onClick={() =>
               picture === pictures.length - 1
                 ? setPicture(0)

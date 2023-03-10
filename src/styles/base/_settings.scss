@@ -23,6 +23,9 @@
   @include desktop {
     font-size: 20px;
   }
+  @include desktop-xl {
+    font-size: 30px;
+  }
 }
 
 body {
