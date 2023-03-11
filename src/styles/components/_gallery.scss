@@ -12,4 +12,8 @@
     justify-content: unset;
     padding: $mrgn-pdng $mrgn-pdng 0;
   }
+  @include desktop-l {
+    justify-content: unset;
+    padding: 3rem 3rem 0;
+  }
 }

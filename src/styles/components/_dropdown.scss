@@ -12,6 +12,11 @@
     padding: 0 1.15rem;
     position: relative;
     font-weight: 500;
+    @include desktop-s {
+      &:hover {
+        cursor:pointer;
+      }
+    }
     h2 {
       font-size: 1.3rem;
       font-weight: 500;
@@ -38,7 +43,6 @@
     color: $color-primary;
     line-height: 1.71rem;
     z-index: -1;
-    
   }
 }
 
