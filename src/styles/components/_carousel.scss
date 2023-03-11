@@ -67,6 +67,7 @@
     height: 2.4rem;
     width: 2.4rem;
     fill: white;
+    z-index: 1;
     @include desktop-s {
       height: 80px;
       width: 80px;
