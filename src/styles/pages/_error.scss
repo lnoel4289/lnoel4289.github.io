@@ -1,5 +1,5 @@
 .error {
-  @include margin-page(20rem, $mrgn-mbl, 20rem);
+  @include margin-page(20rem, 0, 20rem);
   text-align: center;
   color: $color-primary;
   @include desktop {

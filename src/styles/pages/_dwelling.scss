@@ -1,10 +1,10 @@
 .dwelling {
   @include margin-page;
   @include desktop-s {
-    @include margin-page($mrgn-dsktp-s, $mrgn-dsktp-s);
+    @include margin-page($mrgn-dsktp-s, $mrgn-dsktp);
   }
   @include desktop {
-    @include margin-page($mrgn-dsktp-s, $mrgn-dsktp);
+    @include margin-page($mrgn-dsktp-s, $mrgn-dsktp-l, $mrgn-dsktp-s);
   }
   &__dropdowns {
     @include desktop-s {
@@ -17,7 +17,7 @@
         width: calc(50% - $mrgn-dsktp-s/2);
       }
       .content {
-        @include desktop {
+        @include desktop-s {
           height: 100%;
         }
       }
