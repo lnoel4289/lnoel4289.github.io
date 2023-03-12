@@ -9,7 +9,6 @@ import Dwelling from "./pages/Dwelling";
 import "./styles/normalize.css";
 import "./styles/index.scss";
 import reportWebVitals from "./reportWebVitals";
-import dwellings from "./data/dwellings";
 
 const router = createBrowserRouter([
   {
