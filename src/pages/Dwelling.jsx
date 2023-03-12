@@ -5,6 +5,7 @@ import Dropdown from "../components/Dropdown";
 import Error from "./Error";
 import dwellings from "../data/dwellings";
 import Presentation from "../layouts/Presentation";
+import Header from "../layouts/Header";
 
 const Dwelling = () => {
   const { id } = useParams();
@@ -14,29 +15,25 @@ const Dwelling = () => {
   }
 
   return (
-    <div className="dwelling">
+    <><Header /><div className="dwelling">
       <Carousel pictures={dwelling.pictures} title={dwelling.title} />
       <Presentation
         title={dwelling.title}
         location={dwelling.location}
         tags={dwelling.tags}
         rating={dwelling.rating}
-        host={dwelling.host}
-      />
-      <div className="dwelling__dropdowns" >
+        host={dwelling.host} />
+      <div className="dwelling__dropdowns">
         <Dropdown title="Description" content={<p>{dwelling.description}</p>} />
         <Dropdown
           title="Équipements"
-          content={
-            <ul>
-              {dwelling.equipments.map((eq, index) => {
-                return <li key={`${index}${eq}`}>{eq}</li>;
-              })}
-            </ul>
-          }
-        />
+          content={<ul>
+            {dwelling.equipments.map((eq, index) => {
+              return <li key={`${index}${eq}`}>{eq}</li>;
+            })}
+          </ul>} />
       </div>
-    </div>
+    </div></>
   );
 };
 
