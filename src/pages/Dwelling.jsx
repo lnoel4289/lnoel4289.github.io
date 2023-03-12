@@ -11,7 +11,9 @@ const Dwelling = () => {
   const { id } = useParams();
   const dwelling = dwellings.find((elem) => elem.id === id);
 
-  return dwelling ? (
+  return !dwelling ? (
+    <Navigate to="/error" />
+  ) : (
     <>
       <Header />
       <div className="dwelling">
@@ -41,8 +43,6 @@ const Dwelling = () => {
         </div>
       </div>
     </>
-  ) : (
-    <Navigate to="/error" />
   );
 };
 
