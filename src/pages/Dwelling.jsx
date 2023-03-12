@@ -2,7 +2,6 @@ import React from "react";
 import { Navigate, useParams } from "react-router-dom";
 import Carousel from "../components/Carousel";
 import Dropdown from "../components/Dropdown";
-import Error from "./Error";
 import dwellings from "../data/dwellings";
 import Presentation from "../layouts/Presentation";
 import Header from "../layouts/Header";
