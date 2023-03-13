@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 import Footer from "./layouts/Footer";
 import About from "./pages/About";
 import Error from "./pages/Error";
@@ -29,8 +33,8 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <Navigate to="/error" />
-  }
+    element: <Navigate to="/error" />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
